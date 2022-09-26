@@ -1,0 +1,60 @@
+.navHeader {
+  position: fixed;
+  top: 80px;
+  left: 390px;
+  width: calc(100% - 390px);
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin: 0;
+  box-shadow: 0 0px 2px -1px rgba(0, 0, 0, 0.1);
+
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  @media screen and (max-width: 768px) {
+    left: calc(96px);
+    width: calc(100% - 96px);
+  }
+
+  @media screen and (max-width: 425px) {
+    left: 0;
+    top: 60px;
+    width: 100%;
+  }
+
+  &.fullWidth {
+    width: calc(100% - 94px);
+    left: 94px;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      left: 0;
+      justify-content: flex-start;
+    }
+  }
+
+  li {
+    font-size: 16px;
+    padding: 0 32px;
+
+    a {
+      padding: 27px 0;
+      user-select: none;
+      white-space: nowrap;
+    }
+  }
+
+  :global {
+    li.alignRight {
+      list-style: none;
+      margin-left: auto;
+      padding-right: 20px;
+      a {
+        padding: unset;
+      }
+    }
+  }
+}

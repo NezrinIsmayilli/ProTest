@@ -1,0 +1,192 @@
+/*
+    Should break style into small chunks
+*/
+.datePicker {
+    width: 100%;
+    & input {
+      font-size: 13px;
+    }
+  }
+  .Sidebar {
+    .sidebarItem {
+      padding: 24px 25px;
+      border-bottom: 2px solid #fff;
+      .ant-form-item {
+        margin: 0 !important;
+      }
+    }
+  
+    .inputGroup {
+      margin: '20px 0';
+    }
+  
+    .sectionName {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  .customModal {
+    position: relative;
+    margin-top: 50px;
+    .closeButton,
+    .closeButton:hover,
+    .closeButton:active,
+    .closeButton:focus {
+      position: absolute;
+      padding: 0 13px;
+      top: -20px;
+      right: -65px;
+      transform: translate(-50%, -50%);
+
+      @media screen and (max-width: 1024px) {
+        top: -25px;
+        right: -21px;
+      }
+
+      @media screen and (max-width: 768px) {
+        top: -25px;
+        right: -20px;
+      }
+
+      @media screen and (max-width: 425px) {
+        top: -25px;
+        right: -20px;
+      }
+    }
+    :global {
+      .ant-modal-body {
+        margin-top: -60px;
+        padding: 0 !important;
+      }
+    }
+  }
+  
+  .tableTdPadding {
+    :global {
+      .ant-table-row > td {
+        padding: 20px 0;
+      }
+    }
+  }
+  .exportButton,
+  .exportButton:hover,
+  .exportButton:active,
+  .exportButton:focus {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #f9f9f9;
+  }
+  
+  .sidebarItem {
+    padding: 1px 30px 1px;
+    border-bottom: 2px solid #fff;
+    .ant-form-item {
+      margin: 0 !important;
+    }
+  }
+
+  .exportBox {
+    display: flex;
+    align-items: center;
+  }
+  .buttonSortIcon {
+    display: flex;
+    margin-left: 8px;
+    flex-direction: column;
+  }
+  
+  .customPagination {
+    :global {
+      .ant-pagination-item-link {
+        color: #55ab80;
+      }
+  
+      .ant-pagination-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px !important;
+        font-size: 12px;
+      }
+  
+      .ant-pagination-item-active {
+        background-color: #55ab80;
+        color: white !important;
+        border-radius: 6px;
+      }
+  
+      .ant-pagination-item-link {
+        font-size: 15px;
+      }
+  
+      .ant-pagination-item:nth-last-child(2) {
+        margin-right: 15px !important;
+      }
+  
+      .ant-pagination-item-ellipsis {
+        margin-left: 15px !important;
+        font-size: 5px;
+      }
+  
+      .ant-pagination-item > a {
+        padding: 4px 8px;
+      }
+  
+      .ant-pagination-item-active > a {
+        color: white;
+      }
+  
+      .ant-pagination-next {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px !important;
+        width: 30px !important;
+        padding: 9px;
+        background: rgba(85, 171, 128, 0.1);
+      }
+      .ant-pagination-item-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  
+  .totalNumber {
+    font-size: 12px;
+    font-weight: normal;
+    color: #484848;
+    margin-left: 20px;
+  }
+
+.pageSize,
+.pageSize:focus,
+.pageSize:active,
+.pageSize:hover {
+  width: 60px;
+  font-weight: normal;
+  font-size: 13px;
+  color: #555555;
+  border: none;
+  margin: none;
+  // margin-bottom: 8px;
+
+  :global {
+    .ant-select-arrow-icon * {
+      stroke: rgb(0, 0, 0);
+    }
+
+    .ant-select-selection__rendered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ant-select-selection {
+      border: none;
+    }
+  }
+}

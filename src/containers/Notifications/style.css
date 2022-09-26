@@ -1,0 +1,13 @@
+.toast {
+  border-radius: 4px;
+}
+
+.success-toast {
+  background: #55aa7f;
+  border-radius: 4px;
+}
+
+.error-toast {
+  background: #eb5757;
+  border-radius: 4px;
+}

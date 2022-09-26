@@ -1,0 +1,220 @@
+.dateWrap {
+  width: 292px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.disabled {
+  pointer-events: none;
+  :global {
+    .ant-calendar-selected-day .ant-calendar-date {
+      background-color: #d65b4a !important;
+    }
+  }
+}
+
+.interviewdatePicker {
+  width: 100%;
+  position: relative;
+
+  :global {
+    * {
+      box-shadow: none;
+    }
+    .ant-calendar {
+      width: 100%;
+      user-select: none;
+    }
+    .ant-calendar-body {
+      padding: 0;
+    }
+    .ant-calendar-header {
+      border: none;
+    }
+    .ant-calendar-panel {
+      margin: 0 -4px;
+    }
+    .ant-calendar-my-select {
+      position: absolute;
+      left: 0;
+    }
+    .ant-calendar-next-year-btn,
+    .ant-calendar-prev-year-btn {
+      display: none;
+    }
+
+    .ant-calendar-prev-month-btn {
+      right: 10px;
+      left: auto;
+    }
+    .ant-calendar-next-month-btn {
+      right: 0;
+    }
+    .ant-calendar-header a {
+      width: auto;
+      height: auto;
+    }
+    .ant-calendar-header a::after,
+    .ant-calendar-header a::before {
+      width: 12px;
+      height: 12px;
+    }
+    .ant-calendar-selected-day div {
+      color: #fff;
+      background: #ec971f;
+      border-radius: 2px;
+      border-color: transparent;
+    }
+    .ant-calendar-date {
+      width: 32px;
+      height: 30px;
+      line-height: 30px;
+    }
+    .ant-calendar-selected-day .ant-calendar-date {
+      &::before {
+        display: none !important;
+      }
+    }
+    .ant-calendar-disabled-cell .ant-calendar-date {
+      color: rgba(0, 0, 0, 0.11);
+    }
+  }
+}
+
+
+.customModal {
+  position: relative;
+  margin-top: 50px;
+  .closeButton,
+  .closeButton:hover,
+  .closeButton:active,
+  .closeButton:focus {
+    position: absolute;
+    padding: 0 13px;
+    top: -20px;
+    right: -65px;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+      top: -25px;
+      right: -21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -25px;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      top: -25px;
+      right: -20px;
+    }
+  }
+  :global {
+    .ant-modal-body {
+      margin-top: -60px;
+      padding: 0 !important;
+    }
+  }
+  .title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #383d3e;
+    font-weight: bold;
+    padding: 14px 0;
+    border-bottom: 1px solid #fbfbfb;
+  }
+
+  .buttonGroup {
+    background: #fff;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .tabContent {
+    :global {
+      .ant-form {
+        padding: 0 22px;
+      }
+    }
+  }
+
+  .headerButtons {
+    background: #373737;
+    color: #fff;
+    padding: 20px;
+    span {
+      font-size: 12px;
+    }
+    h5 {
+      font-size: 20px;
+      color: #fff;
+      margin: 0;
+    }
+    p {
+      font-size: 12px;
+      opacity: 0.8;
+    }
+  }
+}
+
+.information {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 24px 20px;
+  margin-top: 18px;
+  background-color: #f9f9f9;
+  color: #464a4b;
+}
+
+// Details List style-modal
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+
+  .ulLi {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dbdbdb;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    span {
+      &:nth-child(1) {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: #373737;
+      }
+
+      &:nth-child(2) {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 16px;
+        color: #464a4b;
+        h6 {
+          color: #505050;
+          line-height: 1.5;
+          list-style: none;
+          -webkit-font-feature-settings: "tnum", "tnum";
+          font-feature-settings: "tnum", "tnum";
+          display: inline-block;
+          height: auto;
+          margin-right: 8px;
+          padding: 0 7px;
+          font-size: 12px;
+          white-space: nowrap;
+          background: #fafafa;
+          border: 1px solid #d9d9d9;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

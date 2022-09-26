@@ -1,0 +1,49 @@
+.detailsTab {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  button {
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 14px;
+    height: 42px;
+    line-height: 16px;
+    &:nth-child(1) {
+      border-radius: 4px 0 0 4px;
+    }
+    &:nth-child(3) {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
+.serialNumberCount {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45a8e291;
+  margin-left: 6px;
+  border-radius: 64px;
+  cursor: context-menu;
+}
+
+.statusTable {
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+
+  thead {
+    font-size: 12px;
+
+    tr {
+      th {
+        background-color: #fff;
+        color: #2e2e2e;
+      }
+    }
+  }
+}

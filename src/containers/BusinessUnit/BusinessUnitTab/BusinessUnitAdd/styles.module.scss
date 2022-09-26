@@ -1,0 +1,558 @@
+$text: rgba(0, 0, 0, 0.87); //standard material primaryText color
+
+.newOperationContainer {
+  margin-top: 24px;
+  margin-bottom: 88px;
+  border-top: 1px solid transparent;
+}
+
+.returnBackButton {
+  display: flex;
+  color: #464a4b;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.tabs {
+  padding: 4px;
+
+  :global {
+    .ant-tabs-bar {
+      border-bottom: 0;
+    }
+
+    .ant-tabs-tab {
+      font-size: 14px;
+      border-radius: 0 !important;
+      margin-right: 2px !important;
+      background-color: #e7e7e7 !important;
+    }
+
+    .ant-tabs-tab-active {
+      border-bottom: unset !important;
+      background-color: #55ab80 !important;
+      color: #fff !important;
+    }
+
+    .ant-tabs-nav {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 0 4px;
+  color: $text;
+  margin: 10px 0 12px;
+}
+
+.parentBox {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.paper {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 16px;
+}
+.newOperationTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.fieldsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.field {
+  width: 22%;
+  margin-left: 20px;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .catalogButton {
+    margin-right: 60px;
+  }
+
+  .icon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s;
+  }
+
+  .descriptionIcon {
+    margin-right: 30px;
+    &:hover {
+      fill: #55ab80;
+    }
+  }
+
+  .printIcon {
+    &:hover {
+      fill: #4e9cdf;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.Footer {
+  margin-top: 40px;
+  .row {
+    margin: 10px;
+  }
+
+  .label {
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}
+
+.ActionButtons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.trashIcon {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.2s;
+
+  &:hover {
+    fill: red;
+    opacity: 1;
+  }
+}
+
+.inputError {
+  border: 1px solid red;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid red;
+  }
+}
+
+.tableInput {
+  font-size: 14px;
+  text-align: center;
+}
+
+.invoiceIcon {
+  fill: grey;
+  cursor: pointer;
+
+  &:hover {
+    fill: black;
+  }
+}
+
+.invoiceIconDisabled {
+  cursor: not-allowed;
+  fill: rgb(194, 189, 189);
+
+  &:hover {
+    fill: rgb(194, 189, 189);
+  }
+}
+
+.AddSerialNumbers {
+  padding: 40px 40px;
+  .serialNumberInputBox {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .customCircleButton {
+    color: #dedede;
+    margin-left: 20px;
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .serialNumbers {
+    max-height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+    padding-right: 8px;
+
+    .serialNumber {
+      display: flex;
+      box-sizing: border-box;
+      min-height: 40px;
+      max-height: 40px;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 10px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #e4e4e4b2;
+      color: #373737;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #dedede;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #464646;
+    }
+  }
+
+  .serialNumberFooter {
+    display: flex;
+    padding-top: 16px;
+    border-top: 1px solid #dedede;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .minusSerialNumberButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #dedede;
+    background-color: #f6f6f6;
+    color: #dedede;
+
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #fbfbfb;
+      border-color: darken(#dedede, 8%);
+      color: darken(#dedede, 8%);
+    }
+  }
+}
+
+.AddSerialNumbersModal {
+  margin-top: 200px;
+}
+
+.serialNumberCount {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45a8e291;
+  margin-left: 8px;
+  border-radius: 64px;
+  cursor: context-menu;
+}
+.AddFromCatalog {
+  padding: 40px 40px;
+
+  .selectLabel {
+    font-size: 14px;
+  }
+
+  .buttons {
+    margin: 15px;
+  }
+  .confirmButton {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .cancelButton {
+    font-size: 14px;
+  }
+}
+.selectBox {
+  margin-bottom: 20px;
+}
+.opInvoiceContentTable {
+  &:hover {
+    background: #fff !important;
+
+    td {
+      background: #fff !important;
+    }
+  }
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: transparent !important;
+      }
+      td {
+        padding: 12px 8px 10px !important;
+      }
+    }
+  }
+  thead {
+    font-size: 14px;
+
+    tr {
+      th {
+        background-color: #fff;
+        color: #2e2e2e;
+      }
+    }
+  }
+  th {
+    padding: 12px 8px 10px !important;
+    border-right: none !important;
+    &:last-child {
+      text-align: right;
+    }
+
+    &:nth-child(8) {
+      position: relative;
+      text-align: right;
+    }
+    &:nth-child(9) {
+      position: relative;
+      text-align: center;
+    }
+    &:nth-child(10) {
+      position: relative;
+      text-align: right;
+    }
+  }
+  //td{
+  :global {
+    .ant-table-body {
+      overflow-x: auto !important;
+    }
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+    .ant-table-middle td:first-child {
+      padding-left: 16px !important;
+    }
+
+    .ant-table-middle td:last-child {
+      padding-right: 16px !important;
+    }
+  }
+}
+.opInvoiceContentFooter {
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.exportBox {
+  display: flex;
+  align-items: center;
+}
+.popContent {
+  display: flex;
+  justify-content: flex-end;
+  button {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border: none;
+  }
+  button:focus {
+    outline: none;
+  }
+  span {
+    display: inline-flex;
+  }
+  span:hover {
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  svg {
+    vertical-align: middle;
+  }
+}
+.customModal {
+  position: relative;
+  width: 360px !important;
+  margin-top: 50px;
+  .closeButton,
+  .closeButton:hover,
+  .closeButton:active,
+  .closeButton:focus {
+    position: absolute;
+    padding: 0 13px;
+    top: -20px;
+    right: -65px;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+      top: -25px;
+      right: -21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -25px;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      top: -25px;
+      right: -20px;
+    }
+  }
+  :global {
+    .ant-modal-body {
+      margin-top: -60px;
+      padding: 0 !important;
+    }
+  }
+}
+.productTable {
+  tbody {
+    tr:last-child {
+      &:hover {
+        background: white !important;
+      }
+      td {
+        border: none !important;
+        font-weight: 600;
+        background: white !important;
+      }
+    }
+  }
+}
+
+.customDeleteModal {
+  :global {
+    .ant-modal-body {
+      padding: 0 !important;
+    }
+  }
+
+  .modalAction {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    padding-top: 0 !important;
+
+    button {
+      &:nth-last-child(0) {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+.modalTitle {
+  font-size: 19px;
+  font-weight: bolder;
+  color: black;
+}
+.rejectButton {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+  background-color: #a4a4a4;
+  border-color: #a4a4a4;
+
+  &:hover,
+  &:focus {
+    background-color: darken(#a4a4a4, 8%);
+    border-color: darken(#a4a4a4, 8%);
+    color: #fff;
+  }
+}
+.UpdateRole {
+  .selectBox {
+    margin-bottom: 20px;
+  }
+  .selectLabel {
+    font-size: 14px;
+  }
+
+  .buttons {
+    margin: 15px;
+  }
+  .confirmButton {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .cancelButton {
+    font-size: 14px;
+  }
+}
+
+.btn {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  top: 0;
+  &:hover {
+    color: black;
+    background: transparent;
+    svg {
+      opacity: 1;
+    }
+  }
+  svg {
+    fill: black;
+    opacity: 0;
+    float: right;
+    margin-top: 4px;
+  }
+}
+.transferStocks:hover {
+  .btn {
+    color: black;
+    background: transparent;
+    svg {
+      opacity: 1;
+    }
+  }
+}

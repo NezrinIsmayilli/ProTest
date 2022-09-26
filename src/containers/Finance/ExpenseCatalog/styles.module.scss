@@ -1,0 +1,810 @@
+@import 'theme/vars.scss';
+
+.drawer {
+  width: 304px;
+  background: #e9e9e9;
+  overflow: auto;
+  position: absolute;
+  top: 80px;
+  left: calc(94px + 296px);
+  height: calc(100vh - 80px);
+  z-index: 7;
+}
+
+.drawerHeader {
+  padding: 28px 18px 27px 30px;
+}
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.45);
+  position: absolute;
+  top: 80px;
+  width: calc(100% - 94px - 296px);
+  left: calc(94px + 296px);
+  height: calc(100% - 80px);
+  z-index: 6;
+}
+.truncate {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.title {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 700;
+  // this will fix shaky drawer content while typing
+  &::after {
+    content: ' ';
+    white-space: pre;
+  }
+}
+
+.closeDrawer {
+  float: right;
+  margin-right: 32px;
+  margin-top: 4px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// .sidebar {
+//   width: 296px;
+//   overflow: auto;
+//   background: #e9e9e9;
+// }
+
+// .aside {
+//   overflow: auto;
+//   background: #f6f6f6;
+//   position: absolute;
+//   top: 80px;
+//   width: calc(100% - 94px - 296px);
+//   left: calc(94px + 296px);
+//   height: calc(100% - 80px);
+// }
+
+.navHeader {
+  position: sticky; // it is more UX
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin: 0;
+  li {
+    font-size: 16px;
+    padding: 0 32px;
+    a {
+      padding: 27px 0;
+    }
+  }
+}
+
+.search {
+  padding: 24px 30px 30px;
+  background-color: #e9e9e9;
+  label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+}
+
+.drawerForm {
+  & > div {
+    margin-top: 5px;
+    width: 90%;
+  }
+  label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #868686;
+    display: inline-block;
+    max-width: 100%;
+    margin: 5px 0;
+  }
+  input {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+
+    &::placeholder {
+      color: #555;
+    }
+  }
+  :global(.ant-input):focus {
+    border-color: transparent;
+  }
+}
+
+.drawerFormBox {
+  //padding: 2px 32px;
+}
+
+.drawerCheckbox {
+  margin: 15px 0;
+  user-select: none;
+}
+
+.addParametr {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  background: transparent;
+  outline: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+
+  span {
+    margin-left: 5px;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #337ab7 !important;
+    text-decoration: none;
+  }
+}
+
+.addButtonBox {
+  padding: 8px 32px;
+}
+
+.drawerSelect {
+  color: #333;
+  font-family: Quicksand, sans-serif;
+  font-size: 13px;
+  -webkit-font-smoothing: inherit;
+}
+.parametrSelect {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.select {
+  :global(.ant-select-selection__placeholder) {
+    color: #666;
+  }
+}
+.removeParametr {
+  padding: 2px 10px;
+  margin-right: -40px;
+  outline: none;
+  color: #ccc;
+  transition: color 0.3s;
+  font-size: 17px;
+  background: transparent;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  svg {
+    vertical-align: text-top;
+  }
+  &:hover {
+    color: #999;
+    cursor: pointer;
+  }
+}
+
+// drawer anim
+
+.enter {
+  transform: translateX(-100%);
+}
+.enterActive {
+  transform: translateX(0%);
+  transition: all 0.35s;
+}
+.enterDone {
+  transform: translateX(0%);
+  display: block;
+}
+.exit {
+  transform: translateX(0%);
+}
+.exitActive {
+  transform: translateX(-100%);
+  transition: all 0.35s;
+}
+.exitDone {
+  display: none;
+}
+// for backdrop drawer
+.enterDrop {
+  opacity: 0;
+}
+.enterActiveDrop {
+  opacity: 1;
+  transition: all 0.35s;
+}
+.enterDoneDrop {
+  opacity: 1;
+  display: block;
+}
+.exitDrop {
+  opacity: 1;
+}
+.exitActiveDrop {
+  opacity: 0;
+  transition: all 0.35s;
+}
+.exitDoneDrop {
+  display: none;
+}
+
+.categoryWrapper {
+  :global(.ant-collapse-borderless) {
+    background-color: transparent;
+  }
+  :global(.ant-collapse-content-box) {
+    background-color: #f6f6f6;
+  }
+}
+.item {
+  padding: 8px 16px;
+  height: 41px;
+  border-radius: 4px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #383d3e;
+  font-weight: 500;
+  box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  div {
+    flex: 1;
+    margin: 0;
+  }
+}
+.altInput.editInput {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+}
+.altInput {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.1);
+  button {
+    border: none;
+    background: transparent;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    &:nth-of-type(1) {
+      color: $accent_light;
+      margin-left: 5px;
+    }
+    &:nth-of-type(2) {
+      color: #c82d3b;
+    }
+  }
+
+  input {
+    flex: 1;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    &::placeholder {
+      color: #555;
+    }
+  }
+}
+.arrow {
+  font-size: 18px;
+  margin-right: 6px;
+  svg {
+    vertical-align: middle;
+  }
+}
+.more {
+  font-size: 24px;
+  color: #b4b4b4;
+  //margin-right: -10px;
+  padding: 2px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  overflow: hidden;
+}
+.addCategoryButton {
+  height: 50px;
+  text-align: left;
+  padding: 10px 20px;
+  margin-bottom: 6px;
+}
+
+//---------------
+
+.input {
+  width: 100%;
+  input {
+    color: #333;
+    font-size: 13px;
+    padding: 6px 12px !important;
+    border: none;
+
+    &::placeholder {
+      color: #666;
+    }
+  }
+  svg {
+    color: #ccc;
+  }
+}
+
+.checkboxes {
+  max-height: 100px;
+  overflow: auto;
+  div {
+    margin-bottom: 2px;
+  }
+  label {
+    font-weight: normal;
+    font-size: 12px;
+    & > span {
+      margin-right: 4px;
+    }
+  }
+}
+
+// .anbarLink {
+//   padding: 10px;
+//   padding-bottom: 0;
+//   padding-right: 100px;
+//   text-align: right;
+//   color: $accent_light;
+//   font-size: 13px;
+//   font-weight: 500;
+//   text-decoration: underline;
+// }
+
+// .yeni_anbar {
+//   padding: 24px 30px 30px;
+// }
+
+.collapse_override {
+  background: transparent;
+  border: 1px solid #fff;
+  & > div {
+    padding-right: 16px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff !important;
+  }
+}
+
+.header {
+  user-select: none;
+  padding: 20px 0 20px 32px;
+  & > div:first-child {
+    padding: 0 !important;
+    font-size: 15px;
+    color: rgb(80, 80, 80) !important;
+    font-weight: bold !important;
+  }
+  & > div:last-child {
+    font-size: 15px;
+    color: rgb(80, 80, 80) !important;
+    font-weight: bold !important;
+  }
+
+  & > div:last-child > div {
+    padding: 20px 20px 0 0 !important;
+  }
+}
+
+.popover {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.popContent {
+  button {
+    padding-right: 48px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+  }
+
+  button:hover {
+    transition: color 0.3s;
+    cursor: pointer;
+    color: $accent;
+  }
+  button:focus {
+    outline: none;
+  }
+  span {
+    padding-right: 10px;
+    display: inline-flex;
+  }
+  svg {
+    vertical-align: middle;
+  }
+}
+
+.disableOutline {
+  outline: none;
+}
+
+// product list
+.productList {
+  margin-bottom: 55px;
+}
+
+.productItem {
+  list-style: none;
+  border: 1px solid #DEDEDE;
+  background: #fff;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  padding: 7px 20px;
+  padding-right: 14px;
+  position: relative;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  color: #373737;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: rgba(85, 171, 128, 0.15);
+    button {
+      //transform: scale(1);
+      outline: none;
+    }
+  }
+
+  span {
+    color: #777;
+    margin-right: 13px;
+    font-weight: 400;
+  }
+  div {
+    flex: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: capitalize;
+  }
+
+  button {
+    //display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+    appearance: none;
+    color: #b4b4b4;
+    font-size: 18px;
+    padding: 4px 6px;
+    transition: all 0.1s;
+    //transform: scale(0);
+    cursor: pointer;
+
+    &:nth-of-type(1):hover {
+      color: $accent;
+    }
+    &:nth-of-type(2):hover {
+      color: #c82d3b;
+    }
+
+    &:nth-of-type(1):active {
+      transform: scale(1.04);
+      color: $accent;
+    }
+    &:nth-of-type(2):active {
+      transform: scale(1.04);
+      color: #c82d3b;
+    }
+    &:focus{
+      outline: 0;
+    }
+    svg {
+      vertical-align: middle;
+    }
+  }
+}
+
+// for AddProductForm
+.enterForm {
+  height: 0;
+  margin-bottom: 0px !important;
+}
+.enterActiveForm {
+  height: 164px;
+  margin-bottom: 8px !important;
+  transition: height 0.3s;
+}
+.enterDoneForm {
+  height: 164px;
+  margin-bottom: 8px !important;
+}
+.exitForm {
+  height: 164px;
+  margin-bottom: 8px !important;
+}
+.exitActiveForm {
+  margin-bottom: 0px !important;
+  height: 0;
+  transition: height 0.3s;
+}
+.exitDoneForm {
+  height: 0;
+  margin-bottom: 0px !important;
+}
+
+.addProductForm {
+  background-color: #fff;
+
+  margin-bottom: 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  input {
+    font-size: 13px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  }
+  input::placeholder {
+    color: #555;
+  }
+  button {
+    border: none;
+    background: transparent;
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 13px;
+    margin-right: 23px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:active {
+      transform: scale(0.98);
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:nth-of-type(1) {
+      color: $accent;
+    }
+    &:nth-of-type(2) {
+      color: #b4b4b4;
+    }
+  }
+  div {
+    margin: 16px 20px;
+  }
+}
+
+.boxContainer {
+  padding: 32px 16px;
+}
+
+// .select {
+//   width: 100%;
+//   font-weight: normal;
+//   font-size: 13px;
+//   color: #555555;
+// }
+
+// .dropdown {
+//   font-size: 13px;
+//   font-weight: 500;
+//   color: #333;
+// }
+
+.salesInputs {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #868686;
+  margin-bottom: 12px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 11px;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  & + input {
+    color: #555;
+    font-size: 13px;
+    &::placeholder {
+      color: #555;
+    }
+  }
+}
+
+.select {
+  width: 100%;
+  font-size: 13px;
+  color: #555555;
+}
+
+// .helpBlock {
+//   height: 16px;
+//   display: block;
+//   margin-top: 5px;
+//   font-size: 12px;
+//   font-weight: 600;
+//   color: red;
+//   transition: all 370ms;
+// }
+
+.inputOnError {
+  border-color: red !important;
+}
+
+.selectError {
+  & div {
+    border-color: red;
+  }
+}
+
+.editBox {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.infoBox {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 4px;
+  & > * {
+    margin-bottom: 16px;
+  }
+}
+
+.infoBoxHeader {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #31393c;
+}
+
+.buttonGroup {
+  margin-top: 20px;
+}
+
+.cancelButton {
+  margin-left: 10px;
+  border: none;
+}
+
+.spinStyle {
+  margin: 20px 0;
+}
+
+.buttonIcon {
+  float: right;
+  font-size: 17px;
+}
+
+.customTree {
+  padding-bottom: 150px !important;
+  & li {
+    padding: 0 !important;
+    & > :first-child {
+      display: none !important;
+    }
+    & > :nth-child(2) {
+      // border: 1px solid red !important;
+      width: 100% !important;
+      padding: 0 !important;
+      height: 100% !important;
+      background-color: transparent !important;
+    }
+  }
+}
+
+.drawerFormItem{
+  padding: 24.5px 32px;
+  padding-bottom: 8px!important;
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
+}
+.formItems{
+  //border-bottom: 0!important;
+  :global{
+    .ant-form-item{
+      margin-bottom: 0!important;
+    }
+  }
+}
+
+.formItem {
+  margin: 0!important;
+  label {
+    color: #868686;
+    margin-bottom: 5px !important;
+    font-weight: 500;
+    font-size: 14px !important;
+  }
+  input {
+    font-size: 13px;
+    &:focus {
+      border-color: transparent;
+    }
+  }
+  :global {
+    .ant-form-item-label {
+      margin: 0px!important;
+      line-height: unset;
+    }
+    .ant-checkbox-wrapper {
+        margin: 0!important;
+    }
+    .ant-form-item-control {
+      height: 40px;
+      line-height: unset;
+    }
+    .ant-form-explain {
+      height: 16px;
+      display: block;
+      margin: 0;
+      font-size: 12px;
+      font-weight: 600;
+      color: red;
+      transition: all 370ms;
+    }
+  }
+}

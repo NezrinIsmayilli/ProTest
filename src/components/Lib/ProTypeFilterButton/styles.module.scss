@@ -1,0 +1,19 @@
+.filterButton,
+.filterButton:hover {
+  background-color: #bbbbbb;
+  color: white;
+  font-size: 12px;
+  width: 100%;
+}
+
+.filterButton:focus,
+.filterButton:active {
+  background-color: #bbbbbb;
+  color: white;
+}
+.isActive,
+.isActive:focus,
+.isActive:hover {
+  background-color: #55ab80;
+  color: white;
+}

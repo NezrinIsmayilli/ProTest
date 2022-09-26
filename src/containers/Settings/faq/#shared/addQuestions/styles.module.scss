@@ -1,0 +1,21 @@
+.floatingSwitch {
+    position: absolute;
+    right: 25px;
+    display: flex;
+    z-index: 9;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+    width: 131px;
+
+    div {
+        margin-bottom: 0 !important;
+        min-height: 28px !important;
+    }
+}
+
+.error {
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 46px;
+}

@@ -1,0 +1,51 @@
+.table {
+  thead th {
+    background: #fff;
+    font-size: 12px;
+    color: #c9c9c9;
+    font-weight: 400;
+    border-top: 1px solid rgba(212, 212, 212, 0.5);
+    border-bottom: 1px solid rgba(212, 212, 212, 0.5);
+    padding: 15px 16px;
+  }
+  tbody td {
+    border: none;
+    font-size: 13px;
+    font-weight: 400;
+    max-width: 250px; // antd make auto width columns if it bigger than 250px truncate txt
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  tr:hover td {
+    background: transparent !important;
+  }
+
+  :global {
+    .ant-table-placeholder {
+      display: none;
+    }
+    .ant-form-item {
+      margin: 0;
+    }
+  }
+}
+
+.addRow {
+  transition: transform 0.2s;
+  border: none;
+  overflow: hidden;
+  background: transparent;
+  cursor: pointer;
+  color: #c9c9c9;
+  font-size: 22px;
+  display: inline-flex;
+  vertical-align: middle;
+  &:active {
+    transform: scale(1.06);
+  }
+  i {
+    color: #c9c9c9;
+    font-size: 22px;
+  }
+}

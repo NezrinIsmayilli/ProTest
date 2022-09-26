@@ -1,0 +1,13 @@
+.addButton,
+.addButton:hover,
+.addButton:active,
+.addButton:focus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #55AB80;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+}

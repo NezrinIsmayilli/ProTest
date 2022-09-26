@@ -1,0 +1,426 @@
+.rows {
+  padding: 24px 12px;
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+// tabs styles start
+.tabsWrapper {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.tabButton {
+  display: block;
+  border: none;
+  background-color: rgba(79, 79, 79, 0.2);
+  flex: 1;
+  height: 97px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  padding: 16px;
+  outline: none;
+  overflow: hidden;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: rgba(74, 145, 226, 0.61);
+  }
+
+  & + & {
+    border-left: 2px solid #fff;
+  }
+}
+
+.tabButton.activeTab {
+  background-color: #4a90e2;
+  .tabButtonIcon {
+    opacity: 1;
+  }
+}
+
+.tabButtonTitle {
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 4px;
+  left: 8px;
+  z-index: 3;
+
+  @media (min-width: 1369px) {
+    font-size: 16px;
+    left: 16px;
+  }
+}
+
+.tabButtonIcon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+.tabButtonBgIcon {
+  display: block;
+  position: absolute;
+  transition: opacity 0.2s;
+  transform: translate(30%, 20%) rotate(10deg);
+  width: 120%;
+  height: 120%;
+  bottom: 0;
+  right: 0;
+  opacity: 0.06;
+  z-index: 1;
+}
+// tabs styled end
+
+// price table styles start
+.priceTableWrap {
+  display: flex;
+  align-items: stretch;
+  background-color: #fff;
+  border-radius: 4px;
+  // padding: 16px 0;
+  overflow: hidden;
+}
+
+.titleCol {
+  min-width: 324px;
+  flex: 1;
+  display: inline-block;
+  margin-left: 8px;
+
+  & > div:not(:first-child) {
+    height: 56px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e7e6e6;
+    padding: 14px 24px;
+
+    & > div {
+      font-size: 14px;
+      line-height: 16px;
+      color: #000;
+      margin: 0 !important;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.titleHeadCell {
+  background: rgba(85, 171, 128, 0.15);
+  height: 73px;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #4f4f4f;
+  margin-left: -8px;
+  padding: 14px 24px 14px 32px;
+  font-weight: 500;
+}
+
+.boldGreen {
+  font-weight: bold;
+  color: #219653;
+}
+
+.planCol {
+  width: 94px;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+
+  span {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.2s;
+    border-bottom: 1px solid #e7e6e6;
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &:not(.selectedPlan) svg {
+    fill: #bdbdbd;
+  }
+
+  &:hover {
+    span {
+      background-color: #fafafa;
+    }
+
+    .planHeadCell {
+      background-color: rgba(85, 171, 128, 0.8);
+
+      div {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.planHeadCell {
+  height: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #f9f9f9;
+  border-left: 1px solid #fff;
+  transition: all 0.2s;
+}
+
+.planType {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(80, 80, 80);
+  opacity: 0.6;
+}
+
+.planPrice {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 32px;
+  color: #828282;
+}
+
+.selectedPlan {
+  .planHeadCell {
+    background: #55ab80 !important;
+
+    div {
+      color: #fff;
+    }
+  }
+
+  span {
+    background-color: #f5f5f5;
+  }
+}
+
+// price table styles end
+
+// infopanel styled start
+.infoPanelWrap {
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+  min-height: calc(100vh - 180px - 32px);
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.infoPanelContent {
+  padding: 16px;
+  min-height: 350px;
+}
+
+.subscription {
+  background: #f2f2f2;
+  border-radius: 4px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #4f4f4f;
+  padding: 12px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+
+.infoDates span {
+  color: #eb5757;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background: #bdbdbd;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+ul.modules {
+  list-style-type: none;
+  margin-bottom: 24px;
+  padding: 0 8px;
+
+  li {
+    min-height: 50px;
+    border-bottom: 1px solid #cbd2dc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #505050;
+  }
+}
+
+span.subscriptionType {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #999;
+}
+
+.deleteIcon {
+  color: #eb5757;
+  margin-left: 8px;
+  cursor: pointer;
+  transform: scale(0.999);
+  user-select: none;
+
+  transition: all 0.2s;
+
+  &:active {
+    transform: scale(1.2);
+  }
+}
+
+.infoSecondTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.userCounts {
+  .label {
+    min-width: 60px;
+  }
+
+  .price {
+    min-width: 60px;
+    text-align: right;
+  }
+
+  li {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  li:last-child {
+    border-bottom: 1px solid #cbd2dc;
+  }
+}
+
+.countInput {
+  font-size: 13px;
+  min-width: 88px;
+}
+
+.count {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #373737;
+  min-width: 40px;
+}
+
+.taxes {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4f4f4f;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 8px 24px;
+  width: 100%;
+}
+
+.total {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 24px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+// infopanel styled end
+
+.desc {
+  // min-height: 88px;
+  color: #505050;
+  font-style: 16px;
+  // margin-bottom: 24px;
+  p {
+    margin: 0;
+    // padding-bottom: 16px;
+  }
+  strong {
+    color: #4e9cdf;
+  }
+  span {
+    user-select: none;
+  }
+  :global {
+    .ant-radio-checked .ant-radio-inner {
+      border-color: #4e9cdf;
+      &::after {
+        background-color: #4e9cdf;
+      }
+    }
+  }
+}
+
+.modalDivider {
+  position: absolute !important;
+  height: 100% !important;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  button:first-child {
+    margin-right: 8px;
+  }
+}
+
+.modalInfoItem {
+  margin-bottom: 16px;
+}
+
+.modalInfoLabel {
+  font-weight: 500;
+  font-size: 13px;
+  color: #828282;
+}
+
+.modalInfoText {
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+}

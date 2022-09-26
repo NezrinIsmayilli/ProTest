@@ -1,0 +1,875 @@
+.datePicker {
+  :global {
+    .ant-calendar-picker-clear, .ant-calendar-picker-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 0;
+      height: 100%;
+      display: flex;
+      width: 42px;
+      border-left: 1px solid #DEDEDE;;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+    }
+
+  }
+}
+
+.wareHouseTableFooter{
+  tr{
+
+    td{
+      padding: 12px 16px 10px !important;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      color: #373737;
+
+      &:nth-child(1){
+        padding-left: 6px!important;
+        padding-right: 6px!important;
+      }
+    }
+
+  }
+}
+.customInput {
+  input{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-right: 0 !important;
+  }
+}
+
+.customSelect {
+  :global {
+    .ant-select-selection {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      font-weight: normal;
+      font-size: 13px;
+      color: #555555;
+    }
+  }
+}
+
+.searchPicker {
+  :global {
+    .ant-select-arrow {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      display: flex;
+      width: 42px;
+      border-left: 1px solid #DEDEDE;;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+    }
+
+  }
+}
+
+.newProductTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #373737;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.exportBox{
+  display: flex;
+  align-items: center;
+}
+
+.serialNumberInputBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customCircleButton {
+  color: #DEDEDE;
+
+  i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.serialNumberInput {
+  margin-right: 12px;
+  width: 100%;
+}
+
+.serialNumberBox {
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  width: calc(100% + 16px);
+  padding-right: 8px;
+  margin-left: 0;
+}
+
+.serialNumberBox::-webkit-scrollbar-track {
+  background: #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.serialNumberBox::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+.serialNumberBox::-webkit-scrollbar-thumb {
+  background-color: #464646;
+
+}
+.helperText{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7C7C7C;
+}
+.serialNumber {
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  color: #373737;
+}
+
+.minusSerialNumberButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #DEDEDE;
+  background-color: #F6F6F6;
+  color: #DEDEDE;
+
+  i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover, &:focus {
+    background-color: #fbfbfb;
+    border-color: darken(#DEDEDE, 8%);
+    color: darken(#DEDEDE, 8%);
+  }
+}
+
+.serialNumberFooter{
+  display: flex;
+  padding-top: 16px;
+  border-top: 1px solid #DEDEDE;
+  justify-content: space-between;
+  align-items: center;
+}
+.invoiceHeaderBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.iconButton{
+  background: #F9F9F9;
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  &:hover, &:focus {
+    background-color: darken(#F9F9F9, 2%);
+    border: none;
+    color: #000;
+  }
+}
+
+.invoiceTable{
+  &:hover {
+    //cursor: pointer;
+    background: #fff !important;
+
+    td {
+      background: #fff !important;
+    }
+  }
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+
+  tbody{
+    tr{
+
+      &:hover{
+        background-color: transparent!important;
+      }
+      td{
+        //padding-top: 20px!important;
+        //padding-bottom: 20px!important;
+        padding: 12px 16px 10px !important;
+        &:last-child {
+          padding-right: 4px!important;
+        }
+      }
+    }
+  }
+  thead {
+    font-size: 12px;
+
+    tr{
+      th{
+        background-color: #fff;
+        color: #2e2e2e;
+      }
+    }
+  }
+  th {
+    padding: 12px 16px 10px !important;
+    border-right: none !important;
+    &:last-child {
+      text-align: right;
+    }
+
+    &:nth-child(8){
+      position: relative;
+      text-align: right;
+    }
+    &:nth-child(9){
+      position: relative;
+      text-align: center;
+    }
+    &:nth-child(10){
+      position: relative;
+      text-align: right;
+    }
+  }
+  //td{
+  :global {
+    .ant-table-body{
+      overflow-x: auto!important;
+    }
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+    .ant-table-middle td:first-child {
+      padding-left: 16px !important;
+    }
+
+    .ant-table-middle td:last-child {
+      padding-right: 16px !important;
+    }
+  }
+}
+.opInvoiceContentTable{
+  &:hover {
+    //cursor: pointer;
+    background: #fff !important;
+
+    td {
+      background: #fff !important;
+    }
+  }
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+
+  tbody{
+    tr{
+
+      &:hover{
+        background-color: transparent!important;
+      }
+      td{
+        //padding-top: 20px!important;
+        //padding-bottom: 20px!important;
+        padding: 12px 16px 10px !important;
+      }
+    }
+  }
+  thead {
+    font-size: 12px;
+
+    tr{
+      th{
+        background-color: #fff;
+        color: #2e2e2e;
+      }
+    }
+  }
+  th {
+    padding: 12px 16px 10px !important;
+    border-right: none !important;
+    &:last-child {
+      text-align: right;
+    }
+
+    &:nth-child(8){
+      position: relative;
+      text-align: right;
+    }
+    &:nth-child(9){
+      position: relative;
+      text-align: center;
+    }
+    &:nth-child(10){
+      position: relative;
+      text-align: right;
+    }
+  }
+  //td{
+  :global {
+    .ant-table-body{
+      overflow-x: auto!important;
+    }
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+    .ant-table-middle td:first-child {
+      padding-left: 16px !important;
+    }
+
+    .ant-table-middle td:last-child {
+      padding-right: 16px !important;
+    }
+  }
+}
+.row {
+  background: #fff;
+  font-size: 13px;
+
+  td {
+    // border-top: 2px solid #f6f6f6 !important;
+    // border-bottom: 2px solid #f6f6f6 !important;
+    background-color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    color: #646464;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-right: none !important;
+
+    &:last-child {
+      position: relative;
+      text-align: right;
+    }
+
+    &:nth-child(8) {
+      position: relative;
+      text-align: right;
+    }
+
+    &:nth-child(9) {
+      position: relative;
+      text-align: center;
+    }
+
+    &:nth-child(10) {
+      position: relative;
+      text-align: right;
+    }
+  }
+}
+.invoiceTableFooterParent{
+  display: flex;
+  flex-direction: column;
+  padding-right: 102px;
+  padding-top: 16px;
+}
+.invoiceTableFooter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.inputStyles{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #373737;
+  width: 117px;
+  height: 36px;
+  text-align: center;
+}
+
+.serialNumberCount{
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F1F1;
+  margin-left: 8px;
+  border-radius: 64px;
+}
+.subtitleStyle{
+  color: #373737;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+.checkBox{
+  font-style: normal;
+  font-weight: 600;
+  color: #0E65EB;
+  font-size: 15px;
+  line-height: 24px;
+  :global{
+    .ant-checkbox-inner{
+      border:1px solid #DEDEDE;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #0E65EB;
+      border-color: #0E65EB;
+    }
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner{
+      border-color: #0E65EB;
+    }
+  }
+}
+.customButton{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 4px;
+  height: 40px;
+}
+
+.dropDownButton{
+  font-style: normal;
+  font-weight: 500;
+  color: #4E9CDF;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 4px;
+  height: 40px;
+  background: linear-gradient(0deg, #EDF5FC, #EDF5FC), #FFFFFF;
+  border: 1px solid #4E9CDF;
+  display: flex;
+  align-items: center;
+  padding-right: 0;
+  margin-left: 10px;
+  i{
+    display: flex!important;
+    border-left: 1px solid #4E9CDF;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+  }
+
+  &:hover, &:focus {
+    background: linear-gradient(0deg, #e1ecfc, #e8effc), #e5edff;
+    border-color: darken(#4E9CDF, 8%);
+    color: darken(#4E9CDF, 8%);
+  }
+}
+
+.dropDownMenu{
+  background: #F9F9F9;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.customCollapse{
+  width: calc(100% + 58px);
+  :global{
+    .ant-collapse-header{
+      padding: 24px 42px!important;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}
+
+.purchaseTable{
+  margin-top: 18px;
+  &:hover {
+    //cursor: pointer;
+    background: transparent !important;
+
+    td {
+      background: transparent !important;
+    }
+  }
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+
+  tbody{
+    tr{
+      background: transparent!important;
+      &:hover{
+        background-color: transparent!important;
+      }
+      td{
+        //padding-top: 20px!important;
+        background-color: transparent!important;
+        //padding-bottom: 20px!important;
+        padding: 12px 16px 10px !important;
+        &:last-child {
+          padding-right: 4px!important;
+        }
+      }
+    }
+  }
+  thead {
+    font-size: 12px;
+
+    tr{
+      th{
+        background-color: transparent;
+        color: #2e2e2e;
+      }
+    }
+  }
+  th {
+    padding: 12px 16px 10px !important;
+    border-right: none !important;
+    &:last-child {
+      text-align: right;
+    }
+
+    &:nth-child(8){
+      position: relative;
+      text-align: right;
+    }
+    &:nth-child(9){
+      position: relative;
+      text-align: center;
+    }
+    &:nth-child(10){
+      position: relative;
+      text-align: right;
+    }
+  }
+  //td{
+  :global {
+    .ant-table-body{
+      overflow-x: auto!important;
+    }
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+    .ant-table-middle td:first-child {
+      padding-left: 16px !important;
+    }
+
+    .ant-table-middle td:last-child {
+      padding-right: 16px !important;
+    }
+  }
+}
+
+//operation details css
+.detailsTab{
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  button{
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 14px;
+    height: 42px;
+    line-height: 16px;
+    &:nth-child(1){
+      border-radius: 4px 0 0 4px;
+    }
+    &:nth-child(2){
+      border-radius: 0;
+      border-right: 0;
+      border-left: 0;
+    }
+    &:nth-child(3){
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
+.inputSerialNumberBox{
+  height: 40px;
+  padding: 6px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #505050;
+  line-height: 1.5;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  button{
+    padding: 7px 11px;
+    height: 100%;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #373737;
+
+    &:hover, &:focus{
+      background-color: #EBEBEB;
+      border: none;
+      color: #252525;
+    }
+    i{
+      display: flex;
+      font-size: 14px;
+
+      svg{
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}
+.inputSerialNumberParent{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .inputSerialNumberAction{
+    margin-bottom: 4px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #7c7c7c;
+      line-height: 16px;
+    }
+
+    button{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      /* identical to box height, or 167% */
+
+      color: #55AB80;
+      &:disabled{
+        color: rgba(0, 0, 0, 0.25)!important;
+      }
+      span{
+
+        text-align: right;
+        text-decoration-line: underline;
+
+      }
+    }
+  }
+}
+
+.columnDetailItem{
+  display: flex;
+  flex-direction: column;
+
+  label{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A4A4A4;
+  }
+
+  span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #373737;
+  }
+}
+
+.chip {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: max-content;
+}
+.customSquareButton {
+  border: none !important;
+
+  i {
+    color: #464A4B !important;
+  }
+}
+.opInvTable::-webkit-scrollbar-track {
+  background: #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.opInvTable::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+.opInvTable::-webkit-scrollbar-thumb {
+  background-color: #464646;
+
+}
+.tdPadding{
+  padding: 12px 16px 10px !important;
+}
+.opInvoiceContentFooter{
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.totalTable {
+  &:hover {
+    //cursor: pointer;
+    background: #fff !important;
+
+    td {
+      background: #fff !important;
+    }
+  }
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: transparent !important;
+      }
+      td {
+        //padding-top: 20px!important;
+        //padding-bottom: 20px!important;
+        padding: 6px 16px 6px !important;
+        // &:last-child {
+        //   padding-right: 4px !important;
+        // }
+      }
+    }
+
+    tr:nth-child(2) {
+      & > td {
+        color: #55AB80;
+      }
+    }
+    tr:nth-child(4) {
+      & > td {
+        color: #0E65EB;
+      }
+    }
+  }
+  thead {
+    display: none;
+  }
+  th {
+    padding: 12px 16px 10px !important;
+    border-right: none !important;
+    // &:last-child {
+    //   text-align: right;
+    // }
+
+    // &:nth-child(8) {
+    //   position: relative;
+    //   text-align: right;
+    // }
+  }
+  //td{
+  :global {
+    .ant-table-body {
+      overflow-x: auto !important;
+    }
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+
+    tr td {
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+
+
+.uploadParent {
+  //background-color: red!important;
+}
+
+.uploadParent .ant-upload-list {
+  float: left;
+  background-color: red !important;
+  width: 200px;
+  margin-right: 8px;
+}
+
+.uploadParent .ant-upload-animate-enter {
+  animation-name: uploadAnimateInlineIn;
+}
+
+.uploadParent .ant-upload-animate-leave {
+  animation-name: uploadAnimateInlineOut;
+}
+
+	
+.uploadArea {
+  height: 70px !important;
+  background-color: #ffffff !important;
+}
+
+.uploadButton {
+  background-color: #f9f9f9;
+  display: flex;
+  height: 36px;
+  width: 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}

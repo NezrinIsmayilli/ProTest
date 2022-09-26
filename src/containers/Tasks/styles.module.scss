@@ -1,0 +1,28 @@
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 12px;
+
+  &:hover {
+    background-color: #6fc99c;
+    color: white;
+  }
+}
+
+.urgent {
+  color: red;
+  font-size: 14px!important;
+
+  .isUrgent {
+    color: red;
+    font-size: 14px;
+  }
+
+
+}

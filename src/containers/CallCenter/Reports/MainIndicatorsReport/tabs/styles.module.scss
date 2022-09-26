@@ -1,0 +1,75 @@
+.detailbtn {
+  position: relative;
+}
+.detailbtn::after {
+  content: "";
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid green;
+  transform: rotate(-45deg);
+  display: flex;
+  width: 4px;
+  right: -25px;
+  bottom: -15px;
+  position: absolute;
+}
+.tableSupervisor {
+  table{
+    overflow: hidden;
+  }
+  td, th {
+    line-height: 31px;
+  }
+  td:nth-child(1),
+  td:nth-child(2),
+  td:nth-child(3),
+  td:nth-child(4),
+  td:nth-child(5),
+  td:nth-child(6),
+  td:nth-child(7),
+  td:nth-child(8),
+  td:nth-child(9),
+  td:nth-child(10),
+  td:nth-child(11),
+  td:nth-child(12),
+  td:nth-child(13),
+  td:nth-child(14),
+  td:nth-child(15),
+  td:nth-child(16),
+  td:nth-child(17),
+  td:nth-child(18),
+  td:nth-child(19),
+  td:nth-child(20),
+  td:nth-child(21),
+  td:nth-child(22),
+  td:nth-child(23),
+  td:nth-child(24),
+  td:nth-child(25),
+  td:nth-child(26),
+  td:nth-child(27),
+  td:nth-child(28),
+  td:nth-child(29),
+  td:nth-child(30),
+  td:nth-child(31),
+  td:nth-child(32),
+  td:nth-child(23) {
+    border-right: 1px solid #e8e8e8 !important;
+  }
+}
+
+.columnsStyle {
+  font-weight: 600;
+}
+.detailButton {
+  display: none;
+  height: 28px;
+}
+.detailbtn:hover {
+  .detailButton {
+    display: inline-block;
+  }
+  .rowNumbers {
+    display: none;
+  }
+}

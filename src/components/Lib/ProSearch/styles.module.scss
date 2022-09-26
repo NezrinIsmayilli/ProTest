@@ -1,0 +1,20 @@
+.search {
+  :global {
+    .ant-input-search-icon * {
+      color: black;
+    }
+  }
+  input {
+    width: 100%;
+    color: #333;
+    font-size: 13px;
+    padding: 6px 12px !important;
+
+    &::placeholder {
+      color: rgb(173, 173, 173);
+    }
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}

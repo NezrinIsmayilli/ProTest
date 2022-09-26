@@ -1,0 +1,93 @@
+.customModal {
+  position: relative;
+  margin-top: 50px;
+  .closeButton,
+  .closeButton:hover,
+  .closeButton:active,
+  .closeButton:focus {
+    position: absolute;
+    padding: 0 13px;
+    top: -20px;
+    right: -65px;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+      top: -25px;
+      right: -21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -25px;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      top: -25px;
+      right: -20px;
+    }
+  }
+  :global {
+    .ant-modal-body {
+      margin-top: -60px;
+      padding: 0 !important;
+    }
+  }
+  .title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #383d3e;
+    font-weight: bold;
+    border-bottom: 1px solid #fbfbfb;
+  }
+  :global {
+    .ant-tag-green {
+      margin-bottom: 10px !important;
+    }
+  }
+  .buttonGroup {
+    background: #fff;
+    width: 100%;
+  }
+
+  .tabContent {
+    height: 200px;
+    :global {
+      .ant-form {
+        padding: 0 22px;
+      }
+    }
+  }
+
+  .headerButtons {
+    background: #373737;
+    color: #fff;
+    padding: 20px;
+    span {
+      font-size: 12px;
+    }
+    h5 {
+      font-size: 20px;
+      color: #fff;
+      margin: 0;
+    }
+    p {
+      font-size: 12px;
+      opacity: 0.8;
+    }
+  }
+}
+
+.title {
+  font-size: 18px;
+  line-height: 24px;
+  color: #383d3e;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.buttonGroup {
+  background: #fff;
+  padding-top: 6px;
+  width: 100%;
+  bottom: -5px;
+}

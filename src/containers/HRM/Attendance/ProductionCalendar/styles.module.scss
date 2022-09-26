@@ -1,0 +1,197 @@
+
+
+// settings panel style
+.settingsWrap {
+  margin-bottom: 16px;
+  // margin-top: 6px;
+  align-items: center;
+  display: flex;
+}
+
+.infoText {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  height: 100%;
+  color: #242424;
+}
+
+.buttonsCol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.textColsWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2px;
+}
+
+.infoText {
+  flex: 1;
+  max-width: 300px;
+}
+
+.alignRight {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.borderedRadius {
+  margin-bottom: 0;
+  & > div {
+    border-radius: 20px !important;
+    margin-right: 10px;
+    padding: 0 10px;
+    z-index: 999;
+    position: relative;
+  }
+}
+
+.penButton {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: left;
+  line-height: 30px;
+  min-height: 30px;
+}
+
+.nameSpan {
+  word-break: break-all;
+  width: 100%;
+  margin-right: 8px;
+}
+
+.editInput {
+  width: 212px;
+
+  input {
+    font-size: 12px;
+  }
+  :global {
+    .ant-input-suffix {
+      right: 2px;
+    }
+  }
+}
+
+.nonWorkingDaysButton {
+  height: 40px;
+
+  &:hover {
+    border: 1px solid #55ab80;
+  }
+}
+
+// calendarWrapper Col
+.calendarWrapper {
+  padding: 24px 16px;
+  background: #ffffff;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.row {
+  margin-left: 0px !important;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+// operaitons right box
+.operationWrap {
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px 10px;
+  height: 100%;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.maxWidth {
+  max-width: 300px;
+}
+
+// calendar styles
+.calendarMonth {
+  :global {
+    .ant-fullcalendar {
+      font-size: 12px;
+      color: black;
+      user-select: none;
+      border-top: none;
+
+      table {
+        height: 200px;
+      }
+
+      @media (min-width: 1367px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.calendarHeader {
+  text-align: center;
+  font-size: 12px;
+  @media (min-width: 1367px) {
+    font-size: 15px;
+  }
+  font-weight: bold;
+  line-height: 16px;
+  margin-bottom: 4px;
+
+  text-transform: capitalize;
+}
+
+.calendarCell {
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  padding: 0;
+  color: #505050;
+  line-height: 24px;
+  background: transparent;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.calendarToday {
+  background: #55ab80;
+  color: #ffffff;
+}
+
+.isNotBetween {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.isColorfull {
+  background: black;
+  color: #ffffff;
+}
+
+.list {
+  :global {
+    .ant-empty {
+      margin-top: 64px;
+    }
+    .ant-spin {
+      min-height: 200px;
+    }
+  }
+}

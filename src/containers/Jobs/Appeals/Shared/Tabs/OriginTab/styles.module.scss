@@ -1,0 +1,32 @@
+.buttonGroup {
+  width: 100%;
+  background: #fff;
+  padding-top: 6px;
+  margin-bottom: -30px;
+}
+
+.tabContent {
+  & > div {
+    padding: 0;
+  }
+}
+
+.profile {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #fbfbfb;
+}
+
+.profileRight {
+  flex: 1;
+}
+
+.profileName {
+  font-size: 16px;
+  font-weight: bold;
+  color: #383d3e;
+  margin: 0;
+  margin-left: 8px;
+}

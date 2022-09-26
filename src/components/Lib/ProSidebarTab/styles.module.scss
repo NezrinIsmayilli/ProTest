@@ -1,0 +1,35 @@
+@import 'theme/vars.scss';
+
+.tab {
+  padding: 16px 32px;
+  background-color: #e9e9e9;
+  border-bottom: 2px solid #fff;
+  transition: all 0.4s;
+  &:hover {
+    background: $accent;
+    color: #fff;
+    cursor: pointer;
+  }
+  &.selected {
+    background: $accent;
+    color: #fff;
+  }
+  time {
+    display: block;
+    font-size: 11px;
+  }
+  address {
+    display: block;
+    margin: 2px 0;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  p {
+    margin: 0;
+    font-size: 14px;
+
+    @media (min-width: 1367px) {
+      font-size: 15px;
+    }
+  }
+}

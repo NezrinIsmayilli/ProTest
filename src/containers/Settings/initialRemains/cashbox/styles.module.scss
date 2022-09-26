@@ -1,0 +1,48 @@
+.modalHeader {
+    font-weight: bold;
+    font-size: 30px;
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.buttonsBox {
+    margin-top: 20px;
+}
+.editIcon {
+    background-color: transparent;
+    border: 0;
+    color: #a19f9f !important;
+    font-size: 15px;
+    &:hover {
+        background-color: #55ab8014 !important;
+        color: #55ab80 !important;
+    }
+}
+.customTable {
+    background-color: #fff;
+    td:nth-of-type(5),
+    td:nth-of-type(6),
+    td:nth-of-type(7),
+    td:nth-of-type(8),
+    td:nth-of-type(9),
+    td:nth-of-type(10),
+    td:nth-of-type(11),
+    td:nth-of-type(12),
+    td:nth-of-type(13),
+    td:nth-of-type(14) {
+        border-right: 1px solid #e8e8e8 !important;
+    }
+}
+tbody > tr:last-child td:nth-of-type(5),
+tbody > tr:last-child td:nth-of-type(6),
+tbody > tr:last-child td:nth-of-type(7),
+tbody > tr:last-child td:nth-of-type(8),
+tbody > tr:last-child td:nth-of-type(9),
+tbody > tr:last-child td:nth-of-type(10),
+tbody > tr:last-child td:nth-of-type(11),
+tbody > tr:last-child td:nth-of-type(12),
+tbody > tr:last-child td:nth-of-type(13),
+tbody > tr:last-child td:nth-of-type(14) {
+    border: none !important;
+}

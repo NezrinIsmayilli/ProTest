@@ -1,0 +1,143 @@
+.newModalHeader {
+  background: #55ab80;
+  border-radius: 4px 4px 0px 0px;
+  color: #fff;
+  padding: 16px 24px;
+  p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.padding24 {
+  padding: 24px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.txtRight {
+  text-align: right;
+}
+
+.cancelBtn {
+  margin-left: 10px;
+  background: #f2f2f2;
+  border: 1px solid #dedede;
+  margin-right: 10px;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+.flexDisplay {
+  display: flex;
+}
+
+.borderedRadius {
+  & > div {
+    border-radius: 20px !important;
+    margin-right: 10px;
+    padding: 0 10px;
+  }
+}
+
+.historyStyle {
+  table {
+    border: 0 !important;
+    thead {
+      tr {
+        th {
+          font-size: 12px;
+          padding: 12px 20px 10px !important;
+          &:nth-last-child(2) {
+            border-right: 1px solid transparent !important;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        background: #f2f2f2;
+        td {
+          font-size: 13px;
+          background: #f2f2f2 !important;
+          border-right: 1px solid white !important;
+          position: relative;
+          &:hover {
+            background: transparent !important;
+          }
+          &:last-child {
+            padding: 0;
+          }
+          p {
+            padding: 0;
+            margin: 0;
+          }
+        }
+        &:hover {
+          background: #f2f2f2 !important;
+        }
+      }
+    }
+  }
+}
+.btnTransparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  box-shadow: 0 0 0 0;
+  &:hover {
+    background: transparent;
+  }
+}
+.reportHistoryRow {
+  background: transparent;
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: #c82d3b !important;
+  }
+
+  svg {
+    cursor: pointer;
+    font-size: 18px;
+  }
+}
+.inputBtn {
+  padding: 0;
+  border: 0;
+  height: auto;
+  background: transparent !important;
+}
+.info {
+  &:hover {
+    color: #f2994a !important;
+  }
+}
+.customInput {
+  margin: 0;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.salaryHistory .ant-table-body {
+  max-height: 400;
+  overflow-y: auto;
+}
+.widthFull {
+  width: 100%;
+}

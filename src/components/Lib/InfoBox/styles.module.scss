@@ -1,0 +1,52 @@
+.infoBox {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 700;
+  color: #31393c;
+  margin-bottom: 20px;
+  word-break: break-all;
+}
+
+.viewOption {
+  font-size: 13px;
+  color: #31393c;
+  margin-bottom: 10px;
+  font-weight: 500;
+  & * {
+    word-break: break-all;
+  }
+  :global {
+    .ant-tag {
+      white-space: normal !important;
+    }
+  }
+}
+
+.label {
+  display: block;
+  font-size: 11px;
+  text-transform: capitalize;
+  color: #757575;
+  margin-bottom: 0;
+  font-weight: 500;
+  word-break: break-all;
+}
+.text {
+  text-transform: capitalize;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+.valueText {
+  word-break: break-word;
+  white-space: pre-wrap;
+
+  &::after {
+    content: ' ';
+    white-space: pre;
+  }
+}

@@ -1,0 +1,278 @@
+.slider {
+    min-height: 80px;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    width: 600px;
+
+    ul {
+        list-style: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 9000px;
+        transition: left 0.2s linear;
+        -moz-transition: left 0.2s linear;
+        -o-transition: left 0.2s linear;
+        -webkit-transition: left 0.2s linear;
+        margin-left: -25px;
+
+        li {
+            position: relative;
+            width: 600px;
+            display: inline-block;
+            height: 200px;
+        }
+    }
+}
+/* Content */
+.sliderContainer {
+    margin: 0 auto;
+    max-width: 550px;
+    min-height: 180px;
+    padding: 0;
+    text-align: center;
+}
+
+/*** target hooks ****/
+
+@keyframes slide-animation {
+    0% {
+        opacity: 0;
+    }
+    2% {
+        opacity: 1;
+    }
+    20% {
+        left: 0px;
+        opacity: 1;
+    }
+    22.5% {
+        opacity: 0.6;
+    }
+    25% {
+        left: -600px;
+        opacity: 1;
+    }
+    45% {
+        left: -600px;
+        opacity: 1;
+    }
+    47.5% {
+        opacity: 0.6;
+    }
+    50% {
+        left: -1200px;
+        opacity: 1;
+    }
+    70% {
+        left: -1200px;
+        opacity: 1;
+    }
+    72.5% {
+        opacity: 0.6;
+    }
+    75% {
+        left: -1800px;
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    98% {
+        left: -1800px;
+        opacity: 0;
+    }
+    100% {
+        left: 0px;
+        opacity: 0;
+    }
+}
+
+.slider {
+    ul {
+        -webkit-animation: slide-animation 5s infinite;
+    }
+}
+
+.slider {
+    ul {
+        &:hover {
+            -moz-animation-play-state: paused;
+            -webkit-animation-play-state: paused;
+        }
+    }
+}
+.spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.successBtn {
+    svg {
+        fill: #17aa17;
+        font-size: 55px;
+    }
+    text-align: center;
+    margin-bottom: 15px;
+}
+.errorBtn{
+    svg {
+        fill: #c91d0d;
+        font-size: 55px;
+    }
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.text {
+    text-align: center;
+    p {
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+}
+.closeBtn {
+    display: flex;
+    justify-content: end;
+    .one{
+        button,
+        button:hover,
+        button:active,
+        button:focus {
+            background-color: #df4740;
+            border-color: #df4740;
+            color: #fff;
+        }
+    }
+    .two{
+        margin-right: 10px;
+    }
+}
+.deleteModal {
+    background: rgba(0, 0, 0, 0.7);
+  
+    :global {
+      .ant-modal-header {
+        height: 166px;
+        background: linear-gradient(180deg, #d0021b 0%, #a70014 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .ant-modal-title {
+        display: inline-block;
+        svg {
+          vertical-align: middle;
+          width: 120px;
+          height: 120px;
+          fill: white;
+        }
+      }
+      .ant-modal-body {
+        text-align: center;
+        padding: 32px 48px;
+      }
+    }
+  }
+  
+  .title {
+    color: #3f3f3f;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .desc {
+    color: #505050;
+    font-style: 16px;
+    margin-bottom: 24px;
+    p {
+      margin: 0;
+    }
+  }
+  
+  .closeIcon {
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  .modalButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    button {
+      font-size: 16px;
+      min-width: 99px;
+      min-height: 44px;
+      appearance: none;
+      border: none;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      cursor: pointer;
+      position: relative;
+      margin-right: 14px;
+      outline: none;
+      background: currentColor;
+      transition: 0.2s;
+      box-shadow: 0 0 2px -2px #fff, 0 0 0px 0px currentColor;
+  
+      span {
+        font-size: 16px;
+        display: inline-flex;
+        margin-right: 4px;
+        color: #fff;
+      }
+  
+      &:active {
+        transition: 0s;
+        box-shadow: 0 0 3px 2px #fff, 0 0 2px 5px #fff;
+      }
+    }
+    :global {
+      .ant-btn:hover,
+      .ant-btn:focus,
+      .ant-btn:active {
+        background-color: unset;
+      }
+    }
+  }
+
+  .deleteButton {
+    width: 100px;
+    color: #d0021b;
+    &:focus,
+    &:active,
+    &:hover {
+      background: #d0021b !important;
+    }
+  }
+  
+  button.cancelButton {
+    color: #ebebeb;
+    span {
+      color: #777;
+    }
+    &:active {
+      box-shadow: 0 0 2px 2px #fff, 0 0 3px 6px #fff;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      background: #d9d9d9;
+    }
+  }
+  .apiError{
+      margin-bottom: 0;
+      color: #f5222d;
+  }
+  .formContent{
+      p:first-child{
+          font-size: 20px;
+      }
+  }

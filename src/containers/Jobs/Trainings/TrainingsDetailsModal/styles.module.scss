@@ -1,0 +1,112 @@
+li{
+  line-height: 2;
+}
+.MoreDetails {
+    padding: 50px;
+  
+    .header {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 0.5px solid rgba(158, 158, 158, 0.336);
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+  
+      .section {
+        font-weight: 700;
+      }
+
+      .value {
+        color: black;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .detailsTab {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  
+    button {
+      width: 100%;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      font-size: 14px;
+      height: 42px;
+      line-height: 16px;
+      &:nth-child(1) {
+        border-radius: 4px 0 0 4px;
+      }
+      &:nth-child(2) {
+        border-radius: 0;
+        border-right: 0;
+        border-left: 0;
+      }
+      &:nth-child(3) {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+
+  .customModal {
+    position: relative;
+    margin-top: 50px;
+    .closeButton,
+    .closeButton:hover,
+    .closeButton:active,
+    .closeButton:focus {
+      position: absolute;
+      padding: 0 13px;
+      top: -20px;
+      right: -65px;
+      transform: translate(-50%, -50%);
+
+      @media screen and (max-width: 1024px) {
+        top: -25px;
+        right: -21px;
+      }
+
+      @media screen and (max-width: 768px) {
+        top: -25px;
+        right: -20px;
+      }
+
+      @media screen and (max-width: 425px) {
+        top: -25px;
+        right: -20px;
+      }
+    }
+    :global {
+      .ant-modal-body {
+        margin-top: -60px;
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .information {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 24px 20px;
+    margin-top: 18px;
+    background-color: #f9f9f9;
+    color: #464a4b;
+  }
+  .headerInfo {
+    padding: 16px;
+    border-radius: 8px;
+    margin-left: -4px;
+    display: flex;
+    align-items: center;
+    span {
+      font-weight: 600;
+      margin-right: 5px;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+  }

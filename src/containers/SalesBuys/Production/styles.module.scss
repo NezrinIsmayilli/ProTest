@@ -1,0 +1,266 @@
+.Sidebar {
+  .sidebarItem {
+    padding: 24px 25px;
+    border-bottom: 2px solid #fff;
+    .ant-form-item {
+      margin: 0 !important;
+    }
+  }
+
+  .inputGroup {
+    margin: '20px 0';
+  }
+
+  .sectionName {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.select {
+  width: 100%;
+  font-weight: normal;
+  font-size: 13px;
+  margin-top: 8px;
+  color: #555555;
+  overflow: hidden;
+  // margin-bottom: 8px;
+
+  :global {
+    .ant-select-arrow {
+      color: black;
+    }
+
+    .ant-select-selection {
+      border: 1px solid #d9d9d9 !important;
+      border-color: #d9d9d9 !important;
+    }
+  }
+}
+
+.dropdown {
+  font-size: 13px;
+  padding: 10px;
+  font-weight: normal;
+  color: #333;
+  z-index: 1;
+}
+
+.input {
+  margin-top: 8px;
+  input {
+    font-size: 13px;
+  }
+}
+
+.datePicker {
+  width: 100%;
+  & input {
+    font-size: 13px;
+  }
+}
+.customModal {
+  position: relative;
+  margin-top: 50px;
+  .closeButton,
+  .closeButton:hover,
+  .closeButton:active,
+  .closeButton:focus {
+    position: absolute;
+    padding: 0 13px;
+    top: -20px;
+    right: -65px;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+      top: -25px;
+      right: -21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -25px;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      top: -25px;
+      right: -20px;
+    }
+  }
+  :global {
+    .ant-modal-body {
+      margin-top: -60px;
+      padding: 0 !important;
+    }
+  }
+}
+
+.exportButton,
+.exportButton:hover,
+.exportButton:active,
+.exportButton:focus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.information {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 24px 20px;
+  margin-top: 18px;
+  background-color: #f9f9f9;
+  color: #464a4b;
+}
+
+.DetailsModal {
+  padding: 50px;
+
+  .header {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(158, 158, 158, 0.336);
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+
+    .section {
+      font-weight: 700;
+    }
+  }
+}
+
+.totalNumber {
+  font-size: 12px;
+  font-weight: normal;
+  color: #484848;
+  margin-left: 20px;
+}
+
+input {
+  border-radius: 4px !important;
+}
+
+.tableFooter {
+  tr:last-child > td {
+    border-bottom: none !important;
+    color: white;
+    background-color: #484848;
+    font-weight: bold;
+    pointer-events: none;
+  }
+}
+.chip {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: max-content;
+}
+.newContactButton,
+.newContactButton:hover,
+.newContactButton:active,
+.newContactButton:focus {
+  color: white;
+  background-color: #4e9cdf;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.editActive {
+  cursor: pointer;
+}
+.editDisabled {
+  cursor: not-allowed;
+}
+.editIcon {
+  background-color: transparent;
+  border: 0;
+  color: #a19f9f !important;
+  font-size: 15px;
+  &:hover {
+    background-color: #55ab8014 !important;
+    color: #55ab80 !important;
+  }
+}
+
+.deleteModal {
+  :global {
+    .ant-modal-body {
+      padding: 0 !important;
+    }
+  }
+
+  .modalAction {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    padding-top: 0 !important;
+
+    button {
+      &:nth-last-child(0) {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+.rejectButton {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+  background-color: #a4a4a4;
+  border-color: #a4a4a4;
+
+  &:hover,
+  &:focus {
+    background-color: darken(#a4a4a4, 8%);
+    border-color: darken(#a4a4a4, 8%);
+    color: #fff;
+  }
+}
+.deleteModalTitle {
+  font-size: 19px;
+  font-weight: bolder;
+  color: black;
+}
+.detailsTab {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  button {
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 14px;
+    height: 42px;
+    line-height: 16px;
+    &:nth-child(1) {
+      border-radius: 4px 0 0 4px;
+    }
+    &:nth-last-child() {
+      border-radius: 0 4px 4px 0 !important;
+    }
+  }
+}
+.newDropdownBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  background-color: #4e9cdf !important;
+  font-size: 14px;
+  font-weight: 500;
+  border-color: transparent !important;
+}
+
+.productionTable {}

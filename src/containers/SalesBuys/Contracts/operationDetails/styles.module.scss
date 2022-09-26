@@ -1,0 +1,78 @@
+@import '../styles.module.scss';
+.detailsTab {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  button {
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 14px;
+    height: 42px;
+    line-height: 16px;
+    &:nth-child(1) {
+      border-radius: 4px 0 0 4px;
+    }
+    &:nth-child(2) {
+      border-radius: 0;
+      border-right: 0;
+      border-left: 0;
+    }
+    &:nth-child(3) {
+      border-radius: 0 4px 4px 0 !important;
+    }
+  }
+}
+.detailTab {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  button {
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 14px;
+    height: 42px;
+    line-height: 16px;
+    &:nth-child(1) {
+      border-radius: 4px 0 0 4px;
+    }
+    &:nth-child(2) {
+      border-radius: 0;
+      border-right: 0;
+      border-left: 0;
+    }
+    &:nth-child(3) {
+      border-radius: 0 4px 4px 0 !important;
+    }
+  }
+}
+.productTableFooter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.deleted {
+  background-color: red !important;
+
+  td {
+    font-size: 20px;
+    background-color: red !important;
+  }
+}
+.amountInfoButton {
+  color: #b4b4b4;
+  padding: 0;
+  // margin-right: 18%;
+  transition: all 0.25s;
+  &:hover {
+    color: #096dd9;
+  }
+  &:active {
+    transform: scale(1.2);
+  }
+}

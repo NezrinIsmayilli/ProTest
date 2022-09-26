@@ -1,0 +1,17 @@
+$progress-color: #4e9cdf;
+
+#nprogress .bar {
+  background: $progress-color;
+  top: 80px;
+  height: 3.5px;
+}
+
+#nprogress .peg {
+  // box-shadow: none;
+  box-shadow: 0 0 90px $progress-color, 0 0 85px $progress-color;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: $progress-color;
+  border-left-color: $progress-color;
+}

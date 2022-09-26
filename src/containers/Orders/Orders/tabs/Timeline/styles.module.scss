@@ -1,0 +1,64 @@
+@import '../../../styles.module.scss';
+
+.Timeline {
+  margin-top: 60px;
+}
+
+.date {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0 20px;
+}
+.time {
+  font-size: 20px;
+  font-weight: 50;
+  margin: 0 20px;
+}
+
+.TimelineDetails {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 30px 20px;
+
+  & > * {
+    margin-bottom: 15px;
+  }
+
+  .userInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .stage {
+    font-weight: 600;
+  }
+
+  .additional {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .editButton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #55AB80;
+    cursor: pointer;
+  }
+
+  .description {
+    font-size: 13px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 4px;
+    
+  }
+}

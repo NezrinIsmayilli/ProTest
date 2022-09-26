@@ -1,0 +1,130 @@
+@import "../../index.module.sass";
+
+.OrderRoles {
+  & > * {
+    margin-bottom: 35px;
+  }
+}
+
+.UpdateRole {
+  .selectBox {
+    margin-bottom: 20px;
+  }
+  .selectLabel {
+    font-size: 14px;
+  }
+
+  .buttons {
+    margin: 15px;
+  }
+  .confirmButton {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .cancelButton {
+    font-size: 14px;
+  }
+}
+.customUpload {
+  height: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+.customUpload > span {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.customUpload > span > div:nth-child(2) > div {
+  width: 100%;
+  margin-right: 0 !important;
+}
+.customUpload > span > div:nth-child(2) > div > span > div {
+  height: 25px !important;
+  margin-top: 0 !important;
+}
+.customUpload > span > div:nth-child(1) > span {
+  display: flex;
+  align-items: center;
+}
+.lastRow {
+  div:nth-child(2) {
+    overflow: visible;
+  }
+}
+.editIcon {
+  background-color: transparent;
+  border: 0;
+  color: #a19f9f !important;
+  font-size: 15px;
+  &:hover {
+    background-color: #55ab8014 !important;
+    color: #55ab80 !important;
+  }
+}
+.trashIcon {
+  background-color: transparent;
+  border: 0;
+  color: #a19f9f !important;
+  font-size: 15px;
+  &:hover {
+    background-color: #55ab8014 !important;
+    color: #ff716a !important;
+  }
+}
+
+.player {
+  min-width: 400px;
+  height: 50px;
+  border-radius: 40px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 10px black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .playButton.play {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid green;
+    border-bottom: 15px solid transparent;
+  }
+
+  .playButton.pause {
+    width: 10px;
+    height: 30px;
+    border-left: 10px solid green;
+    border-right: 10px solid green;
+  }
+  .stopButton {
+    width: 30px;
+    height: 30px;
+    background: green;
+  }
+
+  .duration {
+    display: block;
+    width: 102px;
+    height: 10px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    span {
+      display: block;
+      width: 0;
+      height: 9px;
+      background: green;
+    }
+  }
+}

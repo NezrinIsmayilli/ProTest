@@ -1,0 +1,385 @@
+@import 'theme/vars.scss';
+
+.fullname {
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+  background-color: transparent;
+  cursor: pointer;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &:hover,
+  &.active,
+  &:focus {
+    background-color: #55ab80;
+    * {
+      color: #fff;
+    }
+    button {
+      transform: scale(1.01);
+    }
+  }
+  &.active {
+    button {
+      outline: none !important;
+    }
+  }
+}
+
+.button {
+  transition: all 0.2s;
+  transform: scale(0);
+
+  &:focus {
+    outline: auto;
+  }
+  &:hover {
+    transform: scale(1.15) !important;
+  }
+}
+
+.archiveList {
+  :global {
+    .ant-empty {
+      margin-top: 64px;
+    }
+    .ant-spin {
+      min-height: 200px;
+    }
+  }
+}
+
+// settings panel style
+.settingsWrap {
+  margin-bottom: 12px;
+  margin-top: 6px;
+  align-items: center;
+  display: flex;
+}
+
+.infoText {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  height: 100%;
+  color: #242424;
+}
+
+.buttonsCol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.textColsWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.padding24 {
+  padding: 24px;
+}
+.header {
+  background: #373737;
+  border-radius: 4px 4px 0px 0px;
+  h3,
+  p {
+    color: #fff !important;
+  }
+}
+.infoText {
+  flex: 1;
+  max-width: 300px;
+}
+
+.alignRight {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.borderedRadius {
+  margin-bottom: 0;
+  & > div {
+    border-radius: 20px !important;
+    margin-right: 10px;
+    padding: 0 10px;
+    z-index: 999;
+    position: relative;
+  }
+}
+
+.penButton {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: left;
+  line-height: 30px;
+  min-height: 30px;
+}
+
+.nameSpan {
+  word-break: break-all;
+  width: 100%;
+  margin-right: 8px;
+}
+
+// infobox styles
+.infoboxWrap {
+  background: #fff;
+  padding: 0;
+  :global {
+    .ant-empty {
+      padding: 32px 0;
+    }
+  }
+}
+
+.infoStats {
+  padding: 6px;
+  li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eee;
+    border-radius: 4px;
+    color: #31393c;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 12px;
+    margin-bottom: 8px;
+  }
+}
+
+// table styles  main table ovveride
+.fullname {
+  padding: 0px;
+  &:hover,
+  &.active,
+  &:focus {
+    background-color: transparent;
+    span {
+      color: #646464;
+    }
+    h3 {
+      color: #000;
+    }
+    * {
+      color: #eb5757;
+    }
+  }
+}
+
+.table {
+  margin-bottom: 180px;
+  thead {
+    font-size: 12px;
+  }
+  th {
+    padding: 8px 10px !important;
+  }
+  tr:hover td {
+    background-color: #ddebe1 !important;
+  }
+  :global {
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+  }
+}
+
+.hideScroll {
+  :global {
+    .ant-table-body {
+      overflow: hidden !important;
+    }
+  }
+}
+
+.row {
+  cursor: pointer;
+  tr:hover td {
+    background: #ddebe1 !important;
+  }
+  td {
+    background: #fff;
+    font-weight: 400;
+    color: #646464;
+    max-width: 100px;
+    overflow: unset;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    word-break: break-all;
+    position: relative;
+    user-select: none;
+
+    i {
+      display: none;
+    }
+
+    &:hover,
+    .loading + div {
+      i {
+        display: block;
+      }
+
+      .canEdit {
+        display: none;
+      }
+
+      .cellEditButton {
+        background-color: #f2994a;
+      }
+    }
+
+    :global {
+      .ant-popover-open {
+        background-color: #f2994a;
+        i {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.cellWrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.1;
+    background-color: currentColor;
+  }
+
+  :global {
+    .ant-popover-placement-topLeft .ant-popover-arrow,
+    .ant-popover-placement-topRight .ant-popover-arrow {
+      bottom: -4px !important;
+    }
+  }
+}
+
+.editableCell {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+button.cellEditButton {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: #fff !important;
+  border-radius: 0;
+  :global {
+    .ant-btn-loading::before {
+      background-color: unset;
+    }
+  }
+}
+
+.popover {
+  :global {
+    .ant-popover-content {
+      min-width: 120px;
+      user-select: none;
+    }
+
+    .ant-popover-inner {
+      padding: 10px 0;
+    }
+
+    .ant-popover-inner-content {
+      padding: 0 0 4px 0;
+      max-height: 180px;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        width: 2px;
+        background-color: #ddd;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $accent;
+        border-radius: 2px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #ccc;
+      }
+    }
+
+    .ant-popover-arrow {
+      height: 12px;
+      width: 12px;
+      margin-top: -6px;
+      background: #fff;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.eventTitle {
+  font-size: 14px;
+  line-height: 24px;
+  color: #252525;
+  cursor: pointer;
+  padding: 0 8px;
+  white-space: nowrap;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.hour {
+  color: #505050;
+}
+
+.tooltip {
+  pointer-events: none;
+
+  :global {
+    .ant-tooltip-inner,
+    .ant-tooltip-arrow::before {
+      color: currentColor;
+      background-color: currentColor;
+    }
+  }
+}
+
+.customLabel {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #505050;
+}
+.customWrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: #e9e9e9;
+  border-bottom: 2px solid #fff;
+}

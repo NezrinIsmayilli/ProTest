@@ -1,0 +1,504 @@
+$text: rgba(0, 0, 0, 0.87); //standard material primaryText color
+
+.newOperationContainer {
+  margin-top: 24px;
+  margin-bottom: 88px;
+  border-top: 1px solid transparent;
+}
+
+.returnBackButton {
+  display: flex;
+  color: #464a4b;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.tabs {
+  padding: 4px;
+
+  :global {
+    .ant-tabs-bar {
+      border-bottom: 0;
+    }
+
+    .ant-tabs-tab {
+      font-size: 14px;
+      border-radius: 0 !important;
+      margin-right: 2px !important;
+      background-color: #e7e7e7 !important;
+    }
+
+    .ant-tabs-tab-active {
+      border-bottom: unset !important;
+      background-color: #55ab80 !important;
+      color: #fff !important;
+    }
+
+    .ant-tabs-nav {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 0 4px;
+  color: $text;
+  margin: 10px 0 12px;
+}
+
+.tabsHeader {
+  font-size: 14px;
+  padding: 0 4px;
+  margin-bottom: 0.35em;
+  color: $text;
+}
+
+.parentBox {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.paper {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 16px;
+}
+
+.newOperationTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.fieldsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.field {
+  width: 22%;
+  margin-left: 20px;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .catalogButton {
+    margin-right: 60px;
+  }
+
+  .icon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s;
+  }
+
+  .descriptionIcon {
+    margin-right: 30px;
+    &:hover {
+      fill: #55ab80;
+    }
+  }
+
+  .printIcon {
+    &:hover {
+      fill: #4e9cdf;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.Footer {
+  margin-top: 40px;
+  .row {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .discountLabel {
+    color: #55ab80;
+  }
+
+  .vatLabel {
+    color: #0e65eb;
+  }
+
+  .label {
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+
+  .inputGroup {
+    display: flex;
+    align-items: center;
+  }
+
+  .input {
+    text-align: center;
+    font-size: 15px;
+    width: 150px;
+  }
+}
+
+.ActionButtons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.trashIcon {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.2s;
+
+  &:hover {
+    fill: red;
+    opacity: 1;
+  }
+}
+
+.inputError {
+  border: 1px solid red;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid red;
+  }
+}
+
+.tableInput {
+  font-size: 14px;
+  text-align: center;
+}
+
+.invoiceIcon {
+  fill: grey;
+  cursor: pointer;
+
+  &:hover {
+    fill: black;
+  }
+}
+
+.invoiceIconDisabled {
+  cursor: not-allowed;
+  fill: rgb(194, 189, 189);
+
+  &:hover {
+    fill: rgb(194, 189, 189);
+  }
+}
+
+.serialNumberCount {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45a8e291;
+  margin-left: 8px;
+  border-radius: 64px;
+  cursor: context-menu;
+}
+
+.contractBalance {
+  color: #7c7c7c;
+  font-weight: 300;
+  font-size: 14px !important;
+}
+
+.AddFromCatalog {
+  padding: 40px 40px;
+
+  .selectLabel {
+    font-size: 14px;
+  }
+
+  .buttons {
+    margin: 15px;
+  }
+  .confirmButton {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .cancelButton {
+    font-size: 14px;
+  }
+}
+
+.InvoiceModal {
+  .header {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .filterName {
+    font-size: 14px;
+  }
+}
+
+.SelectFromInvoice {
+  margin-top: 20px;
+}
+
+.InvoiceModalWithSN {
+  padding: 40px 40px;
+}
+.InvoiceModalWithoutSN {
+  padding: 40px 40px;
+}
+
+.customCollapse {
+  :global {
+    .ant-collapse-header {
+      padding: 24px 42px !important;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    .ant-collapse-item {
+      border: none;
+    }
+  }
+}
+
+.panelCheckbox {
+  font-style: normal;
+  font-weight: 600;
+  color: #0e65eb;
+  font-size: 15px;
+  line-height: 24px;
+  :global {
+    .ant-checkbox-inner {
+      border: 1px solid #dedede;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #0e65eb;
+      border-color: #0e65eb;
+    }
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+    .ant-checkbox:hover .ant-checkbox-inner,
+    .ant-checkbox-input:focus + .ant-checkbox-inner {
+      border-color: #0e65eb;
+    }
+  }
+}
+
+.selectBox {
+  margin-bottom: 20px;
+}
+.customDeleteModal {
+  :global {
+    .ant-modal-body {
+      padding: 0 !important;
+    }
+  }
+
+  .modalAction {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    padding-top: 0 !important;
+
+    button {
+      &:nth-last-child(0) {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+.modalTitle {
+  font-size: 19px;
+  font-weight: bolder;
+  color: black;
+}
+.rejectButton {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+  background-color: #a4a4a4;
+  border-color: #a4a4a4;
+
+  &:hover,
+  &:focus {
+    background-color: darken(#a4a4a4, 8%);
+    border-color: darken(#a4a4a4, 8%);
+    color: #fff;
+  }
+}
+.opInvoiceContentFooter {
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.customModal {
+  position: relative;
+  margin-top: 50px;
+  .closeButton,
+  .closeButton:hover,
+  .closeButton:active,
+  .closeButton:focus {
+    position: absolute;
+    padding: 0 13px;
+    top: -20px;
+    right: -65px;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+      top: -25px;
+      right: -21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -25px;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      top: -25px;
+      right: -20px;
+    }
+  }
+}
+
+.Summary {
+  display: flex;
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0px 3px 17px -7px #808080;
+  justify-content: space-between;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .label {
+    font-size: 19px;
+    font-weight: 600;
+    color: #55ab80;
+  }
+  .value {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .percent {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+.summaryBox {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  .summaryCol {
+    padding: 0 4px;
+  }
+  .summaryCol:nth-child(1) {
+    padding: 0 4px 0 0;
+  }
+  .summaryCol:nth-child(4) {
+    padding: 0 0 0 4px;
+  }
+}
+
+.collapse {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 20px;
+}
+.btnTransparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: transparent !important;
+  box-shadow: 0 0 0 0;
+  &:hover {
+    background: transparent;
+  }
+}
+.chip {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: max-content;
+}
+
+.swalButtons {
+  background-color: #55ab80;
+  border-color: #55ab80;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #55ab80;
+    border-color: #55ab80;
+  }
+}
+.creditTablesTable {
+  background-color: white;
+  table {
+    font-size: 13px;
+  }
+  tbody {
+    tr {
+      &:last-child {
+        td {
+          color: white;
+          background-color: #484848;
+          border-bottom: none;
+          width: inherit !important;
+          font-weight: 500;
+          pointer-events: none;
+        }
+      }
+
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+  }
+}

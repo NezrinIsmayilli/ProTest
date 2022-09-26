@@ -1,0 +1,163 @@
+@import '../styles.module.scss';
+
+.containerFluid {
+  margin: 32px;
+  margin-bottom: 0;
+  background-color: white;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+//   &::-webkit-scrollbar {
+//     width: 0px;
+//     background: transparent; /* make scrollbar transparent */
+// }
+}
+
+.mainContainer {
+  position: absolute;
+  margin: 50px 0;
+  width: 550px;
+  font-size: 14px;
+  font-weight: 400;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+}
+
+
+.checkbox {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+.title {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 0 4px;
+  margin: 10px 0 12px;
+}
+
+.tabLabel {
+  font-size: 14px;
+  padding: 0 4px;
+  margin-bottom: 0.35em;
+}
+
+.label {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.flexBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+}
+
+.mode {
+  color: #383d3e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.inputLabel {
+    margin-bottom: 6px;
+}
+
+.select {
+  width: 100%;
+  margin: 0!important;
+  font-weight: normal;
+  font-size: 14px;
+  color: #555555;
+  overflow: hidden;
+  // margin-bottom: 8px;
+
+  :global {
+    .ant-select-arrow {
+      color: black;
+    }
+    .ant-select-selection {
+      border: 1px solid #d9d9d9 !important;
+      border-color: #d9d9d9 !important;
+    }
+  }
+}
+
+.button,
+.button:hover,
+.button:active,
+.button:focus {
+  color: #fff;
+  background-color: #55ab80;
+}
+
+.addNumber {
+    width: 93%;
+}
+
+.sectionHeader {
+    color: #6FC99C;
+    margin: 0 0 24px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.plusBtn{
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  font-size: 12px;
+  z-index: 1;
+  width: 14px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.customModal {
+  .closeButton,
+  .closeButton:hover,
+  .closeButton:active,
+  .closeButton:focus {
+    position: absolute;
+    padding: 0 13px;
+    top: -20px;
+    right: -65px;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+      top: -25px;
+      right: -21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -25px;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      top: -25px;
+      right: -20px;
+    }
+  }
+}
+
+.deliveryAddress {
+  display: flex;
+  flex-direction: column;
+  padding-right: 16px;
+
+  @media screen and (max-width: 425px) {
+    padding-right: 0;
+  }
+}

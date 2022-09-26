@@ -1,0 +1,235 @@
+@import 'theme/vars.scss';
+
+.item {
+  padding: 8px 16px;
+  height: 41px;
+  border-radius: 4px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #383d3e;
+  font-weight: 500;
+  box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  div {
+    flex: 1;
+    margin: 0;
+  }
+}
+.altInput.editInput {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+}
+.altInput {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.1);
+  button {
+    border: none;
+    background: transparent;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    &:nth-of-type(1) {
+      color: $accent_light;
+      margin-left: 5px;
+    }
+    &:nth-of-type(2) {
+      color: #c82d3b;
+    }
+  }
+
+  input {
+    flex: 1;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    &::placeholder {
+      color: #555;
+    }
+  }
+}
+.arrow {
+  font-size: 18px;
+  margin-right: 6px;
+  svg {
+    vertical-align: middle;
+  }
+}
+.more {
+  font-size: 24px;
+  color: #b4b4b4;
+  //margin-right: -10px;
+  padding: 2px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  overflow: hidden;
+}
+.addCategoryButton {
+  height: 50px;
+  text-align: left;
+  padding: 10px 20px;
+  margin-bottom: 6px;
+}
+
+//---------------
+
+.input {
+  width: 100%;
+  input {
+    color: #333;
+    font-size: 13px;
+    padding: 6px 12px !important;
+    border: none;
+
+    &::placeholder {
+      color: #666;
+    }
+  }
+  svg {
+    color: #ccc;
+  }
+}
+
+.checkboxes {
+  max-height: 100px;
+  overflow: auto;
+  div {
+    margin-bottom: 2px;
+  }
+  label {
+    font-weight: normal;
+    font-size: 12px;
+    & > span {
+      margin-right: 4px;
+    }
+  }
+}
+
+// .anbarLink {
+//   padding: 10px;
+//   padding-bottom: 0;
+//   padding-right: 100px;
+//   text-align: right;
+//   color: $accent_light;
+//   font-size: 13px;
+//   font-weight: 500;
+//   text-decoration: underline;
+// }
+
+// .yeni_anbar {
+//   padding: 24px 30px 30px;
+// }
+
+.collapse_override {
+  background: transparent;
+  border: 1px solid #fff;
+  & > div {
+    padding-right: 16px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff !important;
+  }
+}
+
+.popover {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.popContent {
+  button {
+    padding-right: 48px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+  }
+
+  button:hover {
+    transition: color 0.3s;
+    cursor: pointer;
+    color: $accent;
+  }
+  button:focus {
+    outline: none;
+  }
+  span {
+    padding-right: 10px;
+    display: inline-flex;
+  }
+  svg {
+    vertical-align: middle;
+  }
+}
+
+.disableOutline {
+  outline: none;
+}
+
+.buttonGroup {
+  margin-top: 20px;
+}
+
+.cancelButton {
+  margin-left: 10px;
+  border: none;
+}
+
+.spinStyle {
+  margin: 20px 0;
+}
+
+.buttonIcon {
+  float: right;
+  font-size: 17px;
+}
+
+.truncate {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.customTree {
+  padding-bottom: 150px !important;
+  & li {
+    padding: 0 !important;
+    & > :first-child {
+      display: none !important;
+    }
+    & > :nth-child(2) {
+      // border: 1px solid red !important;
+      width: 100% !important;
+      padding: 0 !important;
+      height: 100% !important;
+      background-color: transparent !important;
+    }
+  }
+}

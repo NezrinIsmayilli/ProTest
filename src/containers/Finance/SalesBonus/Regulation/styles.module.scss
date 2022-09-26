@@ -1,0 +1,377 @@
+// settings panel style
+.settingsWrap {
+  margin-bottom: 16px;
+  // margin-top: 6px;
+  align-items: center;
+  display: flex;
+}
+
+.infoText {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  height: 100%;
+  color: #242424;
+}
+
+.buttonsCol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.textColsWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2px;
+}
+
+.infoText {
+  flex: 1;
+  max-width: 300px;
+}
+
+.penButton {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: left;
+  line-height: 30px;
+  min-height: 30px;
+}
+
+.nameSpan {
+  word-break: break-all;
+  width: 100%;
+  margin-right: 8px;
+}
+
+.editInput {
+  width: 212px;
+
+  input {
+    font-size: 12px;
+  }
+  :global {
+    .ant-input-suffix {
+      right: 2px;
+    }
+  }
+}
+
+// calendarWrapper Col
+.calendarWrapper {
+  padding: 24px 16px;
+  background: #ffffff;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.row {
+  margin-left: 0px !important;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+// operaitons right box
+.operationWrap {
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px 10px;
+  height: 100%;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.maxWidth {
+  max-width: 300px;
+}
+
+// calendar styles
+.calendarMonth {
+  :global {
+    .ant-fullcalendar {
+      font-size: 12px;
+      color: black;
+      user-select: none;
+      border-top: none;
+
+      table {
+        height: 200px;
+      }
+
+      @media (min-width: 1367px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.calendarHeader {
+  text-align: center;
+  font-size: 12px;
+  @media (min-width: 1367px) {
+    font-size: 15px;
+  }
+  font-weight: bold;
+  line-height: 16px;
+  margin-bottom: 4px;
+
+  text-transform: capitalize;
+}
+
+.calendarCell {
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  padding: 0;
+  color: #505050;
+  line-height: 24px;
+  background: transparent;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.calendarToday {
+  background: #55ab80;
+  color: #ffffff;
+}
+
+.isNotBetween {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.isColorfull {
+  background: black;
+  color: #ffffff;
+}
+
+.list {
+  :global {
+    .ant-empty {
+      margin-top: 64px;
+    }
+    .ant-spin {
+      min-height: 200px;
+    }
+  }
+}
+.newButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.AddSerialNumbersModal {
+  margin-top: 200px;
+}
+.AddFromCatalog {
+  padding: 40px 40px;
+
+  .selectLabel {
+    font-size: 14px;
+  }
+
+  .buttons {
+    margin: 15px;
+  }
+  .confirmButton {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .cancelButton {
+    font-size: 14px;
+  }
+}
+.selectBox {
+  margin-bottom: 20px;
+}
+.customTable {
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: transparent !important;
+        //background: transparent;
+      }
+    }
+  }
+  thead {
+    font-size: 12px;
+  }
+  th {
+    padding: 12px 20px 10px !important;
+    border-right: none !important;
+    &:last-child {
+      text-align: right;
+    }
+
+    &:nth-child(8) {
+      position: relative;
+      text-align: right;
+    }
+    &:nth-child(9) {
+      position: relative;
+      text-align: center;
+    }
+    &:nth-child(10) {
+      position: relative;
+      text-align: right;
+    }
+  }
+  td {
+    padding: 12px 20px 10px !important;
+  }
+  :global {
+    .ant-table-body {
+      overflow-x: auto !important;
+    }
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+    .ant-table-middle td:first-child {
+      padding-left: 16px !important;
+    }
+
+    .ant-table-middle td:last-child {
+      padding-right: 16px !important;
+    }
+  }
+}
+.inputError {
+  border: 1px solid red;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid red;
+  }
+}
+
+.tableInput {
+  font-size: 14px;
+  text-align: center;
+}
+.table {
+  background-color: rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  color: rgb(80, 80, 80);
+  display: table;
+  font-size: 13px;
+  width: 100%;
+
+  thead {
+    border-top: 1px solid rgba(212, 212, 212, 0.5);
+    border-bottom: 1px solid rgba(212, 212, 212, 0.5);
+  }
+
+  th {
+    text-align: center !important;
+    padding: 12px 20px 10px !important;
+    border-right: none !important;
+    &:first-child {
+      border-radius: 4px 0px 0px 4px;
+    }
+    &:last-child {
+      border-radius: 0px 4px 4px 0px;
+    }
+  }
+  tr:first-child {
+    td:first-child {
+      border-top-left-radius: 4px;
+    }
+    td:last-child {
+      border-top-right-radius: 4px;
+    }
+  }
+
+  tr:last-child {
+    td:first-child {
+      border-bottom-left-radius: 4px;
+    }
+    td:last-child {
+      border-bottom-right-radius: 4px;
+    }
+    td {
+      border: 0;
+    }
+  }
+  td {
+    text-align: center !important;
+    background-color: white;
+    font-size: 13px;
+    font-weight: 400;
+    color: #646464;
+    // max-width: 100px;
+    text-overflow: ellipsis;
+    border: 0;
+    border-bottom: 0;
+    position: relative;
+    overflow: initial;
+
+    .rightInput {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .leftInput {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: 0;
+    }
+  }
+
+  :global {
+    [class$='focused'] {
+      border-color: #dedede;
+      box-shadow: none;
+    }
+  }
+
+  input,
+  :global(.ant-input-number-input) {
+    font-size: 12px;
+  }
+}
+
+.tr {
+  td {
+    font-size: 12px;
+    font-weight: 600;
+    color: #373737;
+    padding: 15px 16px;
+    :global(.ant-input-group-addon) {
+      color: #c9c9c9;
+      background: transparent;
+    }
+  }
+}
+.salesBonusRegulation {
+  tr:first-child {
+    background-color: #e2e5de !important;
+  }
+  tr:not(:first-child) {
+    background-color: #fff !important;
+  }
+  tr {
+    td:first-child {
+      padding: 0;
+    }
+  }
+}

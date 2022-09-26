@@ -1,0 +1,36 @@
+.info {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  border-left: 8px solid #4e9cdf;
+  border-radius: 4px;
+  min-height: 70px;
+  padding-left: 40px;
+  position: relative;
+  overflow: hidden;
+
+  & > p {
+    flex: 1;
+    margin: 0;
+    color: #505050;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 0 16px;
+  }
+
+  & > button {
+    position: absolute;
+    display: flex;
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    color: #c6c6c6;
+  }
+}

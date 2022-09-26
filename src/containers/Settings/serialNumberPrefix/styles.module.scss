@@ -1,0 +1,56 @@
+@import '../index.module.sass';
+
+.serialNumberCount {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45a8e291;
+  margin-left: 8px;
+  border-radius: 64px;
+  cursor: context-menu;
+}
+.invoiceIcon {
+  fill: grey;
+  cursor: pointer;
+
+  &:hover {
+    fill: black;
+  }
+}
+
+.invoiceIconDisabled {
+  cursor: not-allowed;
+  fill: rgb(194, 189, 189);
+
+  &:hover {
+    fill: rgb(194, 189, 189);
+  }
+}
+.fileViewer {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .fileViewerBtn {
+    background-color: white;
+    border: none;
+    svg {
+      font-size: 30px;
+      color: grey;
+    }
+    svg:hover {
+      color: black;
+    }
+  }
+}
+
+.viewerBtns {
+  display: flex;
+  align-items: center;
+}
+
+.downloadIcon:hover {
+  fill: black;
+}

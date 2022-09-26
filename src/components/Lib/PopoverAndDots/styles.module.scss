@@ -1,0 +1,75 @@
+@import 'theme/vars.scss';
+
+.dots {
+  font-size: 20px;
+  color: #bbb;
+  transition: color 0.3s ease-in-out;
+  background: none;
+  border: none;
+  user-select: none;
+  svg {
+    vertical-align: middle;
+  }
+  &:hover {
+    cursor: pointer;
+    color: #666;
+  }
+}
+
+.popover {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.popoverText {
+  flex: 1 1 0%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.popContent {
+  font-size: 12px;
+  font-weight: 500;
+  div {
+    padding-right: 48px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+  }
+  a {
+    padding-right: 48px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    color: #505050;
+  }
+  a:hover {
+    transition: color 0.3s;
+    cursor: pointer;
+    color: $accent;
+  }
+  a:focus {
+    outline: none;
+  }
+  div:hover {
+    transition: color 0.3s;
+    cursor: pointer;
+    color: $accent;
+  }
+  div:focus {
+    outline: none;
+  }
+  span {
+    padding-right: 8px;
+    display: inline-flex;
+  }
+  svg {
+    vertical-align: middle;
+  }
+}

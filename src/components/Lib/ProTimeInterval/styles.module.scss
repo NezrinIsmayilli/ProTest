@@ -1,0 +1,53 @@
+.range {
+  display: flex;
+  margin-bottom: 2px;
+  input {
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    font-weight: 600;
+    &:active,
+    &:focus {
+      border-color: transparent;
+    }
+  }
+  :global {
+    .ant-calendar-picker {
+      margin: 0 2px;
+    }
+  }
+}
+
+.rangeButtons {
+  margin: 14px 0;
+  margin-left: 2px;
+  white-space: nowrap;
+  button {
+    font-size: 11px;
+    width: 100%;
+    //margin-right: 5px;
+    color: #fff !important;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+  //
+  //:nth-child(3){
+  //  border-radius: 0px 4px 4px 0px;
+  //}
+  //:nth-child(2){
+  //  border-radius: 0;
+  //}
+  //:nth-child(1){
+  //  border-radius: 4px 0px 0px 4px;
+  //}
+  :global {
+    button:not(.ant-btn-primary) {
+      background-color: #bbb;
+    }
+  }
+}

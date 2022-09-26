@@ -1,0 +1,92 @@
+.content {
+  padding: 32px 52px;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.header {
+  margin: 20px 0;
+}
+
+.downloadButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #fbfbfb;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: #2f80ed;
+    fill: #fff;
+    color: #fff;
+  }
+}
+.customModal {
+  :global {
+
+    @media screen  and (max-width: 320px) {
+      .ant-modal-content {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .ant-modal-body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+
+    .ant-modal-content {
+      padding: 16px 24px;
+      margin: 64px 0;
+    }
+
+    .ant-modal-title {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .ant-modal-body {
+      padding: 16px 16px;
+    }
+
+    .ant-modal-close {
+      top: -44px !important;
+      right: -44px !important;
+      background-color: #fff;
+      border-radius: 4px;
+      color: #373737 !important;
+
+      @media screen  and (max-width: 768px) {
+        top: -45px !important;
+        right: 0px !important;
+      }
+    }
+
+    .ant-modal-close-x {
+      width: 40px !important;
+      height: 40px !important;
+      line-height: 36px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ant-modal-header {
+      border-bottom: 0 !important;
+      padding: 16px 16px;
+    }
+
+    .ant-modal-footer {
+      border-top: 0 !important;
+      padding-top: 8px;
+    }
+  }
+}

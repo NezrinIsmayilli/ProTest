@@ -1,0 +1,33 @@
+.buttonGroup {
+  width: 100%;
+  background: #fff;
+  padding-top: 6px;
+  margin-bottom: -30px;
+}
+.profile {
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 8px;
+  margin-left: -4px;
+  margin-bottom: 10px;
+  h5 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    color: #383d3e;
+  }
+  span {
+    font-size: 10px;
+    color: #898989;
+  }
+}
+
+.descWrap {
+  margin-left: 70px;
+  line-height: initial;
+}

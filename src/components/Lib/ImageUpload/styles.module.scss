@@ -1,0 +1,36 @@
+.uploadCard {
+  label {
+    line-height: 16px;
+    color: #868686;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 11px;
+  }
+  .upload {
+    width: 100%;
+    display: block;
+
+    .uploadBtn {
+      background: #eeeeee;
+      text-align: center;
+      color: #888888;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    div {
+      display: block !important;
+      p {
+        font-size: 12px;
+      }
+    }
+    .uploadImage {
+      background: #eeeeee !important;
+      border-radius: 4px;
+      width: 100%;
+      .ant-upload-list .ant-upload-list-picture {
+        background: red !important;
+      }
+    }
+  }
+}

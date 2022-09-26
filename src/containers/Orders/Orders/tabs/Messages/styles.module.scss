@@ -1,0 +1,76 @@
+@import '../../../styles.module.scss';
+
+.Message {
+  border-bottom: 1px solid #dbdbdb;
+
+  &:last-child {
+    border: none;
+  }
+
+  &:nth-child(n + 2) {
+    margin-top: 20px;
+  }
+  .author {
+    font-size: 16px;
+    color: #373737;
+    font-weight: 600;
+  }
+
+  .date {
+    font-size: 12px;
+    font-weight: normal;
+    color: '#7C7C7C';
+  }
+
+  .infoContainer {
+    height: 40px;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .message {
+    display: inline-block;
+    font-size: 16px;
+    margin: 24px 10px;
+    color: #313131;
+    font-weight: normal;
+  }
+}
+
+.Messages {
+  margin-top: 50px;
+
+  .newMessage {
+    font-size: 16px;
+    padding: 18px;
+  }
+
+  .messagesContainer {
+    overflow: auto;
+    max-height: 380px;
+    padding: 0 28px 0 0;
+  }
+
+  .messagesContainer::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  .messagesContainer::-webkit-scrollbar-track {
+    background: #dedede;
+  }
+
+  /* Handle */
+  .messagesContainer::-webkit-scrollbar-thumb {
+    background: black;
+    height: 100px;
+  }
+
+  /* Handle on hover */
+  .messagesContainer::-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
+}

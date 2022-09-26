@@ -1,0 +1,30 @@
+.flexCenter {
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  :global {
+    .ant-avatar {
+      margin-right: 8px;
+    }
+  }
+  .title {
+    p,
+    h3 {
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 170px;
+
+    }
+    p {
+      color: #9b9b9b;
+      font-size: 13px;
+    }
+  }
+}
+
+.padding24 {
+  padding: 24px;
+}

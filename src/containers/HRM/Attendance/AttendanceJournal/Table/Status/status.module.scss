@@ -1,0 +1,54 @@
+.shared {
+  font-size: 14px;
+  height: 34px;
+  display: inline-block;
+  line-height: 34px;
+  margin-right: 8px;
+  svg {
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+}
+
+.came {
+  color: #27ae60;
+}
+
+.tag {
+  padding: 6px 12px;
+  margin: 0;
+  margin-right: 8px;
+}
+
+.permission {
+  color: #f2994a;
+
+  svg {
+    margin-top: -3px;
+
+    * {
+      fill: #f2994a;
+    }
+  }
+}
+
+.vacation {
+  color: #2d9cdb;
+}
+
+.trip {
+  color: #efe162;
+  svg {
+    * {
+      fill: #efe162;
+    }
+  }
+}
+
+.sick {
+  color: #eb5757;
+}
+
+.appointment {
+  color: #9b51e0;
+}

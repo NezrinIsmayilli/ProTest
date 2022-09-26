@@ -1,0 +1,202 @@
+/*
+    Should break style into small chunks
+*/
+.datePicker {
+  width: 100%;
+  & input {
+    font-size: 13px;
+  }
+}
+.Sidebar {
+  .sidebarItem {
+    padding: 24px 25px;
+    border-bottom: 2px solid #fff;
+    .ant-form-item {
+      margin: 0 !important;
+    }
+  }
+
+  .inputGroup {
+    margin: '20px 0';
+  }
+
+  .sectionName {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+.customModal {
+  position: relative;
+  margin-top: 50px;
+  .closeButton,
+  .closeButton:hover,
+  .closeButton:active,
+  .closeButton:focus {
+    position: absolute;
+    padding: 0 13px;
+    top: -20px;
+    right: -65px;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+      top: -25px;
+      right: -21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -25px;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      top: -25px;
+      right: -20px;
+    }
+  }
+  :global {
+    .ant-modal-body {
+      margin-top: -60px;
+      padding: 0 !important;
+    }
+  }
+}
+
+.tableTdPadding {
+  :global {
+    .ant-table-row > td {
+      padding: 20px 0;
+    }
+  }
+}
+.exportButton,
+.exportButton:hover,
+.exportButton:active,
+.exportButton:focus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.sidebarItem {
+  padding: 1px 30px 1px;
+  border-bottom: 2px solid #fff;
+  .ant-form-item {
+    margin: 0 !important;
+  }
+}
+.tableSupervisor {
+  tr:nth-child(1) > th:not(:nth-child(1)),
+  tr:nth-child(2) > th:nth-child(6),
+  th:nth-child(9),
+  th:nth-child(12),
+  th:nth-child(16),
+  th:nth-child(19),
+  th:nth-child(21),
+  tr > td:nth-child(2),
+  td:nth-child(3),
+  td:nth-child(9),
+  td:nth-child(10),
+  td:nth-child(11),
+  td:nth-child(12),
+  td:nth-child(13),
+  td:nth-child(14),
+  td:nth-child(15),
+  td:nth-child(16),
+  td:nth-child(17) {
+    border-right: 1px solid #e8e8e8 !important;
+  }
+  tr:last-child > td {
+    border: none !important;
+    color: white;
+    background-color: #484848;
+    font-weight: bold;
+    pointer-events: none;
+  }
+}
+.tableFooter {
+  tr:nth-child(1) > th:not(:nth-child(1)),
+  tr:nth-child(2) > th:nth-child(6),
+  th:nth-child(9),
+  th:nth-child(12),
+  th:nth-child(16),
+  th:nth-child(19),
+  th:nth-child(21),
+  tr > td:nth-child(2),
+  td:nth-child(8),
+  td:nth-child(9),
+  td:nth-child(10),
+  td:nth-child(11),
+  td:nth-child(14),
+  td:nth-child(17),
+  td:nth-child(21),
+  td:nth-child(24),
+  td:nth-child(26),
+  td:nth-child(27),
+  td:nth-child(28) {
+    border-right: 1px solid #e8e8e8 !important;
+  }
+  tr:last-child > td {
+    border: none !important;
+    color: white;
+    background-color: #484848;
+    font-weight: bold;
+    pointer-events: none;
+  }
+}
+
+.exportBox {
+  display: flex;
+  align-items: center;
+}
+.buttonSortIcon {
+  display: flex;
+  margin-left: 8px;
+  flex-direction: column;
+}
+
+.detailbtn {
+  position: relative;
+}
+.detailbtn::after {
+  content: '';
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid green;
+  transform: rotate(-45deg);
+  display: flex;
+  width: 4px;
+  right: -25px;
+  bottom: -15px;
+  position: absolute;
+}
+.detailButton {
+  display: none;
+  height: 28px;
+}
+.detailbtn:hover {
+  .detailButton {
+    display: inline-block;
+  }
+  .rowNumbers {
+    display: none;
+  }
+}
+.title 
+   h3{
+    font-weight: 700;
+    color: #505050;
+    padding: 10px 5px;
+   }
+
+.statusTable{
+  tr:last-child > td {
+      border: none !important;
+      color: white !important;
+      background-color: #484848;
+      font-weight: bold;
+      pointer-events: none;
+  }
+}

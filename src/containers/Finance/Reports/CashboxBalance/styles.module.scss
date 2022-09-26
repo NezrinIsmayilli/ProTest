@@ -1,0 +1,22 @@
+.currency {
+  font-weight: bold !important;
+  border-left: 1px solid #e8e8e8;
+}
+th {
+  border: none !important;
+}
+tbody > tr:last-child td {
+  border: none !important;
+}
+.cashboxTableFooter{
+  background-color: #484848;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  max-height: 41px;
+  overflow: hidden;
+}
+.cashboxTableFooter > div{
+  font-weight: 700 !important;
+}

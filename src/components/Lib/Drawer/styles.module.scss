@@ -1,0 +1,65 @@
+.drawer {
+  width: 304px;
+  background: #e9e9e9;
+  overflow: auto;
+  position: absolute;
+  top: 80px;
+  left: calc(94px + 296px);
+  height: calc(100vh - 80px);
+  z-index: 99;
+}
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.45);
+  position: absolute;
+  top: 80px;
+  width: calc(100% - 94px - 296px);
+  left: calc(94px + 296px);
+  height: calc(100% - 80px);
+  z-index: 9;
+}
+
+// drawer anim
+.enter {
+  transform: translateX(-100%);
+}
+.enterActive {
+  transform: translateX(0%);
+  transition: all 0.35s;
+}
+.enterDone {
+  transform: translateX(0%);
+  display: block;
+}
+.exit {
+  transform: translateX(0%);
+}
+.exitActive {
+  transform: translateX(-100%);
+  transition: all 0.35s;
+}
+.exitDone {
+  display: none;
+}
+// for backdrop drawer
+.enterDrop {
+  opacity: 0;
+}
+.enterActiveDrop {
+  opacity: 1;
+  transition: all 0.35s;
+}
+.enterDoneDrop {
+  opacity: 1;
+  display: block;
+}
+.exitDrop {
+  opacity: 1;
+}
+.exitActiveDrop {
+  opacity: 0;
+  transition: all 0.35s;
+}
+.exitDoneDrop {
+  display: none;
+}

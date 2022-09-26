@@ -1,0 +1,164 @@
+$text: rgba(0, 0, 0, 0.87); //standard material primaryText color
+
+.newOperationContainer {
+  margin-top: 24px;
+  margin-bottom: 88px;
+  border-top: 1px solid transparent;
+}
+
+.returnBackButton {
+  display: flex;
+  color: #464a4b;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.tabs {
+  padding: 4px;
+
+  :global {
+    .ant-tabs-bar {
+      border-bottom: 0;
+    }
+
+    .ant-tabs-tab {
+      font-size: 14px;
+      border-radius: 0 !important;
+      margin-right: 2px !important;
+      background-color: #e7e7e7 !important;
+    }
+
+    .ant-tabs-tab-active {
+      border-bottom: unset !important;
+      background-color: #55ab80 !important;
+      color: #fff !important;
+    }
+
+    .ant-tabs-nav {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 0 4px;
+  color: $text;
+  margin: 10px 0 12px;
+}
+
+.tabsHeader {
+  font-size: 14px;
+  padding: 0 4px;
+  margin-bottom: 0.35em;
+  color: $text;
+}
+
+.parentBox {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.paper {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 35px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 16px;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .catalogButton {
+    margin-right: 60px;
+  }
+
+  .icon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s;
+  }
+
+  .descriptionIcon {
+    margin-right: 30px;
+    &:hover {
+      fill: #55ab80;
+    }
+  }
+
+  .printIcon {
+    &:hover {
+      fill: #4e9cdf;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.newOperationTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.fieldsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.field {
+  width: 22%;
+  margin-left: 20px;
+}
+.ActionButtons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.parameters {
+  display: flex;
+  flex-direction: column;
+  margin-top: 68px;
+  max-height: 585px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow-y: scroll;
+  align-items: center;
+}
+.parameterBtn {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 80%;
+  border: none;
+  margin: 3px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  padding: 8px 0;
+  border-radius: 4%;
+}
+.pencil_btn {
+  border: none;
+  color: #ff716a;
+}

@@ -1,0 +1,44 @@
+.formItem {
+  margin-bottom: 15px;
+  label {
+    display: inline-block;
+    line-height: 16px;
+    color: #868686;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  input {
+    font-size: 13px;
+    &:focus {
+      border-color: transparent;
+    }
+  }
+  :global {
+    .ant-form-item-label {
+      line-height: unset;
+    }
+    .ant-form-item-control {
+      min-height: 40px;
+      max-height: fit-content;
+      line-height: unset;
+    }
+    .ant-form-explain {
+      height: 16px;
+      display: block;
+      margin: 0;
+      font-size: 12px;
+      font-weight: 600;
+      color: red;
+      transition: all 370ms;
+    }
+  }
+}
+
+.autoHeight {
+  :global {
+    .ant-form-item-control {
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import 'theme/vars.scss';
+
+.containerFluid {
+  margin-top: 24px;
+  margin-bottom: 88px;
+  border-top: 1px solid transparent;
+  :global {
+    .ant-spin {
+      max-height: unset !important;
+    }
+  }
+}
+
+.nameCode {
+  font-size: 18px;
+  font-weight: 700;
+  color: #505050;
+  margin: 10px 0 30px;
+}
+
+.salesAddBtns {
+  margin-top: 32px;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $accent_light;
+  margin-bottom: 30px;
+}
+
+// for this component
+.nameAndDate {
+  font-size: 13px;
+  color: #b4b4b4;
+  margin-right: 17px;
+  position: relative;
+  font-weight: 400;
+}
+
+.date {
+  &::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #b4b4b4;
+    position: absolute;
+    top: 8px;
+    left: 70px;
+  }
+}
+
+.userName {
+  margin-left: 17px;
+}
+
+.balance {
+  font-size: 13px;
+  color: #b4b4b4;
+  margin-right: 17px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.debt {
+  color: #d0021b;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.number {
+  font-size: 13px;
+  color: #555;
+  display: block;
+  width: 100%;
+  &:focus,
+  &:active {
+    border-color: transparent !important;
+  }
+}
+:global {
+  .ant-input-number-focused {
+    border-color: transparent !important;
+  }
+}

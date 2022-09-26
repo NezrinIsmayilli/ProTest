@@ -1,0 +1,121 @@
+$box-shadow: 0px 3px 17px -7px #808080;
+.content {
+  padding: 32px 0px;
+  // max-width: 1380px;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.header {
+  margin: 20px 0;
+}
+
+.downloadButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #fbfbfb;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: #2f80ed;
+    fill: #fff;
+    color: #fff;
+  }
+}
+
+.selectLabel {
+  font-size: 14px;
+}
+.chip {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.invoiceTable {
+  .buttonSortIcon {
+    display: flex;
+    margin-left: 8px;
+    flex-direction: column;
+  }
+  .checkButton,
+  .checkButton:hover,
+  .checkButton:active {
+    background: none;
+    outline: none;
+    border: none;
+    fill: #505050;
+  }
+
+}
+
+.newDropdownBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  background-color: #27ae60 !important;
+  font-size: 14px;
+  font-weight: 500;
+  border-color: transparent !important;
+}
+.downloadBtn {
+  margin-left: 15px;
+  // padding: 10px 100px;
+  width: 70%;
+  height: 25px;
+}
+.infoModal {
+  h3 {
+    font-weight: 600;
+    color: #505050;
+  }
+  p {
+    color: #505050;
+  }
+  .infoBtn {
+    text-align: right;
+    button {
+      margin-right: 6px;
+      background: #e64942;
+      color: #fff;
+    }
+  }
+}
+.appsName{
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  display: flex;
+  align-items: baseline;
+  .infoButton {
+    color: #5e5555;
+    padding: 0;
+    margin-right: 8px;
+    transition: all 0.25s;
+    margin-left: 10px;
+    &:hover {
+      color: #096dd9;
+    }
+    &:active {
+      transform: scale(1.2);
+    }
+    i{
+      font-size: 17px;
+    }
+  }
+  span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+

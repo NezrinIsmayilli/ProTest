@@ -1,0 +1,59 @@
+.orgchart-container {
+  border: none;
+  background-color: #f6f6f6;
+  height: calc(100vh - 337px);
+}
+.orgchart {
+  background-size: 0;
+  background-image: none;
+}
+.orgchart.myChart > ul > li > ul li::before {
+  border-top-color: #6fc99c;
+}
+
+.orgchart.myChart > ul > li > ul li .oc-node::before,
+.orgchart.myChart ul li .oc-node:not(:only-child)::after {
+  background-color: #6fc99c;
+}
+
+.oc-node:hover,
+.oc-nide:before {
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.oc-node:hover,
+.oc-node::before {
+  background-color: transparent;
+}
+
+.orgchart.myChart .oc-node .position {
+  box-sizing: border-box;
+  background-color: #fff;
+  /* color: #fff; */
+  border: 2px solid #6fc99c;
+  border-radius: 6px;
+  width: 130px;
+  height: 65px;
+  padding: 2px;
+  padding-top: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.orgchart.myChart .oc-node .fullname {
+  box-sizing: border-box;
+  color: #6fc99c;
+  background-color: #fff;
+  width: 130px;
+  height: 65px;
+  padding: 2px;
+  border: 1px solid #6fc99c;
+}
+
+.oc-node-custom {
+  margin-bottom: 0px!important;
+}

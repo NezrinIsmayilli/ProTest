@@ -1,0 +1,48 @@
+.detailbtn {
+  position: relative;
+}
+.detailbtn::after {
+  content: '';
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid green;
+  transform: rotate(-45deg);
+  display: flex;
+  width: 4px;
+  right: -25px;
+  bottom: -15px;
+  position: absolute;
+}
+.customTable {
+  background-color: #fff;
+  td {
+    border-right: 1px solid #e8e8e8 !important;
+  }
+}
+.detailButton {
+  display: none;
+  height: 28px;
+}
+
+.customTableFooter {
+  background-color: #484848;
+  thead {
+    display: none;
+  }
+  tr:last-child > td {
+    border: none !important;
+    color: white !important;
+    background-color: #484848;
+    font-weight: bold;
+    pointer-events: none;
+  }
+}
+.employeeInfo {
+  display: inline-flex;
+  align-items: center;
+}
+.groupTitle {
+  font-weight: 700;
+  font-size: 16px;
+}

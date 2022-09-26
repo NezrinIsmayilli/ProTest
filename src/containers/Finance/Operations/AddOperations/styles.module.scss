@@ -1,0 +1,403 @@
+$text: rgba(0, 0, 0, 0.87); //standard material primaryText color
+
+.containerFluid {
+  margin-top: 24px;
+  margin-bottom: 88px;
+  border-top: 1px solid transparent;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 0 4px;
+  color: $text;
+  margin: 10px 0 12px;
+}
+
+.tabLabel {
+  font-size: 14px;
+  padding: 0 4px;
+  margin-bottom: 0.35em;
+  color: $text;
+}
+
+//override custom style to antd tabs
+.customTabs {
+  padding: 4px;
+
+  :global {
+    .ant-tabs-bar {
+      border-bottom: 0;
+    }
+
+    .ant-tabs-tab {
+      font-size: 14px;
+      border-radius: 0 !important;
+      margin-right: 2px !important;
+      padding: 0 12px !important;
+      background-color: #e7e7e7 !important;
+    }
+
+    .ant-tabs-tab-active {
+      border-bottom: unset !important;
+      background-color: #55ab80 !important;
+      color: #fff !important;
+    }
+
+    .ant-tabs-nav {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+
+.parentBox {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+  padding-top: 8px;
+}
+
+.paper {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 24px;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 16px;
+}
+
+.datePickerBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 18px 0;
+}
+
+.salaryDatePickerBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.label {
+  font-size: 13px;
+  margin-bottom: 0.35em;
+  color: rgba(0, 0, 0, 0.57);
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-left: 6px;
+    font-size: 13px;
+  }
+}
+
+.formAction {
+  display: flex;
+  align-items: center;
+
+  button {
+    margin-right: 6px;
+  }
+}
+
+.selectMargin {
+  margin: 18px 0;
+}
+
+.smallDatePicker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+//amount styles
+.amountCurrency {
+  width: 56%;
+  align-items: flex-start;
+  padding-right: 8px;
+  margin-bottom: 18px;
+}
+
+.amountInput {
+  margin-right: 6px;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.currencySelect {
+  width: 32%;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 13px;
+  color: #555555;
+}
+
+.datePicker {
+  :global {
+    .ant-calendar-picker-clear {
+      display: none !important;
+    }
+    .ant-calendar-picker-clear,
+    .ant-calendar-picker-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 0;
+      height: 100%;
+      display: flex;
+      width: 42px;
+      border-left: 1px solid #dedede;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+    }
+  }
+  input {
+    font-size: 13px;
+  }
+}
+
+//search select drop down styles
+.select {
+  width: 100%;
+  font-weight: normal;
+  font-size: 13px;
+  color: #555555;
+  // margin-bottom: 8px;
+  margin-bottom: 5px;
+
+  :global {
+    .ant-select-arrow-icon * {
+      stroke: #777;
+    }
+
+    li.ant-select-search {
+      border-bottom: none !important;
+    }
+  }
+}
+
+:global {
+  .ant-select-open .ant-select-selection,
+  .ant-select-selection:active,
+  .ant-select-selection:focus {
+    border-color: transparent;
+  }
+
+  .ant-select-open .ant-select-arrow-icon * {
+    stroke: #777 !important;
+  }
+}
+
+.dropdown {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  z-index: 1;
+}
+
+.qaligBox {
+  display: flex;
+  align-items: center;
+}
+
+.hesab {
+  font-size: 13px;
+}
+
+.value {
+  font-size: 13px;
+  color: #33658a;
+  margin-left: 6px;
+}
+
+.salaryAccountValue {
+  color: #55ab80;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.accountBalancesBox {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  span {
+    height: 6px;
+    width: 6px;
+    margin: 0 6px;
+    background-color: rgba(0, 0, 0, 0.56);
+    border-radius: 3px;
+
+    &:nth-last-child(1) {
+      display: none;
+    }
+  }
+}
+
+.accountBalancesItem {
+  color: rgba(0, 0, 0, 0.58);
+  font-size: 13px;
+  font-weight: 500;
+
+  //margin-left: 6px;
+}
+
+.dots {
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.transaction {
+  display: flex;
+  flex-direction: column;
+  width: 84%;
+  position: relative;
+  align-items: flex-start;
+  padding-right: 8px;
+}
+
+.amount {
+  margin-bottom: 5px;
+}
+
+.currency {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  align-items: flex-start;
+}
+
+.backBtn {
+  display: flex;
+  color: #464a4b;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+.customInfo {
+  font-size: 28px;
+  display: flex;
+  border: 1px solid #d9d9d9;
+  justify-content: center;
+  width: 38px;
+  margin-top: 11px;
+  margin-left: -12px;
+  height: 40px;
+  align-items: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.customInvoiceInfo {
+  padding: 0;
+  font-size: 28px;
+  display: flex;
+  border: 1px solid #d9d9d9;
+  justify-content: center;
+  width: 39px;
+  margin-top: 30px;
+  height: 39px;
+  align-items: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.employeeSelect {
+  div {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+}
+
+.plusBtn {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  font-size: 12px;
+  z-index: 1;
+  width: 14px;
+  cursor: pointer;
+}
+.infoButton{
+  position: absolute;
+  top: -2px;
+  left: 70px;
+  z-index: 10;
+  cursor: pointer;
+}
+.contactAddModal {
+  .button,
+  .button:hover,
+  .button:active,
+  .button:focus {
+    color: #fff;
+    background-color: #55ab80;
+    margin-top: 10px;
+  }
+}
+.customModal {
+  .closeButton,
+  .closeButton:hover,
+  .closeButton:active,
+  .closeButton:focus {
+    position: absolute;
+    padding: 0 13px;
+    top: -20px;
+    right: -65px;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+      top: -25px;
+      right: -21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -25px;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      top: -25px;
+      right: -20px;
+    }
+  }
+}
+.infoText {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.infoAmount {
+  display: flex;
+  flex-direction: column;
+  p {
+    margin: 0;
+  }
+}
+.opInvoiceContentFooter {
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}

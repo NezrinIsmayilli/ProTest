@@ -1,0 +1,148 @@
+@import '../../index.module.sass';
+
+.OrderRoles {
+  & > * {
+    margin-bottom: 35px;
+  }
+}
+
+.UpdateRole {
+  .selectBox {
+    margin-bottom: 20px;
+  }
+  .selectLabel {
+    font-size: 14px;
+  }
+
+  .buttons {
+    margin: 15px;
+  }
+  .confirmButton {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .cancelButton {
+    font-size: 14px;
+  }
+}
+.ivrCollapse > div > div {
+  padding: 2px !important;
+  padding-right: 40px;
+}
+.ivrHeader {
+  color: #6fc99c;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.formItem label {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.formItem {
+  :global {
+    .ant-form-item-control {
+      height: unset;
+    }
+  }
+}
+
+.customUpload {
+  height: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+.customUpload > span {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.customUpload > span > div:nth-child(2) > div {
+  width: 100%;
+  margin-right: 0 !important;
+}
+.customUpload > span > div:nth-child(2) > div > span > div {
+  height: 25px !important;
+  margin-top: 0 !important;
+}
+.customUpload > span > div:nth-child(1) > span {
+  display: flex;
+  align-items: center;
+}
+.lastRow {
+  div:nth-child(2) {
+    overflow: visible;
+  }
+}
+.editIcon {
+  background-color: transparent;
+  border: 0;
+  color: #a19f9f !important;
+  font-size: 15px;
+  &:hover {
+    background-color: #55ab8014 !important;
+    color: #55ab80 !important;
+  }
+}
+.trashIcon {
+  background-color: transparent;
+  border: 0;
+  color: #a19f9f !important;
+  font-size: 15px;
+  &:hover {
+    background-color: #55ab8014 !important;
+    color: #ff716a !important;
+  }
+}
+.labelText {
+  margin: 0 10px 0 0 !important;
+}
+
+.slideRow {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.slideText {
+  margin: 0 !important;
+}
+.slideNumber {
+  margin-bottom: 0;
+  text-align: end;
+}
+
+.slider > div:first-child > div:first-child {
+  background-color: #e1e1e1;
+  height: 8px;
+}
+
+.colorPicker {
+  position: relative;
+}
+
+.colorPickerText {
+  position: absolute;
+  width: 30%;
+  left: 6.8px;
+  top: 3px;
+  border: navajowhite;
+  height: 20px;
+  outline: none;
+}
+
+.colorPickerColor {
+  width: 100%;
+  &::-webkit-color-swatch-wrapper {
+    padding: 0;
+    width: 100%;
+  }
+  &::-webkit-color-swatch {
+    border: 1px solid #bfc9d9;
+    padding: 0;
+  }
+}

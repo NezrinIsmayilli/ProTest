@@ -1,0 +1,35 @@
+.threeDots {
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: 'center';
+  background-color: #f9f9f9;
+  flex-direction: column;
+  border: none;
+}
+
+:global {
+  .ant-popover-inner-content {
+    padding: 0px !important;
+  }
+}
+
+.item {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 20px 20px 20px 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: #f9f9f9;
+  font-size: 13px;
+}
+
+.item:hover {
+  background-color: #f1f1f1;
+}

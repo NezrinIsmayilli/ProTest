@@ -1,0 +1,119 @@
+@import 'theme/vars.scss';
+
+.colStyle {
+  padding-bottom: 70px;
+}
+
+.lastColumn {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  right: 4px;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+.fabWrap {
+  position: fixed;
+  z-index: 99;
+  bottom: 30px;
+  right: 30px;
+}
+
+.fabButton {
+  width: 51px !important;
+  height: 51px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    display: inline-flex;
+    font-size: 23px;
+  }
+}
+
+.popover {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.popoverText {
+  flex: 1 1 0%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-variant-numeric: tabular-nums;
+  padding-left: 5px;
+}
+
+.dots {
+  font-size: 20px;
+  color: #bbb;
+  transition: color 0.3s ease-in-out;
+  display: inline-flex;
+  &:hover {
+    cursor: pointer;
+    color: #666;
+  }
+}
+
+.popContent {
+  font-size: 12px;
+  font-weight: 500;
+  div {
+    padding-right: 48px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+  }
+  a {
+    padding-right: 48px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    color: #505050;
+  }
+  a:hover {
+    transition: color 0.3s;
+    cursor: pointer;
+    color: $accent;
+  }
+  a:focus {
+    outline: none;
+  }
+  div:hover {
+    transition: color 0.3s;
+    cursor: pointer;
+    color: $accent;
+  }
+  div:focus {
+    outline: none;
+  }
+  span {
+    padding-right: 8px;
+    display: inline-flex;
+  }
+  svg {
+    vertical-align: middle;
+  }
+}
+
+//
+.rowBox {
+  margin-left: -6px;
+  margin-bottom: 18px;
+}
+
+.buttonsBox {
+  padding-top: 10px;
+  div {
+    display: inline-block;
+  }
+  button {
+    min-width: 115px;
+    position: relative;
+    height: 40px;
+    padding: inherit;
+  }
+}

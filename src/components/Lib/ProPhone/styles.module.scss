@@ -1,0 +1,518 @@
+.flyingProPhone {
+  // display: flex;
+  // align-items: center;
+  // justify-content: flex-end;
+  // color: #000;
+}
+
+.flyingDropdown {
+  // width: 135px;
+  // height: 60px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // padding-left: 10px;
+  cursor: pointer;;
+}
+
+.flyingDropdownButton {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.flyingText {
+  font-size: 16px;
+  color: #fff;
+}
+
+.phoneContainer {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 99999;
+  width: 360px;
+  line-height: 19px !important;
+  border-radius: 5px;
+  background: #fff;
+
+  box-shadow: 1px 1px 5px 4px rgba(206, 206, 206, 0.17);
+
+  box-sizing: border-box;
+
+  &.ontop {
+    top: -14px;
+    left: 200px;
+  }
+}
+
+.callerContainer {
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  z-index: 99999;
+  width: 285px;
+  line-height: 19px !important;
+  border-radius: 5px;
+  background: #fff;
+
+  box-shadow: 1px 1px 5px 4px rgba(206, 206, 206, 0.17);
+
+  box-sizing: border-box;
+}
+
+.phoneOnCallHeader {
+  padding: 10px 15px;
+
+  .callerCloser {
+    border: 0;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .phoneCallerNameAndType {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    .phoneCallerName {
+      font-size: 15px;
+      color: #000;
+    }
+    .phoneCallerType {
+      font-size: 15px;
+      color: #000;
+    }
+  }
+
+  .phoneCallerNumberAndTimer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .phoneCallerNumber {
+      font-size: 12px;
+      color: rgb(58, 58, 58);
+    }
+    .phoneCallerTimer {
+      font-size: 12px;
+      color: rgb(58, 58, 58);
+    }
+  }
+
+  .phoneStatus {
+    position: absolute;
+    left: 13px;
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: rgba(196, 196, 196, 0.2);
+    }
+
+    span {
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      background-color: #ffd741;
+
+      &.online {
+        background-color: #00e491;
+      }
+
+      &.offline {
+        background-color: #fa374f;
+      }
+    }
+  }
+}
+.phoneOnCallBody {
+
+  // Addressbook
+  .phoneOnCallBodyHeader {
+    font-size: 15px;
+    position: absolute;
+    top: 11px;
+    left: 12px;
+  }
+  .phoneOnCallSearch {
+    padding: 10px;
+    border-top: 1px solid #dddddd;
+
+    input {
+      font-size: 14px !important;
+    }
+  }
+
+  .phoneOnCallOperatorsList {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 10px 0;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 2px;
+      background-color: #ffffff;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #dddddd;
+      border-radius: 2px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: #ffffff;
+    }
+    
+    li {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgb(231, 231, 231);
+
+      .phoneOnCallOperatorInfo {
+        display: flex;
+        align-items: center;
+
+        .phoneOnCallOperatorName {
+          margin-left: 10px;
+          .phoneOnCallOperatorNameText {
+            font-size: 14px;
+            color: #000;
+          }
+          span {
+            font-size: 12px;
+            color: rgb(58, 58, 58);
+          }
+        }
+      }
+
+      button {
+        display: none;
+        border: 0;
+        background-color: transparent;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      &:hover {
+        button {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .phoneOnCallReturnPad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      cursor: pointer;
+      border: 1px solid rgb(240, 240, 240);
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      &:hover {
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+          rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      }
+    }
+  }
+  
+
+  // Addressbook end
+
+  .spectumContainer {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(250, 250, 250);
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .phoneCallControls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 0;
+
+    button {
+      padding: 4px 38px;
+      border: 0;
+      background: transparent;
+      border-right: 1px solid #ddd;
+      cursor: pointer;
+      font-size: 15px;
+      color: #000;
+
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 5px;
+      }
+
+      &.phoneMute {
+        &:hover,
+        &.active {
+          color: #ffd741 !important;
+        }
+      }
+      &.phoneHold {
+        &:hover,
+        &.active {
+          color: #78d1e1 !important;
+        }
+      }
+      &.phoneTransfer {
+        &:hover,
+        &.active {
+          color: #78d1e1 !important;
+        }
+      }
+      &.phoneEnd {
+        border-right: 0;
+        color: #fa374f;
+
+        &:hover {
+          color: #b10015;
+        }
+      }
+    }
+  }
+
+  .phoneDisplay {
+    width: 100%;
+    height: 62px;
+    border: 1px solid rgb(250, 250, 250);
+    border-right: 0;
+    border-left: 0;
+
+    input {
+      border: 0;
+      width: 100%;
+      height: 60px;
+      text-align: center;
+      font-size: 27px;
+    }
+  }
+
+  .phoneControls {
+    padding: 20px 44px;
+
+    button {
+      padding: 4px 15px;
+      border: 0;
+      background: transparent;
+      border-right: 1px solid #ddd;
+      cursor: pointer;
+      font-size: 15px;
+      color: #000;
+
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 5px;
+      }
+
+      &.phoneMute {
+        &:hover,
+        &.active {
+          color: #ffd741;
+        }
+      }
+      &.phoneHold {
+        &:hover,
+        &.active {
+          color: #78d1e1;
+        }
+      }
+      &.phoneTransfer {
+        &:hover,
+        &.active {
+          color: #78d1e1;
+        }
+      }
+      &.phoneEnd {
+        border-right: 0;
+        color: #fa374f;
+
+        &:hover {
+          color: #b10015;
+        }
+      }
+    }
+
+    .phoneNumbers {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      button {
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgb(240, 240, 240);
+        padding: 10px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        &:hover {
+          // background-color: rgb(245, 245, 245);
+          // box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+            rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        }
+
+        svg {
+          margin: 0;
+        }
+
+        &.phoneNumersAddressBook {
+          font-size: 14px;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          margin-top: 15px;
+          padding: 6px;
+          color: #ffd741;
+        }
+        &.phoneNumersCall {
+          font-size: 30px;
+          border-radius: 50%;
+          width: 65px;
+          height: 65px;
+          margin-top: 15px;
+          color: #00e491;
+        }
+        &.phoneNumersClear {
+          font-size: 14px;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          margin-top: 15px;
+          padding: 6px;
+          color: #fa374f;
+        }
+      }
+    }
+  }
+}
+
+.phoneIncomingBody {
+  padding: 20px 30px;
+  .phoneIncomingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .phoneIncomingNameAndNumber {
+      line-height: 19px !important;
+      .phoneIncoming {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+      .phoneIncomingName {
+        font-size: 17px;
+        color: #000;
+        margin-bottom: 4px;
+
+        span {
+          font-size: 12px;
+          margin-top: 5px;
+          display: block;
+          color: rgb(139, 139, 139);
+        }
+      }
+      .phoneIncomingNumber {
+        font-size: 14px;
+        color: #000;
+      }
+    }
+    .phoneIncomingAnswer {
+      background: transparent;
+      border: 0;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      color: #00e491;
+
+      cursor: pointer;
+
+      svg {
+        margin-right: 5px;
+      }
+
+      &:hover {
+        background-color: #00e491;
+        color: #fff;
+      }
+    }
+    .phoneIncomingHangUp {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      z-index: 99;
+
+      button {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+      }
+    }
+    .phoneOutgoingAnswer {
+      background: transparent;
+      border: 0;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      color: #fa374f;
+
+      cursor: pointer;
+
+      svg {
+        margin-right: 5px;
+      }
+
+      &:hover {
+        background-color: #fa374f;
+        color: #fff;
+      }
+    }
+  }
+}

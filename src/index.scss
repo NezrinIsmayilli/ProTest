@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Exo 2", sans-serif;
+  color: #505050;
+  background-color: #f6f6f6;
+  overflow-x: hidden;
+}
+
+// global scrollbar class for all
+.scrollbar {
+}
+// &::-webkit-scrollbar-track
+//   background-color: #e9e9e9
+// &::-webkit-scrollbar
+//   width: 4px
+//   background-color: #55ab80
+// &::-webkit-scrollbar-thumb
+//   background-color: #6fc99c
+//   border-radius: 2px
+
+.infoContainer {
+  height: calc(100vh - 190px);
+  overflow: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#root {
+  height: 100%;
+}
+.paper {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 24px;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 16px;
+}
+
+.ant-upload-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ant-upload-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .ant-upload-list-item {
+    background: #f9f9f9;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0;
+    border-radius: 4px;
+    height: 50px !important;
+
+    &:hover {
+      background: #eeeeee;
+    }
+  }
+  .ant-upload-list-item-name {
+    padding-left: 24px !important;
+  }
+  .ant-upload-list-picture .ant-upload-list-item-thumbnail,
+  .ant-upload-list-picture-card .ant-upload-list-item-thumbnail {
+    left: 12px !important;
+  }
+  .ant-upload-list-item-info > span {
+    display: flex;
+    align-items: center;
+  }
+  .ant-upload-list-item-card-actions.picture {
+    top: 17px !important;
+    right: 10px !important;
+  }
+  .ant-upload-list-item-image {
+    width: unset !important;
+    height: 32px !important;
+    border-radius: 0 !important;
+  }
+  & > div {
+    &:nth-child(2n - 1) {
+      width: 48%;
+      margin-right: 12px;
+      //margin-right: 0!important;
+    }
+    &:nth-child(2n) {
+      width: 47%;
+      margin-right: 0 !important;
+    }
+  }
+  .ant-upload-list-item-card-actions .anticon {
+    font-size: 18px;
+    color: #ff716a;
+  }
+}
+.styles_formItem__3QESQ .ant-select-selection--multiple {
+  padding-bottom: unset !important;
+}

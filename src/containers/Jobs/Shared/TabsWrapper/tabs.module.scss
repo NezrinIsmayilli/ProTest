@@ -1,0 +1,57 @@
+.tabs {
+  background: #fff;
+
+  :global {
+    .ant-tabs-nav {
+      width: 100%;
+      background: #fbfbfb;
+      & > div {
+        display: flex;
+      }
+    }
+    .ant-tabs-tab {
+      flex: 1;
+      text-align: center;
+      font-size: 12px;
+      text-transform: uppercase;
+      user-select: none;
+    }
+    .ant-spin-nested-loading,
+    .ant-spin-container {
+      height: 100%;
+    }
+    .ant-spin,
+    .ant-empty {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .ant-tabs-tabpane {
+      height: calc(100vh - 230px);
+      overflow: auto;
+      padding: 12px;
+      &::-webkit-scrollbar-track {
+        background-color: #e9e9e9;
+      }
+
+      &::-webkit-scrollbar {
+        width: 4px;
+        background-color: #55ab80;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #6fc99c;
+        border-radius: 2px;
+      }
+    }
+    .ant-tabs-tab-active {
+      text-shadow: 0 0 #55ab80, 0 0 #55ab80, 0 0 #55ab80;
+      font-weight: 400;
+    }
+    .ant-tabs-bar {
+      margin-bottom: 0px;
+    }
+  }
+}

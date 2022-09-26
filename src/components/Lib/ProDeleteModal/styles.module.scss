@@ -1,0 +1,97 @@
+.deleteModal {
+  background: rgba(0, 0, 0, 0.7);
+
+  :global {
+    .ant-modal-header {
+      height: 166px;
+      background: linear-gradient(180deg, #d0021b 0%, #a70014 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ant-modal-title {
+      display: inline-block;
+      svg {
+        vertical-align: middle;
+      }
+    }
+    .ant-modal-body {
+      text-align: center;
+      padding: 32px 48px;
+    }
+  }
+}
+
+.title {
+  color: #3f3f3f;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.desc {
+  color: #505050;
+  font-style: 16px;
+  margin-bottom: 24px;
+}
+
+.closeIcon {
+  font-size: 40px;
+  color: #fff;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    font-size: 16px;
+    min-width: 99px;
+    min-height: 44px;
+    appearance: none;
+    border: none;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    margin-right: 14px;
+    outline: none;
+    background: currentColor;
+    transition: 0.2s;
+    box-shadow: 0 0 2px -2px #fff, 0 0 0px 0px currentColor;
+
+    span {
+      font-size: 16px;
+      display: inline-flex;
+      margin-right: 4px;
+      color: #fff;
+    }
+
+    &:active {
+      transition: 0s;
+      box-shadow: 0 0 3px 2px #fff, 0 0 2px 5px #fff;
+    }
+  }
+}
+
+.xIcon.xIcon {
+  font-size: 30px;
+}
+
+.deleteButton {
+  color: #d0021b;
+}
+
+button.cancelButton {
+  color: #ebebeb;
+  span {
+    color: #777;
+  }
+  &:active {
+    box-shadow: 0 0 2px 2px #fff, 0 0 3px 6px #fff;
+  }
+}

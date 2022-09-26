@@ -1,0 +1,128 @@
+.table {
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+
+  thead {
+    font-size: 12px;
+  }
+  th {
+    padding: 12px 20px 10px !important;
+    border-right: none !important;
+    &:last-child {
+      text-align: right;
+    }
+  }
+  :global {
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+  }
+}
+
+.row {
+  background: #fff;
+  font-size: 13px;
+  &:hover {
+    cursor: pointer;
+    background: rgba(85, 171, 128, 0.180392) !important;
+    td {
+      background: rgba(85, 171, 128, 0.180392) !important;
+    }
+  }
+  td {
+    background-color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    color: #646464;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-right: none !important;
+    &:last-child {
+      position: relative;
+      text-align: right;
+    }
+  }
+}
+
+.footer {
+  border-radius: 0 0 4px 4px;
+  background: #484848;
+  padding: 16px 40px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.tableLight {
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+
+  thead {
+    font-size: 12px;
+  }
+  th {
+    padding: 12px 20px 10px !important;
+    border-right: none !important;
+    &:first-child {
+      border-radius: 4px 0px 0px 4px;
+    }
+    &:last-child {
+      text-align: right;
+      border-radius: 0px 4px 4px 0px;
+    }
+  }
+  :global {
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+  }
+  .row {
+    background: #fff;
+    font-size: 13px;
+    &:hover {
+      cursor: pointer;
+      background: #fff !important;
+      td {
+        background: #fff !important;
+      }
+    }
+    td {
+      background-color: white;
+      font-size: 13px;
+      font-weight: 400;
+      color: #646464;
+      max-width: 100px;
+      text-overflow: ellipsis;
+      border: 2px solid #f6f6f6;
+      border-bottom: 0;
+      position: relative;
+      overflow: initial;
+      div {
+        display: flex;
+        align-items: center;
+        div {
+          width: auto;
+          position: absolute;
+          right: -0.9em;
+          z-index: 1;
+          margin: auto;
+          border-radius: 100%;
+          height: auto;
+          border: 2px solid #f6f6f6;
+        }
+      }
+      &:first-child {
+        border-radius: 4px 0px 0px 4px;
+      }
+      &:last-child {
+        border-radius: 0px 4px 4px 0px;
+      }
+    }
+  }
+}

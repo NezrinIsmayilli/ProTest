@@ -1,0 +1,47 @@
+.permissionSelect {
+  width: 100%;
+  max-width: 280px;
+}
+
+.permissionSelectContainer {
+  height: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.spin {
+  display: block;
+}
+
+.row {
+  background: #fff;
+  font-size: 13px;
+  &:hover {
+    background: #fff;
+
+    td {
+      background: #fff !important;
+    }
+  }
+  td {
+    background-color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    color: #646464;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-right: none !important;
+
+    &:last-child {
+      position: relative;
+      text-align: right;
+    }
+  }
+}
+.privilegeSelect {
+  div:nth-child(2) > div > div > div {
+    max-height: 300px !important;
+  }
+}

@@ -1,0 +1,107 @@
+.blockContent
+    display: flex
+    align-items: flex-start
+    padding: 15px 0
+    .blockContentSubjectsButton
+        border: none
+        background: transparent
+        cursor: pointer
+        width: 100%
+
+        .blockContentSubjects
+            display: flex
+            align-items: center
+            justify-content: space-between
+            background-color: #55AB80
+            color: #ffffff
+            font-size: 14px
+            padding: 10px 15px
+            border-radius: 5px
+            margin-right: 10px
+    .blockContentQuestionsButton
+        border: none
+        width: 100%
+        cursor: pointer
+
+        .blockContentQuestions
+            display: flex
+            align-items: center
+            justify-content: space-between
+            background-color: #55AB80
+            color: #ffffff
+            font-size: 14px
+            padding: 10px 15px
+            border-radius: 5px
+
+    .blockContentSubjectsHeader
+        flex: 1
+    .blockContentQuestionHeader
+        flex: 2
+
+    .blockContentBody
+        padding: 5px 10px 0 0
+
+    .blockContentRightBody
+        padding: 5px 0 0 0
+        position: relative
+
+        .spinContainer
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 50px 0
+            background-color: #ffffff32
+
+.blockContentItem
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border: 1px solid #ddd
+    border-radius: 5px
+    padding: 7px 10px
+    background-color: #ffffff
+    margin-bottom: 5px
+
+    &.selected
+        background-color: #55ab8026
+
+    .blockContentItemName
+        border: none
+        background: transparent
+        font-size: 13px
+        cursor: pointer
+        flex: 1
+        text-align: left
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
+        max-width: 300px
+
+    .blockContentItemTools
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .blockContentItemStatus
+            font-size: 12px
+            background-color: #ddd
+            border-radius: 10px
+            padding: 0 7px
+        .blockContentItemButtons
+            width: 16px
+            height: 16px
+            display: flex
+            align-items: center
+            justify-content: center
+            background: transparent
+            border: none
+            font-size: 11px
+            margin-left: 8px
+            cursor: pointer
+            svg
+                display: block

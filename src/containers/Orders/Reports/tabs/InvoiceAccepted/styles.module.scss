@@ -1,0 +1,60 @@
+@import '../../../styles.module.scss';
+
+.InvoiceAccepted {
+    .header {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  
+    .contentTable {
+      :global {
+        ::-webkit-scrollbar {
+          width: 3px;
+        }
+  
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #dedede;
+        }
+  
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: black;
+          height: 100px;
+        }
+  
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: black;
+        }
+        .ant-table-tbody {
+        }
+        .ant-table-thead > tr > th {
+          font-size: 14px;
+          color: #a4a4a4;
+        }
+  
+        .ant-table-tbody > tr > td {
+          font-size: 14px;
+          color: #464a4b;
+        }
+  
+        .ant-table-thead > tr:hover {
+          background-color: none !important;
+        }
+  
+        .ant-table-thead > tr > th:nth-child(n + 3) {
+          color: #a4a4a4;
+          text-align: center !important;
+        }
+  
+        // .ant-table-tbody > tr > td:nth-child(3) {
+  
+        //     background-color: #F1F1F1!important;
+        // }
+        .ant-table-tbody > tr > td:nth-child(n + 3) {
+          text-align: center !important;
+        }
+      }
+    }
+  }

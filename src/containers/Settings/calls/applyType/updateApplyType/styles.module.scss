@@ -1,0 +1,91 @@
+.formItem {
+  margin-bottom: 20px !important;
+  label {
+    color: #868686;
+    margin-bottom: 5px !important;
+    font-weight: 500;
+    font-size: 14px !important;
+  }
+  input {
+    font-size: 13px;
+    &:focus {
+      border-color: transparent;
+    }
+  }
+  :global {
+    .ant-form-item-label {
+      margin-bottom: 5px;
+      line-height: unset;
+    }
+    .ant-form-item-control {
+      height: 40px;
+      line-height: unset;
+    }
+    .ant-form-explain {
+      height: 16px;
+      display: block;
+      margin: 0;
+      font-size: 12px;
+      font-weight: 600;
+      color: red;
+      transition: all 370ms;
+    }
+  }
+}
+
+.addCatalogModal {
+  padding: 25px;
+
+  .header {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(158, 158, 158, 0.336);
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+
+    .section {
+      font-weight: 700;
+    }
+  }
+}
+
+.customModal {
+  position: relative;
+  margin-top: 50px;
+  .closeButton,
+  .closeButton:hover,
+  .closeButton:active,
+  .closeButton:focus {
+    position: absolute;
+    padding: 0 13px;
+    top: -20px;
+    right: -65px;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+      top: -25px;
+      right: -21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -25px;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      top: -25px;
+      right: -20px;
+    }
+  }
+  :global {
+    .ant-modal-body {
+      margin-top: -60px;
+      padding: 0 !important;
+    }
+  }
+}

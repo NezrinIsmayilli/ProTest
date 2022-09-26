@@ -1,0 +1,80 @@
+@import '../../styles.module.scss';
+
+@mixin new {
+  color: white;
+  background-color: #3b4557 !important;
+}
+
+@mixin draft {
+  color: white;
+  background-color: #9b59b6 !important;
+}
+
+@mixin going {
+  color: white;
+  background-color: #f39c12 !important;
+}
+
+@mixin delivery {
+  color: white;
+  background-color: #2980b9 !important;
+}
+
+@mixin takeover {
+  color: white;
+  background-color: #16a085 !important;
+}
+
+@mixin done {
+  color: white;
+  background-color: #27ae60 !important;
+}
+
+@mixin reject {
+  color: white;
+  background-color: #d35400 !important;
+}
+@mixin delete {
+  color: white;
+  background-color: #c0392b !important;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 4px 8px;
+  font-weight: 300;
+  border: none;
+  border-radius: 4px;
+}
+
+.new {
+  @include new;
+}
+
+.draft {
+  @include draft;
+}
+
+.going {
+  @include going;
+}
+
+.delivery {
+  @include delivery;
+}
+
+.takeover {
+  @include takeover;
+}
+
+.done {
+  @include done;
+}
+
+.reject {
+  @include reject;
+}
+
+.delete {
+  @include delete;
+}

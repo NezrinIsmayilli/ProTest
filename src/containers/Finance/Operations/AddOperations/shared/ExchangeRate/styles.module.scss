@@ -1,0 +1,118 @@
+.parentWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 18px 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.transaction {
+  display: flex;
+  flex-direction: column;
+  width: 84%;
+  position: relative;
+  align-items: flex-start;
+  padding-right: 8px;
+}
+
+.warning {
+  margin-bottom: 5px;
+  border-color: #f5222d;
+  color: #f5222d;
+}
+.amount{
+  margin-bottom: 5px;
+}
+
+.currency {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  align-items: flex-start;
+}
+
+.label {
+  font-size: 13px;
+  margin-bottom: 0.35em;
+  color: rgba(0, 0, 0, 0.57);
+}
+
+.rateDeptBox {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.strong {
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.green {
+  color: #4cae4c;
+  font-size: 15px;
+}
+
+.red {
+  color: #f5222d;
+  font-size: 15px;
+}
+
+
+.customBtn {
+  margin-left: 4px;
+  width: 48px;
+}
+.select {
+  width: 100%;
+  font-weight: normal;
+  font-size: 13px;
+  color: #555555;
+  // margin-bottom: 8px;
+  margin-bottom: 5px;
+  :global {
+    .ant-select-arrow-icon * {
+      stroke: #777;
+    }
+    li.ant-select-search {
+      border-bottom: none !important;
+    }
+  }
+}
+
+:global {
+  .ant-select-open .ant-select-selection,
+  .ant-select-selection:active,
+  .ant-select-selection:focus {
+    border-color: transparent;
+  }
+  .ant-select-open .ant-select-arrow-icon * {
+    stroke: #777 !important;
+  }
+}
+
+.dropdown {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  z-index: 1;
+}
+.inputWarning{
+  position: absolute;
+  right: 8px;
+  top: 0;
+  font-size: 13px;
+  margin-bottom: 0.35em;
+  color: #f5222d;
+}

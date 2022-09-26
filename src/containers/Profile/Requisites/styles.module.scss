@@ -1,0 +1,23 @@
+.content {
+    max-width: 560px;
+    margin-left: 20px;
+    margin-top: 32px;
+    margin-right: 90px;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 40px;
+    .requisites {
+        .colStyle {
+            margin-bottom: -15px;
+        }
+        h1 {
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        .header{
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    }
+}

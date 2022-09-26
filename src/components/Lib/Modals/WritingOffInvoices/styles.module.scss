@@ -1,0 +1,58 @@
+.documentIcon path {
+  fill: grey;
+  cursor: pointer;
+
+  &:hover {
+    fill: #4e9cdf;
+  }
+}
+
+.disable path,
+.disable:hover path {
+  cursor: none;
+  fill: #bdbdbd;
+}
+
+.OperationsModal {
+  .header {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(158, 158, 158, 0.336);
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+
+    .section {
+      font-weight: 700;
+    }
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  .subTitle {
+    font-size: 18px;
+    margin: 10px;
+    color: #cbcbcb;
+    font-weight: normal;
+  }
+}
+
+.customSquareButton,
+.customSquareButton:hover {
+  border: none !important;
+  background-color: white;
+  cursor: pointer;
+
+  i {
+    background-color: white;
+    color: #464a4b !important;
+  }
+}

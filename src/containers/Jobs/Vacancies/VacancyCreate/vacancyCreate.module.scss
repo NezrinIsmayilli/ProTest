@@ -1,0 +1,207 @@
+@import 'theme/vars.scss';
+
+.containerFluid {
+  margin-top: 24px;
+  margin-bottom: 88px;
+  border-top: 1px solid transparent;
+  :global {
+    .ant-spin {
+      max-height: unset !important;
+    }
+  }
+}
+
+.nameCode {
+  font-size: 18px;
+  font-weight: 700;
+  color: #505050;
+  margin: 30px 0 10px;
+}
+
+.actionBtns {
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $accent_light;
+  margin-bottom: 30px;
+}
+
+// for this component
+.nameAndDate {
+  font-size: 13px;
+  color: #b4b4b4;
+  margin-right: 17px;
+  position: relative;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  span {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.dot {
+  font-size: 16px;
+  color: #b4b4b4;
+  padding: 0 6px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.balance {
+  font-size: 13px;
+  color: #b4b4b4;
+  margin-right: 17px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.debt {
+  color: #d0021b;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.number {
+  font-size: 13px;
+  color: #555;
+  display: block;
+  width: 100%;
+  &:focus,
+  &:active {
+    border-color: transparent !important;
+  }
+}
+:global {
+  .ant-input-number-focused {
+    border-color: transparent !important;
+  }
+}
+
+// modal
+.deleteModal {
+  background: rgba(0, 0, 0, 0.7);
+
+  :global {
+    .ant-modal-header {
+      height: 166px;
+      background: linear-gradient(180deg, #4e9cdf 0%, #4785ba 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ant-modal-title {
+      display: inline-block;
+    }
+    .ant-modal-body {
+      text-align: center;
+      padding: 32px 48px;
+    }
+  }
+}
+
+.title {
+  color: #3f3f3f;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.desc {
+  color: #505050;
+  font-style: 16px;
+  margin-bottom: 24px;
+  p {
+    margin: 0;
+    padding-bottom: 16px;
+  }
+  strong {
+    color: #4e9cdf;
+  }
+  span {
+    user-select: none;
+  }
+  :global {
+    .ant-radio-checked .ant-radio-inner {
+      border-color: #4e9cdf;
+      &::after {
+        background-color: #4e9cdf;
+      }
+    }
+  }
+}
+
+.closeIcon {
+  font-size: 40px;
+  color: #fff;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    min-width: 99px;
+    min-height: 44px;
+    appearance: none;
+    border: none;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    margin-right: 14px;
+    outline: none;
+    background: currentColor;
+    transition: 0.2s;
+    box-shadow: 0 0 2px -2px #fff, 0 0 0px 0px currentColor;
+
+    span {
+      font-size: 14px;
+      display: inline-flex;
+      margin-right: 4px;
+    }
+
+    &:active {
+      transition: 0s;
+      box-shadow: 0 0 3px 2px #fff, 0 0 2px 5px #fff;
+    }
+  }
+}
+
+.xIcon.xIcon {
+  font-size: 30px;
+}
+
+.payButton {
+  color: #fff;
+  background: #4e9cdf !important;
+  &:hover,
+  &:active,
+  &:focus {
+    background: #4e9cdf !important;
+    color: #fff;
+  }
+}
+
+.cancelButton {
+  background: #ebebeb !important;
+  span {
+    color: #666;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    background: #ebebeb !important;
+  }
+}

@@ -1,0 +1,59 @@
+.columnDetailsCv {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  .button,
+  .button:hover,
+  .button:active {
+    background: none;
+    outline: none;
+    border: none;
+    .jobsDownloadIcon {
+      cursor: pointer;
+      fill: #505050;
+      &:hover {
+        fill: #55ab80;
+      }
+    }
+  }
+}
+
+.index {
+  flex: 1;
+}
+.image {
+  margin-right: 8px;
+}
+
+.starButton {
+  display: inline-block;
+  border: none;
+  padding: 0 0 0 12px;
+  transition: all 0.2s;
+  transform: scale(0.99);
+
+  &:hover {
+    transform: scale(1.2);
+    i {
+      color: rgb(165, 165, 165);
+    }
+  }
+}
+
+.starButtonActive {
+  &:hover {
+    transform: scale(1.2);
+    i {
+      color: #ec971f;
+    }
+  }
+}
+
+.star {
+  color: #c4c4c4;
+}
+
+.starActive {
+  color: #ec971f;
+}

@@ -1,0 +1,116 @@
+.label {
+  font-size: 13px;
+  margin-bottom: 0.35em;
+  color: rgba(0, 0, 0, 0.57);
+}
+.selectBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+//money balance styles
+.subSelect {
+  display: flex;
+  align-items: center;
+}
+.subLabel {
+  font-size: 13px;
+}
+.valueError {
+  font-size: 13px;
+  color: red;
+  margin-left: 6px;
+}
+.valueSuccess {
+  font-size: 13px;
+  color: #55ab80;
+  margin-left: 6px;
+}
+
+//operation type styles
+.typeBox {
+  display: inherit;
+  flex-direction: inherit;
+}
+.types {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  button {
+    margin-right: 4px;
+  }
+}
+.sumbitBtn{
+  background-color: #55ab80;
+}
+.currencyInfo {
+  display: flex;
+  align-items: center;
+}
+
+.currenciesRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.select {
+  width: 100%;
+  font-weight: normal;
+  font-size: 13px;
+  color: #555555;
+  // margin-bottom: 8px;
+  margin-bottom: 5px;
+  :global {
+    .ant-select-arrow-icon * {
+      stroke: #777;
+    }
+    li.ant-select-search {
+      border-bottom: none !important;
+    }
+  }
+}
+
+:global {
+  .ant-select-open .ant-select-selection,
+  .ant-select-selection:active,
+  .ant-select-selection:focus {
+    border-color: transparent;
+  }
+  .ant-select-open .ant-select-arrow-icon * {
+    stroke: #777 !important;
+  }
+}
+
+.dropdown {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  z-index: 1;
+}
+
+.selectError {
+  & div {
+    border-color: red;
+  }
+  :global {
+    .ant-select-arrow-icon * {
+      stroke: red;
+    }
+  }
+}
+
+.disabled {
+  & > div {
+    background-color: #eee !important;
+  }
+}
+
+.expenseItem {
+  div {
+    label {
+      display: flex;
+      margin-bottom: 0;
+    }
+  }
+}

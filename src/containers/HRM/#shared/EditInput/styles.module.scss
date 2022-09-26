@@ -1,0 +1,21 @@
+.editInput {
+  width: 212px;
+
+  input {
+    font-size: 12px;
+  }
+  :global {
+    .ant-input-suffix {
+      right: 2px;
+    }
+  }
+  span {
+    button:first-child {
+      i {
+        svg {
+          height: 14px;
+        }
+      }
+    }
+  }
+}

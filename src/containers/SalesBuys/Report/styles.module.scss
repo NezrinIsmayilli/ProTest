@@ -1,0 +1,42 @@
+.lastColumn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.info {
+  font-size: 20px;
+  color: #bbb;
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  margin-left: 8px;
+  &:hover {
+    cursor: pointer;
+    color: #666;
+  }
+}
+
+// .footerCount {
+//   font-size: 12px;
+//   padding-top: 20px;
+// }
+
+.tableWrap {
+  padding: 0px 16px;
+}
+
+.tabs {
+  margin: 10px -6px;
+}

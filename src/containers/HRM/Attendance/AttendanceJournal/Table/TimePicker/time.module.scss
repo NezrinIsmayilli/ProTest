@@ -1,0 +1,21 @@
+.timeWrap {
+  display: flex;
+}
+
+.timeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.time {
+  z-index: 10;
+  width: 62px;
+  input {
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+  }
+}

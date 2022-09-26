@@ -1,0 +1,35 @@
+.datePicker {
+  display: block;
+  cursor: pointer;
+
+  font-size: 13px;
+  :global {
+    // .ant-calendar-picker-icon svg {
+    //   fill: #27ae60;
+    // }
+    .ant-calendar-picker-clear,
+    .ant-calendar-picker-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 0;
+      height: 100%;
+      display: flex;
+      width: 42px;
+      border-left: 1px solid #dedede;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+    }
+  }
+
+  input {
+    font-size: 13px;
+    cursor: pointer;
+  }
+}
+
+.dropdownDatePicker {
+  font-size: 13px;
+  z-index: 9;
+}

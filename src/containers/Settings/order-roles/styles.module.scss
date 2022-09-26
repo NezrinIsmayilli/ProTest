@@ -1,0 +1,37 @@
+@import '../index.module.sass';
+
+.OrderRoles {
+  & > * {
+    margin-bottom: 35px;
+  }
+}
+
+.UpdateRole {
+  .selectBox {
+    margin-bottom: 20px;
+  }
+  .selectLabel {
+    font-size: 14px;
+  }
+
+  .buttons {
+    margin: 15px;
+  }
+  .confirmButton {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .cancelButton {
+    font-size: 14px;
+  }
+}
+
+.orderRoleTable {
+  th {
+      &:nth-child(3) {
+        text-align: center;
+        padding: 12px 20px 10px !important;
+      }
+  }
+}

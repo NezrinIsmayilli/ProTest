@@ -1,0 +1,142 @@
+@import 'theme/vars.scss';
+.container {
+  margin-top: 14px;
+  margin-bottom: 88px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rowBox {
+  padding-left: 9px;
+  margin-bottom: 24px;
+}
+
+.table {
+  background-color: rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  color: rgb(80, 80, 80);
+  display: table;
+  font-size: 13px;
+  height: 140px;
+  width: 100%;
+  thead {
+    border-top: 1px solid rgba(212, 212, 212, 0.5);
+    border-bottom: 1px solid rgba(212, 212, 212, 0.5);
+  }
+  th {
+    padding: 12px 20px 10px !important;
+    border-right: none !important;
+    &:first-child {
+      border-radius: 4px 0px 0px 4px;
+    }
+    &:last-child {
+      text-align: right;
+      border-radius: 0px 4px 4px 0px;
+    }
+  }
+  td {
+    background-color: white;
+    font-size: 13px;
+    font-weight: 400;
+    color: #646464;
+    max-width: 100px;
+    text-overflow: ellipsis;
+    border: 2px solid #f6f6f6;
+    border-bottom: 0;
+    position: relative;
+    overflow: initial;
+  }
+  :global {
+    [class$='focused'] {
+      border-color: #dedede;
+      box-shadow: none;
+    }
+  }
+  input,
+  :global(.ant-input-number-input) {
+    font-size: 12px;
+  }
+  input:focus {
+    // box-shadow: none;
+    border-color: #dedede;
+  }
+  .error {
+    input {
+      border-color: red;
+    }
+    :global(.ant-input-number) {
+      border-color: red;
+    }
+  }
+}
+
+.tr {
+  td {
+    font-size: 12px;
+    font-weight: 600;
+    color: #373737;
+    padding: 15px 16px;
+    :global(.ant-input-group-addon) {
+      color: #c9c9c9;
+      background: transparent;
+    }
+  }
+}
+
+.addRow {
+  transition: transform 0.2s;
+  border: none;
+  overflow: hidden;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  font-size: 22px;
+  &:active {
+    transform: scale(1.06);
+  }
+}
+
+.txtRight {
+  text-align: right !important;
+}
+.c {
+  text-align: center;
+}
+
+.txtRight {
+  text-align: right;
+}
+
+.inputOnError {
+  border-color: red;
+}
+
+.selectError {
+  & div {
+    border-color: red;
+  }
+}
+
+.txtCenter {
+  text-align: center;
+}
+
+.txtRight {
+  text-align: right;
+}
+
+.delete {
+  color: #b4b4b4;
+  &:hover {
+    color: #c82d3b;
+  }
+}
+
+.edit {
+  color: #b4b4b4;
+  &:hover {
+    color: $accent;
+  }
+}

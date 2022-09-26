@@ -1,0 +1,105 @@
+.pagination {
+    :global {
+      .ant-pagination-item-link {
+        color: #55ab80;
+      }
+  
+      .ant-pagination-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px !important;
+        font-size: 12px;
+      }
+  
+      .ant-pagination-item-active {
+        background-color: #55ab80;
+        color: white !important;
+        border-radius: 6px;
+      }
+  
+      .ant-pagination-item-link {
+        font-size: 15px;
+      }
+  
+      .ant-pagination-item:nth-last-child(2) {
+        margin-right: 15px !important;
+      }
+  
+      .ant-pagination-item-ellipsis {
+        margin-left: 15px !important;
+        font-size: 5px;
+      }
+  
+      .ant-pagination-item > a {
+        padding: 4px 8px;
+      }
+  
+      .ant-pagination-item-active > a {
+        color: white;
+      }
+  
+      .ant-pagination-next {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px !important;
+        width: 30px !important;
+        padding: 9px;
+        background: rgba(85, 171, 128, 0.1);
+      }
+      .ant-pagination-item-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .totalNumber {
+    font-size: 12px;
+    font-weight: normal;
+    color: #484848;
+    margin-left: 20px;
+  }
+  
+  .pageSize,
+  .pageSize:focus,
+  .pageSize:active,
+  .pageSize:hover {
+    width: 60px !important;
+    font-weight: normal;
+    font-size: 13px;
+    color: #555555;
+    border: none;
+    margin: none;
+    // margin-bottom: 8px;
+  
+    :global {
+      .ant-select-arrow-icon * {
+        stroke: rgb(0, 0, 0);
+      }
+  
+      .ant-select-selection__rendered {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .ant-select-selection {
+        border: none;
+      }
+    }
+  }
+
+  ul[class^='ant-select-dropdown-menu'] {
+    max-height: 300px !important;
+  }
+  
+  .dropdown {
+    font-size: 13px;
+    padding: 10px;
+    font-weight: normal;
+    color: #333;
+    z-index: 1;
+  }

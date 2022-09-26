@@ -1,0 +1,125 @@
+@import 'theme/vars.scss'
+
+//-------------emin's styles
+.tool_icons
+  height: 100%
+  padding: 10px
+  display: inline-block
+  overflow: hidden
+  flex: 1
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  user-select: none
+
+.tool_icon
+    font-size: 25px
+    margin-top: 3px
+    color: #cceadb
+    padding: 28px 12px
+    user-select: none
+    outline: none
+    display: flex
+    align-items: center
+    img
+      vertical-align: unset
+    &:hover
+      cursor: pointer
+
+.title_popover
+  \:global(.ant-popover-inner-content)
+    padding: 15px 14px 1px 14px
+  li
+    list-style: none
+    font-size: 13px
+    padding: 6px 0px
+    font-weight: 500
+    a
+      color: #646464
+      display: block
+      height: 100%
+      width: 100%
+      transition: all .3s
+     
+      &:hover
+        color: $accent_light
+      &:hover span
+        box-shadow: 0 0 0 3px $accent_light
+    span
+      transition: all .3s
+      margin-right: 10px
+    &:hover
+      cursor: pointer
+      color: $accent_light
+    &:first-child
+      padding-top: 0
+    &:last-child
+      padding-bottom: 0
+
+.active
+  color: $accent_light !important
+  font-weight: 700
+  span
+    box-shadow: 0 0 0 3px $accent_light
+
+
+.icon_popover_content
+  \:global(.ant-popover-content)
+    width: 290px
+  \:global(.ant-popover-inner-content)
+    padding: 0px
+    *
+      color: $accent_light
+      font-size: 12px
+  \:global(.ant-list-item-meta-title)
+    font-weight: 700
+
+  \:global(.ant-list-item-meta-description)
+    font-size: 12px
+
+  \:global(.ant-popover-arrow)
+    height: 20px
+    width: 20px
+    margin-top: -6px
+    background: $accent_light
+    box-shadow: none
+  \:global(.ant-popover-title)
+    color: #ffffff
+    background: $accent_light
+    text-align: center
+    padding: 15px 0
+    font-size: 13px
+    border-radius: 4px 4px 0 0
+
+.tool_popover_list
+  max-height: 300px
+  overflow: auto
+  font-size: 12px
+  a
+    border-bottom: 1px solid #f1f1f1
+    display: block
+  li
+    transition: all .3s
+  li:hover
+    cursor: pointer
+    background: #f1f1f1
+
+.gear_icon
+   font-size: 16px
+   display: inline-block
+   width: 30px
+   height: 30px
+   border: 1px solid #60a080
+   border-radius: 3px
+   margin: 10px 0 10px 10px
+   display: flex
+   align-items: center
+   justify-content: center
+
+.noNotification
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #505050 !important
+  height: 74px
+  font-size: 16px

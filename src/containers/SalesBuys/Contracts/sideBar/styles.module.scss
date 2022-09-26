@@ -1,0 +1,38 @@
+@import '../styles.module.scss';
+.sidebarItem {
+  padding: 24px 25px;
+  border-bottom: 2px solid #fff;
+  .ant-form-item {
+    margin: 0 !important;
+  }
+}
+
+.inputGroup {
+  margin: '20px 0';
+}
+
+.sectionName {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filterButton {
+  background-color: #bbbbbb;
+  color: white;
+  font-size: 12px;
+  width: 100%;
+}
+.activeFilterButton,
+.activeFilterButton:active,
+.activeFilterButton:hover {
+  background-color: #55ab80;
+  color: white;
+  font-size: 12px;
+  width: 100%;
+}
+
+.submitButton {
+  width: 100%;
+  font-size: 14px;
+}

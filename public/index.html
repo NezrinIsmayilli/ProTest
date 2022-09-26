@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="Description" content="Prospect SMB - Small Medium Buisness" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Prospect Cloud ERP</title>
+    <!-- Code snippet to speed up Google Fonts rendering  -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700,900&display=swap"
+      as="fetch"
+      crossorigin="anonymous"
+    /> -->
+    <!-- google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700,900&display=swap"
+    />
+
+    <!-- End of code snippet for Google Fonts -->
+    <!-- Branding Prospect ERP Logo Preloader CSS Animation -->
+    <style>
+      .overlay {
+        background: #55ab80;
+        position: fixed;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        -webkit-perspective: 4000px;
+        perspective: 4000px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+      }
+
+      .wrap {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform: scale3d(0.4, 0.4, 0.4) rotateX(-30deg);
+        transform: scale3d(0.4, 0.4, 0.4) rotateX(-30deg);
+      }
+
+      .cube {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform: rotateY(45deg);
+        transform: rotateY(45deg);
+        background: transparent;
+        will-change: transform;
+        -webkit-animation: rot 2.5s ease-in-out infinite;
+        animation: rot 2.5s ease-in-out infinite;
+      }
+
+      .side {
+        width: 100px;
+        height: 100px;
+        background: white;
+        position: absolute;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        border: 10px solid #55ab80;
+        box-shadow: 0 0 0px 1px #55ab80;
+        border-top-width: 5px;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+
+      .side::after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        top: -10px;
+        left: -10px;
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        border-top: 20px solid #55ab80;
+      }
+
+      .s1 {
+        -webkit-transform: rotateY(0deg) translateZ(50px);
+        transform: rotateY(0deg) translateZ(50px);
+      }
+      .s2 {
+        -webkit-transform: rotateY(90deg) translateZ(50px);
+        transform: rotateY(90deg) translateZ(50px);
+      }
+      .s3 {
+        -webkit-transform: rotateY(180deg) translateZ(50px);
+        transform: rotateY(180deg) translateZ(50px);
+      }
+      .s4 {
+        -webkit-transform: rotateY(270deg) translateZ(50px);
+        transform: rotateY(270deg) translateZ(50px);
+      }
+
+      .top {
+        background: #55ab80;
+        -webkit-transform: rotateX(90deg) translateZ(35px);
+        transform: rotateX(90deg) translateZ(35px);
+        border-color: #fff;
+        border-width: 14px;
+      }
+
+      @-webkit-keyframes rot {
+        0% {
+          -webkit-transform: rotateY(45deg);
+          transform: rotateY(45deg);
+        }
+
+        49%,
+        50% {
+          -webkit-transform: rotateY(225deg);
+          transform: rotateY(225deg);
+        }
+
+        99%,
+        100% {
+          -webkit-transform: rotateY(405deg);
+          transform: rotateY(405deg);
+        }
+      }
+
+      @keyframes rot {
+        0% {
+          -webkit-transform: rotateY(45deg);
+          transform: rotateY(45deg);
+        }
+
+        49%,
+        50% {
+          -webkit-transform: rotateY(225deg);
+          transform: rotateY(225deg);
+        }
+
+        99%,
+        100% {
+          -webkit-transform: rotateY(405deg);
+          transform: rotateY(405deg);
+        }
+      }
+
+      div.preloader--hide {
+        display: none;
+      }
+      .progress {
+        width: 200px;
+        height: 2px;
+        background: rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-top: 20px;
+      }
+
+      .bar {
+        background: #fff;
+        background: linear-gradient(
+          to right,
+          transparent,
+          rgba(255, 255, 255, 0.6),
+          transparent
+        );
+        height: 4px;
+        width: 80px;
+        -webkit-transform: translateX(-80px);
+        transform: translateX(-80px);
+        -webkit-animation: animBar 0.6s ease-in infinite;
+        animation: animBar 0.6s ease-in infinite;
+      }
+      @-webkit-keyframes animBar {
+        from {
+          -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
+        }
+        to {
+          -webkit-transform: translateX(220px);
+          transform: translateX(220px);
+        }
+      }
+      @keyframes animBar {
+        from {
+          -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
+        }
+        to {
+          -webkit-transform: translateX(220px);
+          transform: translateX(220px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- preloader -->
+    <div class="overlay preloader">
+      <div class="wrap">
+        <div class="cube">
+          <div class="side s1"></div>
+          <div class="side s2"></div>
+          <div class="side s3"></div>
+          <div class="side s4"></div>
+          <div class="side top"></div>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      // (function(){
+      // var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      // s1.async=true;
+      // s1.src='https://embed.tawk.to/5e81abe235bcbb0c9aabc275/default';
+      // s1.charset='UTF-8';
+      // s1.setAttribute('crossorigin','*');
+      // s0.parentNode.insertBefore(s1,s0);
+      // })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>

@@ -1,0 +1,316 @@
+li {
+  line-height: 2;
+}
+.MoreDetails {
+  padding: 50px;
+
+  .header {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(158, 158, 158, 0.336);
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+
+    .section {
+      font-weight: 700;
+    }
+
+    .value {
+      color: black;
+      font-weight: normal;
+    }
+  }
+}
+
+.detailsTab {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  button {
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 14px;
+    height: 42px;
+    line-height: 16px;
+    &:nth-child(1) {
+      border-radius: 4px 0 0 4px;
+    }
+    &:nth-child(2) {
+      border-radius: 0 4px 4px 0;
+    }
+    
+  }
+}
+
+.customModal {
+  position: relative;
+  margin-top: 50px;
+  .closeButton,
+  .closeButton:hover,
+  .closeButton:active,
+  .closeButton:focus {
+    position: absolute;
+    padding: 0 13px;
+    top: -20px;
+    right: -65px;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+      top: -25px;
+      right: -21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -25px;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      top: -25px;
+      right: -20px;
+    }
+  }
+  :global {
+    .ant-modal-body {
+      margin-top: -60px;
+      padding: 0 !important;
+    }
+  }
+}
+
+.information {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 24px 20px;
+  margin-top: 18px;
+  background-color: #f9f9f9;
+  color: #464a4b;
+}
+
+// Details List style-modal
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+
+  .ulLi {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dbdbdb;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    span {
+      &:nth-child(1) {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: #373737;
+      }
+
+      &:nth-child(2) {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 16px;
+        color: #464a4b;
+      }
+    }
+  }
+  :global {
+    .ant-collapse-item {
+      padding-left: 0;
+      padding-top: 16px;
+      padding-bottom: 0;
+      padding-right: 0 !important;
+      .ant-collapse-header {
+        font-size: 16px !important;
+        border-bottom: 1px solid #dbdbdb;
+        padding-bottom: 10px !important;
+        .ant-collapse-arrow {
+          right: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+// History Tab
+.buttonGroup {
+  width: 100%;
+  background: #fff;
+  padding-top: 6px;
+  margin-bottom: -30px;
+}
+
+.tabContent {
+  padding: 10px 0 0 0;
+}
+
+.profile {
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 8px;
+  margin-left: -4px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  h5 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  span {
+    font-size: 14px;
+    color: #898989;
+  }
+  .descWrap {
+    margin-left: 50px;
+    line-height: initial;
+    h4{
+      margin-bottom: 0;
+    }
+  }
+}
+.headerInfo{
+  padding: 16px 0;
+  border-radius: 8px;
+  margin-left: -4px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  h5 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  h6 {
+    margin-bottom: 0;
+  }
+  span {
+    font-size: 14px;
+    color: #898989;
+  }
+  .profileRight {
+    margin-left: 15px;
+  }
+}
+
+// Payments Tab Table
+.invoiceTable {
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: transparent !important;
+      }
+      td {
+        padding: 12px 16px 10px !important;
+      }
+    }
+  }
+  thead {
+    font-size: 12px;
+
+    tr {
+      th {
+        background-color: #fff;
+        color: #2e2e2e;
+      }
+    }
+  }
+  th {
+    padding: 12px 16px 10px !important;
+    border-right: none !important;
+    &:last-child {
+      text-align: right;
+    }
+
+    &:nth-child(8) {
+      position: relative;
+      text-align: right;
+    }
+    &:nth-child(9) {
+      position: relative;
+      text-align: center;
+    }
+    &:nth-child(10) {
+      position: relative;
+      text-align: right;
+    }
+  }
+  //td{
+  :global {
+    .ant-table-body {
+      overflow-x: auto !important;
+    }
+
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+    .ant-table-middle td:first-child {
+      padding-left: 16px !important;
+    }
+
+    .ant-table-middle td:last-child {
+      padding-right: 16px !important;
+    }
+  }
+}
+.footer{
+      tr:last-child > td {
+      border-bottom: none !important;
+      color: white;
+      background-color: #484848;
+      font-weight: bold;
+      pointer-events: none;
+    }
+}
+.chip{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+// Payment tab
+.exportBox {
+  display: flex;
+  align-items: center;
+}
+.columnDetailItem {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a4a4a4;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #373737;
+  }
+}

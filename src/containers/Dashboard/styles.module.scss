@@ -1,0 +1,95 @@
+$box-shadow: 0px 3px 17px -7px #808080;
+
+.NavigationButtons {
+  margin: 10px 20px;
+}
+
+.Summary {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: $box-shadow;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  .label {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0;
+  }
+
+  .value {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.Indicators {
+  padding: 10px 20px;
+  @extend .Summary;
+
+  .header {
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 1px solid #efefea;
+    padding: 10px 0 13px;
+  }
+  .ant-select {
+    top: 0 !important;
+  }
+  .value {
+    font-size: 18px;
+  }
+  .report {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+
+    .report {
+      font-size: 20px;
+      font-weight: 700;
+
+      .report__name {
+        font-size: 15px;
+        font-weight: 400;
+      }
+      .report_value {
+        font-size: 18px;
+      }
+    }
+
+    .icon__container {
+      svg {
+        width: 35px;
+        fill: #373737
+      }
+    }
+  }
+}
+.RecentOperations {
+  @extend .Indicators;
+
+  .label {
+    font-size: 18px;
+    // font-weight: 700;
+    margin: 2px 0 10px;
+  }
+}
+
+.SalesFigures {
+ @extend .Indicators;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

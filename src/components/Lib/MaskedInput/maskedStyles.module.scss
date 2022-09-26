@@ -1,0 +1,36 @@
+.maskedInput {
+  height: 30px;
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  width: 100%;
+  text-overflow: ellipsis;
+  outline: none;
+  transition: all 0.3s;
+  &:focus {
+    border-color: transparent;
+    border-right-width: 1px !important;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(85, 171, 128, 0.2);
+  }
+}
+
+:global {
+  .has-error .maskedInput {
+    border: 1px solid #f5222d;
+  }
+}
+
+.disable {
+  color: rgba(0, 0, 0, 0.25);
+  background-color: #eee;
+  cursor: not-allowed;
+  opacity: 1;
+  box-shadow: none;
+  pointer-events: none;
+  user-select: none;
+}

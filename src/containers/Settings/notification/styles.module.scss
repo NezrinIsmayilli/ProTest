@@ -1,0 +1,56 @@
+$text: rgba(0, 0, 0, 0.87); //standard material primaryText color
+
+.AddSerialNumbersModal {
+  margin-top: 200px;
+}
+
+.serialNumberCount {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45a8e291;
+  margin-left: 8px;
+  border-radius: 64px;
+  cursor: context-menu;
+}
+
+.contractBalance {
+  color: #7c7c7c;
+  font-weight: 300;
+  font-size: 14px !important;
+}
+
+.AddFromCatalog {
+  padding: 40px 40px;
+
+  .selectLabel {
+    font-size: 14px;
+  }
+
+  .buttons {
+    margin: 15px;
+  }
+  .confirmButton {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .cancelButton {
+    font-size: 14px;
+  }
+}
+
+.AddDescriptionModal {
+  margin-top: 400px;
+}
+.AddDescription {
+  padding: 40px 40px;
+}
+.SelectFromInvoice {
+  margin-top: 20px;
+}
+.selectBox {
+  margin-bottom: 20px;
+}

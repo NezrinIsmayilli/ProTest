@@ -1,0 +1,80 @@
+.settingModal {
+  border-radius: 0px;
+  width: 400px !important;
+}
+
+.settingModalHeader {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #55ab80;
+  padding: 3px 0;
+  p {
+      margin-bottom: 0;
+      font-weight: 400;
+      margin-left: 20px;
+    }
+  .settingCloseButton {
+      background-color: unset;
+      border: 0;
+      color: white;
+      font-size: 20px;
+      margin-right: 10px;
+  }
+}
+.settingModalContent {
+  margin-top: 30px;
+    .selectedColumns{
+        margin-right: 8px;
+    }
+  .selectAllColumns {
+      font-weight: 600;
+      margin-bottom: 10px;
+      padding-left: 40px;
+  }
+  .standartColumns,
+  .otherColumns {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 40px;
+      margin-bottom: 12px;
+      :global {
+          .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+              margin-left: 0px;
+          }
+      }
+  }
+  .standartColumns {
+      margin: 0 20px;
+  }
+  .otherColumns{
+    margin-top: 12px;
+    margin-bottom: 0px;
+    padding-left: 60px;
+  }
+  .settingSaveButton {
+      display: block;
+      padding-top: 25px;
+      text-align: right;
+  }
+  :global {
+      .ant-card-small > .ant-card-body {
+          padding: 12px 0;
+      }
+  }
+}
+.draggableItem {
+  z-index: 99999999;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+}
+

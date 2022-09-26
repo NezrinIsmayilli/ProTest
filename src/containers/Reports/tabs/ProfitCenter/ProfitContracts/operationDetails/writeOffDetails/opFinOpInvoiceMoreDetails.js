@@ -1,0 +1,184 @@
+import React, { useRef } from 'react';
+import { MdKeyboardArrowLeft } from 'react-icons/md';
+import { Button, Collapse } from 'antd';
+import Detail from 'containers/Warehouse/Products/detail';
+import styles from 'containers/Warehouse/styles.module.scss';
+
+const { Panel } = Collapse;
+
+function OpFinOpInvoiceMoreDetails({ onCancel, row }) {
+  const {
+    cashboxName,
+    status,
+    dateOfTransaction,
+    createdAt,
+    createdByName,
+    createdByLastname,
+    operationDirectionName,
+    categoryName,
+    subCategoryName,
+    contactOrEmployee,
+    amount,
+    currencyCode,
+    invoicePaymentRate,
+    invoicePaymentCustomRate,
+    paymentTypeName,
+    description,
+  } = row;
+  const componentRef = useRef();
+  return (
+    <div
+      style={{
+        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+      }}
+    >
+      <Button
+        onClick={onCancel}
+        type="link"
+        style={{
+          alignSelf: 'flex-start',
+          marginLeft: -24,
+        }}
+        className={styles.backBtn}
+      >
+        <MdKeyboardArrowLeft size={24} style={{ marginRight: 4 }} />
+        Ödəniş əməliyyatlarına qayıt
+      </Button>
+      <div
+        style={{
+          marginTop: 16,
+          width: 'calc(100% + 32px)',
+        }}
+      >
+        <div ref={componentRef} style={{ padding: 16 }}>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              marginBottom: 20,
+            }}
+          >
+            <span className={styles.modalTitle}>Əlavə məlumat</span>
+
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              {/* <ReactToPrint
+                trigger={() => (
+                  <Button
+                    className={styles.customSquareButton}
+                    style={{ marginRight: 10 }}
+                    shape="circle"
+                    icon="printer"
+                  />
+                )}
+                content={() => componentRef.current}
+              />
+
+              <Button
+                className={styles.customSquareButton}
+                shape="circle"
+                icon="file-excel"
+              /> */}
+            </div>
+          </div>
+
+          <ul className={styles.detailsList}>
+            <Detail primary="Hesab" secondary={cashboxName || '-'} />
+            <Detail
+              primary="Ödəniş statusu"
+              secondary={
+                status === 'deleted' ? (
+                  <span
+                    className={styles.chip}
+                    style={{
+                      color: '#C4C4C4',
+                      background: '#F8F8F8',
+                    }}
+                  >
+                    Silinmiş
+                  </span>
+                ) : (
+                  <span
+                    className={styles.chip}
+                    style={{
+                      color: '#F3B753',
+                      background: '#FDF7EA',
+                    }}
+                  >
+                    Aktiv
+                  </span>
+                )
+              }
+            />
+
+            <Detail
+              primary="İcra tarixi"
+              secondary={dateOfTransaction || '-'}
+            />
+            <Detail primary="Əməliyyatın tarixi" secondary={createdAt || '-'} />
+            <Detail
+              primary="Məsul şəxs"
+              secondary={`${createdByName} ${createdByLastname || ''}`}
+            />
+            <Detail
+              primary="Əməliyyatın növü"
+              secondary={
+                operationDirectionName === 'Cash out'
+                  ? 'Məxaric'
+                  : operationDirectionName === 'Cash in'
+                  ? 'Mədaxil'
+                  : '-'
+              }
+            />
+            <Detail primary="Kategoriya " secondary={categoryName || '-'} />
+
+            <Detail primary="Qaimə" secondary={subCategoryName || '-'} />
+            <Detail
+              primary="Qarşı tərəf"
+              secondary={contactOrEmployee || '-'}
+            />
+            <Detail
+              primary="Məbləğ"
+              secondary={
+                operationDirectionName === 'Cash out'
+                  ? `-${parseFloat(amount).toFixed(2)}`
+                  : parseFloat(amount).toFixed(2)
+              }
+            />
+
+            <Detail primary="Valyuta" secondary={currencyCode} />
+            <Detail
+              primary="Məzənnə"
+              secondary={
+                invoicePaymentRate !== null
+                  ? parseFloat(invoicePaymentRate).toFixed(2)
+                  : invoicePaymentCustomRate !== null
+                  ? parseFloat(invoicePaymentCustomRate).toFixed(2)
+                  : '-'
+              }
+            />
+            <Detail primary="Ödəniş növü" secondary={paymentTypeName} />
+
+            {description ? (
+              <Collapse
+                expandIconPosition="right"
+                defaultActiveKey={['1']}
+                className={styles.additionalCollapse}
+              >
+                <Panel header="Əlavə məlumat" key="1">
+                  <p>{description}</p>
+                </Panel>
+              </Collapse>
+            ) : (
+              <Detail primary="Əlavə məlumat" secondary="-" />
+            )}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default OpFinOpInvoiceMoreDetails;

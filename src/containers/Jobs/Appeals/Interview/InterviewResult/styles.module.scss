@@ -1,0 +1,131 @@
+.drawer {
+  .ant-drawer-content {
+    ::-webkit-scrollbar-track {
+      background-color: #e9e9e9;
+    }
+    ::-webkit-scrollbar {
+      width: 4px;
+      background-color: #55ab80;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #6fc99c;
+      border-radius: 2px;
+    }
+  }
+  .ant-drawer-wrapper-body,
+  .ant-drawer-body {
+    height: 100%;
+    position: relative;
+  }
+  :global {
+    .ant-calendar-input-wrap,
+    .ant-calendar-picker-input {
+      display: none !important;
+      border: none !important;
+    }
+    .ant-calendar-picker > div {
+      position: relative !important;
+    }
+  }
+}
+
+
+
+.customModal {
+  position: relative;
+  margin-top: 50px;
+  .closeButton,
+  .closeButton:hover,
+  .closeButton:active,
+  .closeButton:focus {
+    position: absolute;
+    padding: 0 13px;
+    top: -20px;
+    right: -65px;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+      top: -25px;
+      right: -21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -25px;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      top: -25px;
+      right: -20px;
+    }
+  }
+  :global {
+    .ant-modal-body {
+      margin-top: -60px;
+      padding: 0 !important;
+    }
+  }
+  .title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #383d3e;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+  
+  .buttonGroup {
+    background: #fff;
+    padding-top: 6px;
+    width: 100%;
+    bottom: -5px;
+  }
+  
+  .tabContent {
+    height: 300px;
+
+  }
+}
+
+.information {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 24px 20px;
+  margin-top: 18px;
+  background-color: #f9f9f9;
+  color: #464a4b;
+}
+
+// Details List style-modal
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+
+  .ulLi {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dbdbdb;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    span {
+      &:nth-child(1) {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: #373737;
+      }
+
+      &:nth-child(2) {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 16px;
+        color: #464a4b;
+      }
+    }
+  }
+}

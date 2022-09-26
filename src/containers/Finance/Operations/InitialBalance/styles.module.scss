@@ -1,0 +1,20 @@
+.containerFluid {
+  margin-top: 24px;
+  margin-bottom: 88px;
+  border-top: 1px solid transparent;
+}
+
+.nameCode {
+  font-size: 18px;
+  font-weight: 700;
+  color: #505050;
+  margin: 10px 0 30px;
+  & span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+.numericInput {
+  width: 100%;
+}

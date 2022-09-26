@@ -1,0 +1,652 @@
+@import 'theme/vars.scss'
+
+.marginRight10
+  margin-right: 10px
+
+.links
+  width: 100%
+  display: flex
+  justify-content: flex-start
+
+.btn-container
+  text-align: right
+  margin-bottom: 10px
+.msk_block
+  margin: 15px
+  padding: 32px
+  background-color: #fff
+  border-radius: 4px
+  max-height: 500px
+  overflow-y: hidden
+  .header
+    font-size: 15px
+    font-weight: 500
+    cursor: pointer
+    span
+      float: right
+      width: 30px
+      cursor: pointer
+    &.open
+      span
+        i
+          transform: rotate(180deg)
+  .body
+    display: block
+    margin-top: 30px
+    position: relative
+    ul.positions
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        background-color: #f2f2f2
+        border-radius: 4px
+        margin-bottom: 2px
+        color: #2a2a2a
+        font-weight: 500
+        span
+          position: absolute
+          text-align: center
+          width: 50px
+          height: 50px
+          padding-top: 13px
+          border-right: 2px solid #fff
+        div
+          margin-left: 65px
+          cursor: pointer
+          height: 50px
+          padding-top: 14px
+          color: #373737
+          font-size: 14px
+          input
+            margin-top: -6px
+            width: 250px
+            display: inline-block
+          a
+            float: right
+            margin-right: 15px
+            color: #ddd
+            font-weight: normal
+            height: 50px
+            width: 30px
+            margin-top: -14px
+            padding-top: 14px
+            text-align: center
+            i
+              font-size: 20px
+            &:hover .fa-pencil,
+            &:hover .fa-save
+              color: #67ad84
+            &:hover .fa-trash,
+            &:hover .fa-times
+              color: #e74c3c
+        &:hover
+          background-color: #dfdfdf
+          div
+            a
+              color: #fff
+ul.menu-kassa-msk-hesab
+  padding: 0
+  margin: 0 60px 0 0
+  list-style: none
+  transition: all 350ms
+  li
+    a
+      font-size: 14px
+      font-weight: 500
+      margin: 2px 0
+      padding: 10.5px 15px
+      color: #2e2e2e
+      display: block
+      text-decoration: none
+      &:hover
+        display: block
+        background-color: #f2f2f2
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          right: -25px
+          top: 0px
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 21px 0 21px 25px
+          border-color: transparent transparent transparent #f2f2f2
+    &.active
+      a
+        display: block
+        background-color: $accent
+        color: #fff
+        position: relative
+        transition: all 350ms
+        &:after
+          content: ''
+          position: absolute
+          right: -25px
+          top: 0px
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 21px 0 21px 25px
+          border-color: transparent transparent transparent #55ab80
+          transition: all 350ms
+
+.msk_block2
+  margin: 15px
+  padding: 32px
+  background-color: #fff
+  border-radius: 4px
+  .header
+    font-size: 15px
+    font-weight: 500
+    cursor: pointer
+    span
+      float: right
+      width: 30px
+      cursor: pointer
+    &.open
+      span
+        i
+          transform: rotate(180deg)
+  .body
+    display: none
+    margin-top: 30px
+    position: relative
+    .btn-container
+      text-align: right
+      margin-bottom: 10px
+    ul.positions
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        background-color: #f2f2f2
+        border-radius: 4px
+        margin-bottom: 2px
+        color: #2a2a2a
+        font-weight: 500
+        span
+          position: absolute
+          text-align: center
+          width: 50px
+          height: 50px
+          padding-top: 13px
+          border-right: 2px solid #fff
+        div
+          margin-left: 65px
+          cursor: pointer
+          height: 50px
+          padding-top: 14px
+          color: #373737
+          font-size: 14px
+          input
+            margin-top: -6px
+            width: 250px
+            display: inline-block
+          a
+            float: right
+            margin-right: 15px
+            color: #ddd
+            font-weight: normal
+            height: 50px
+            width: 30px
+            margin-top: -14px
+            padding-top: 14px
+            text-align: center
+            i
+              font-size: 20px
+            &:hover .fa-pencil,
+            &:hover .fa-save
+              color: #67ad84
+            &:hover .fa-trash,
+            &:hover .fa-times
+              color: #e74c3c
+        &:hover
+          background-color: #dfdfdf
+          div
+            a
+              color: #fff
+    ul.menu-kassa-msk-hesab
+      padding: 0
+      margin: 0 60px 0 0
+      list-style: none
+      li
+        a
+          font-size: 14px
+          font-weight: 500
+          margin: 2px 0
+          padding: 9.5px 15px
+          color: #2e2e2e
+          display: block
+          text-decoration: none
+          &:hover
+            display: block
+            background-color: #f2f2f2
+            position: relative
+            &:after
+              content: ''
+              position: absolute
+              right: -25px
+              top: 0px
+              width: 0
+              height: 0
+              border-style: solid
+              border-width: 21px 0 21px 25px
+              border-color: transparent transparent transparent #f2f2f2
+
+        &.active
+          a
+            display: block
+            background-color: $accent
+            color: #fff
+            position: relative
+            &:after
+              content: ''
+              position: absolute
+              right: -25px
+              top: 0px
+              width: 0
+              height: 0
+              border-style: solid
+              border-width: 21px 0 21px 25px
+              border-color: transparent transparent transparent #55ab80
+
+.new-position-modal
+  .modal-header
+    border: none
+    color: #ffffff
+    background-color: #68af86
+    border-radius: 4px 4px 0 0
+    padding: 10px 24px
+    font-weight: 600
+    .close
+      margin-top: 2px
+      button
+        font-size: 27px
+  .modal-body
+    padding-left: 24px
+    padding-right: 24px
+    .new-position-modal-dec
+      color: #868686
+      font-size: 14px
+      font-weight: 400
+      h4
+        font-size: 15px
+        color: #505050
+        margin-bottom: 17px
+      span
+        display: block
+        &.desc
+          font-size: 12px
+          font-weight: 500
+          margin-bottom: 8px
+  .modal-footer
+    border: none
+    text-align: left
+    padding-left: 24px
+    padding-right: 24px
+    padding-bottom: 24px
+
+.table-msk
+  width: 100%
+  font-size: 13px
+  thead > tr > th
+    display: table-cell
+    font-weight: 500
+    font-size: 12px
+    text-align: left
+    color: #fff
+    padding: 12px 20px 10px
+    background-color: #a3a3a3
+    border-color: #DDD
+    //border-right: 1px solid #f6f6f6
+    &:first-child
+      border-radius: 4px 0 0 4px
+      width: 57px
+      height: 42px
+    &:last-child
+      border-radius: 0 4px 4px 0
+      border-right: none
+    a
+      color: #fff
+      text-decoration: none
+  tbody
+    tr:nth-child(1)
+      border-top: 4px solid #fff
+    tr
+      border-top: 2px solid #fff
+      td
+        display: table-cell
+        padding: 12px 15px 12px
+        background-color: #f2f2f2
+        //border-top: 1px solid #fff
+        font-size: 13px
+        font-weight: 400
+        color: #646464
+        //border-radius: 4px
+        // text-align: center
+        //border-right: 2px solid #fff
+        input
+          font-size: 13px
+          font-weight: 500
+          color: $navbg
+        &:last-child
+          border-right: none
+  tfoot
+    tr
+      td
+        background-color: #484848
+        color: #fff
+        font-size: 14px
+        font-weight: 500
+        padding: 12px 25px
+
+      td:first-child
+        border-radius: 0 0 0 4px
+      td:last-child
+        border-radius: 0 0 4px 0
+
+.scr_ovr
+  overflow-y: scroll
+  height: 250px
+
+.table-msk-xerc
+  tbody
+    tr
+      td
+
+        font-size: 14px
+        font-weight: 500
+      td:first-child
+        width: 10%
+      td:nth-child(2)
+        width: 30%
+        input
+
+          display: inline
+        span
+          // width: 120px
+          display: inline-block
+          // height: 34px
+          padding: 6px 12px
+          font-weight: 500
+          font-size: 14px
+        a
+          display: none
+          width: 25px
+          float: right
+          text-align: center
+          margin-left: 5px
+          position: relative
+          top: 7px
+          i
+            color: #b4b4b4
+            font-size: 20px
+          &:hover
+            i.fa-pencil
+              color: $accent
+            i.fa-trash
+              color: #c82d3b
+      td:nth-child(2)
+        text-align: left
+        a
+          display: none
+          text-decoration: none
+          margin-right: 15px
+          i
+            font-size: 18px
+            color: #a3a3a3
+            &.fa-pencil:hover
+              color: #67ad84
+            &.fa-trash:hover
+              color: #e74c3c
+
+      &:hover
+        td:nth-child(2)
+          a
+            display: inline
+      td:nth-child(3)
+        width: 30%
+
+      td:nth-child(4)
+
+        i
+          color: #b4b4b4
+          font-size: 20px
+        &:hover
+          i.fa-pencil
+            color: $accent
+          i.fa-trash
+            color: #c82d3b
+      td:nth-child(4)
+        text-align: left
+        a
+          display: none
+          text-decoration: none
+          margin-right: 15px
+          i
+            font-size: 18px
+            color: #a3a3a3
+            &.fa-pencil:hover
+              color: #67ad84
+            &.fa-trash:hover
+              color: #e74c3c
+
+      &:hover
+        td:nth-child(4)
+          a
+            display: inline
+
+.table-msk-integration
+  tbody
+    tr
+      td:first-child
+        width: 57px
+      td:last-child
+        vertical-align: middle
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        min-height: 45px
+        button
+          background-color: #FFFFFF
+          outline: none
+          border-color: #DEDEE4
+          i
+            color: #9d9d9d
+          span
+            color: #9d9d9d
+            display: inline-block
+            padding: 6px 12px
+      &:hover
+        td:last-child
+          div
+            opacity: 1
+          a
+            opacity: 1
+
+.table-msk-hesab
+  tbody
+    tr
+      td:first-child
+        width: 57px
+      td:last-child
+        vertical-align: middle
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 45px
+        input
+          max-width: 300px
+          display: inline
+        span
+          display: inline-block
+          // height: 34px
+          padding: 6px 12px
+        div
+          transition: all 0.35s
+          opacity: 0
+        a
+          display: block
+          width: 25px
+          opacity: 0
+          float: right
+          text-align: center
+          margin-left: 5px
+          position: relative
+          // top: 7px
+      &:hover
+        td:last-child
+          div
+            opacity: 1
+          a
+            opacity: 1
+.table-msk-notification
+  tbody
+    tr
+      td
+        text-align: left
+      td:last-child
+        vertical-align: middle
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        min-height: 45px
+      &:hover
+        td:last-child
+          div
+            opacity: 1
+          a
+            opacity: 1
+
+.table-msk-barcode
+  tbody
+    tr
+      td
+        text-align: left
+        padding: 12px 20px 10px
+      td:first-child
+        width: 57px
+      td:last-child
+        vertical-align: middle
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 45px
+        input
+          max-width: 300px
+          display: inline
+        span
+          display: inline-block
+          padding: 6px 12px
+        a
+          display: block
+          width: 25px
+          color: #646464
+          float: right
+          text-align: center
+          margin-left: 5px
+          position: relative
+
+.table-msk-credit
+  thead > tr > th
+    &:last-child
+      text-align: right
+  tbody
+    tr
+      td:last-child
+        vertical-align: middle
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        min-height: 45px
+      &:hover
+        td:last-child
+          div
+            opacity: 1
+          a
+            opacity: 1
+
+.serialNumberCount
+  height: 24px
+  width: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: #45a8e291
+  margin-left: 8px
+  border-radius: 64px
+  cursor: context-menu
+
+.delete
+  color: #b4b4b4
+  padding: 0
+  line-height: 16px
+  &:hover
+    color: #c82d3b
+.edit
+  color: #b4b4b4
+  padding: 0
+  line-height: 16px
+  margin-left: 8px
+  &:hover
+    color: $accent
+
+.row
+  display: flex !important
+  justify-content: space-between
+  align-items: center
+
+.valyutaDelete
+  color: #b4b4b4
+  top: 2px !important
+  &:hover
+    top: 2px !important
+    color: #c82d3b
+.valyutaEdit
+  color: #b4b4b4
+  top: 2px !important
+  &:hover
+    top: 2px !important
+    color: $accent
+
+.table-msk-valyuta
+  // tbody
+  //   tr
+  //     td:last-child
+  //       width: 400px
+
+.menu-kassa-msk-hesab
+  padding: 0
+  margin: 0
+  list-style: none
+
+.calendar-cont
+  background-color: #fff
+  padding: 10px
+
+.contact_control_btns
+  float: left
+  padding-top: 2px
+  a
+    i
+      font-size: 18px
+      font-weight: 200
+      margin-right: 0
+.edit
+  color: #b4b4b4
+  &:hover
+    color: $accent
+
+
+.barcodeEdit
+  opacity: 1!important
+
+.swalButtons
+  background-color: #55ab80 !important
+  border-color: #55ab80
+  &:hover, &:active, &:focus
+    background-color:  #55ab80 
+    border-color: #55ab80
+    

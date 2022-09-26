@@ -1,0 +1,54 @@
+
+
+  // Details List style-modal
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+
+  .ulLi {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dbdbdb;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    span {
+      &:nth-child(1) {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: #373737;
+      }
+
+      &:nth-child(2) {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #464a4b;
+        width: 60%;
+        text-align: end;
+      }
+    }
+  }
+  :global {
+    .ant-collapse-item {
+      padding-left: 0;
+      padding-top: 16px;
+      padding-bottom: 0;
+      padding-right: 0 !important;
+      .ant-collapse-header {
+        font-size: 16px !important;
+        border-bottom: 1px solid #dbdbdb;
+        padding-bottom: 10px !important;
+        .ant-collapse-arrow {
+          right: 0 !important;
+        }
+      }
+    }
+  }
+}

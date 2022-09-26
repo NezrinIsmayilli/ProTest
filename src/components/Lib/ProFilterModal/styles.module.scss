@@ -1,0 +1,123 @@
+@import 'theme/vars.scss';
+
+.filter {
+  margin-bottom: 17px;
+  position: relative;
+  z-index: 99;
+  img {
+    padding: 16px 12px;
+    border-radius: 4px;
+    margin-right: 9px;
+    transition: all 0.7s ease;
+    &:hover {
+      cursor: pointer;
+      background-color: #65b28b;
+    }
+  }
+}
+
+.popContent {
+  position: absolute;
+  top: 65px;
+  z-index: 99;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 4px 19px rgba(220, 220, 220, 0.5);
+  border-radius: 3px;
+}
+
+.header {
+  padding: 18px 32px 0;
+  padding-right: 27px;
+  font-size: 14px;
+  color: #d8d8d8;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 24px 32px;
+  border-top: 1px solid #ededed;
+  button {
+    font-size: 12px;
+  }
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  transition: color 0.4s;
+  display: inline-flex;
+  background: none;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    color: #333;
+  }
+}
+
+.panel.panel {
+  border: none;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  user-select: none;
+
+  i {
+    font-size: 15px !important;
+  }
+}
+
+.selectedFilters {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  span {
+    display: inline-block;
+  }
+}
+
+.tools {
+  display: flex;
+}
+
+.filterButton {
+  border: none;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 53px;
+  background: #c9c9c9;
+  border-radius: 4px;
+  margin-right: 9px;
+  transition: all 0.7s ease;
+  cursor: pointer;
+  font-size: 30px;
+  &:focus {
+    outline: none;
+  }
+}
+.activeFilterButton {
+  background: #65b28b;
+}
+
+.checkboxes {
+  label {
+    font-size: 12px;
+  }
+  input {
+    margin-right: 20px;
+  }
+  :global(.ant-checkbox) {
+    margin-right: 6px;
+  }
+  :global(.ant-checkbox-checked) + span {
+    color: $accent;
+  }
+}

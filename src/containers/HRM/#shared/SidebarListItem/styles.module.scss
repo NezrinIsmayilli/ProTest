@@ -1,0 +1,62 @@
+.item {
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &:hover,
+  &.active,
+  &:focus {
+    background-color: #55ab80;
+    * {
+      color: #fff;
+    }
+    button {
+      transform: scale(1.01);
+    }
+  }
+  &.active {
+    button {
+      outline: none !important;
+    }
+  }
+}
+
+.textWrap {
+  flex: 1;
+}
+
+.mainTitle {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  transition: all 0.2s;
+  word-break: break-all;
+}
+
+.secondTitle {
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.7;
+  transition: all 0.2s;
+  text-transform: capitalize;
+  word-break: break-all;
+}
+
+.button {
+  transition: all 0.2s;
+  transform: scale(0);
+
+  &:focus {
+    outline: auto;
+  }
+  &:hover {
+    transform: scale(1.15) !important;
+  }
+}

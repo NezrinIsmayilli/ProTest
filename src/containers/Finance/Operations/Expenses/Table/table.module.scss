@@ -1,0 +1,154 @@
+@import 'theme/vars.scss';
+
+.table {
+  background-color: rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  color: rgb(80, 80, 80);
+  display: table;
+  font-size: 16px;
+  height: 140px;
+  width: 100%;
+  thead {
+    border-top: 1px solid rgba(212, 212, 212, 0.5);
+    border-bottom: 1px solid rgba(212, 212, 212, 0.5);
+  }
+  th {
+    font-size: 12px;
+    color: #c9c9c9;
+    font-weight: 400;
+    height: 60px;
+    text-align: left;
+    padding: 0 16px;
+  }
+  :global {
+    [class$='focused'] {
+      border-color: #d9d9d9 !important;
+      box-shadow: none;
+    }
+  }
+
+  :global(.ant-input-number-input) {
+    font-size: 12px;
+  }
+}
+
+.error {
+  border-color: red;
+}
+
+.tr {
+  td {
+    font-size: 12px;
+    font-weight: 700;
+    color: #373737;
+    padding: 15px 16px;
+    :global(.ant-input-group-addon) {
+      color: #c9c9c9;
+      background: transparent;
+    }
+  }
+}
+
+.tfoot {
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 21px 24px 1px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #373737;
+  text-align: right;
+  div {
+    width: 100%;
+    font-size: 12px;
+    color: #bbb;
+  }
+  & + div {
+    margin: 0;
+    margin-top: 20px;
+  }
+  p {
+    width: 100%;
+    font-weight: bold;
+  }
+}
+
+.addRow {
+  transition: transform 0.2s;
+  border: none;
+  overflow: hidden;
+  background: transparent;
+  cursor: pointer;
+  color: #c9c9c9;
+  font-size: 22px;
+  display: inline-flex;
+  &:active {
+    transform: scale(1.06);
+  }
+}
+.addLink {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+  b {
+    display: block;
+    text-decoration: underline;
+    color: rgba(255, 0, 0, 0.932);
+  }
+}
+.rowEnter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.rowEnterActive {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 300ms ease-in-out;
+}
+.rowExit {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.rowExitActive {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.2s ease-out;
+}
+
+.arrow {
+  font-size: 18px;
+  margin-right: 6px;
+  svg {
+    vertical-align: middle;
+  }
+}
+
+.salesAddBtns {
+  margin-top: 32px;
+}
+
+.txtCenter {
+  text-align: center !important;
+}
+
+.width10 {
+  width: 10%;
+}
+
+.width100 {
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.width20 {
+  width: 20%;
+}
+
+.width25 {
+  width: 25%;
+}
+
+.width15 {
+  width: 15%;
+}

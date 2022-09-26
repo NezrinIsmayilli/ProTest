@@ -1,0 +1,82 @@
+@import '../styles.module.scss';
+.newDropdownBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  background-color: #4e9cdf !important;
+  font-size: 14px;
+  font-weight: 500;
+  border-color: transparent !important;
+}
+.InfoContener{
+  display: flex;
+  align-items: center;
+}
+.ellipseDiv{
+  margin-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.responsiveFilterButton {
+  display: none;  
+  color: #4e9cdf;
+  border: 1px solid #4e9cdf;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  button {
+    border: none;
+    background: transparent;
+    padding-top: 5px;
+    svg {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.paginationRow {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 425px) {
+    flex-wrap: wrap-reverse;
+    padding-bottom: 50px;
+    div:nth-child(2) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    div:nth-child(1) {
+      ul li:first-child,
+      ul li:last-child {
+        display: none;
+      }
+    }
+
+    div:nth-child(2) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.pageToolsContainer {
+  margin: 24px 0;
+
+  @media screen and (max-width: 425px) {
+    margin-top: 102px;
+  }
+}

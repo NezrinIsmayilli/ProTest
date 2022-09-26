@@ -1,0 +1,22 @@
+.contactModalContainer {
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.floatingSwitch {
+    position: absolute;
+    right: 25px;
+    display: flex;
+    z-index: 9;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+    width: 131px;
+
+    div {
+        margin-bottom: 0 !important;
+        min-height: 28px !important;
+    }
+}

@@ -1,0 +1,132 @@
+.drawerHeader {
+  padding: 30px 18px 30px 30px;
+}
+
+.title {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 700;
+  &::after {
+    content: ' ';
+    white-space: pre;
+  }
+}
+
+.closeDrawer {
+  float: right;
+  margin-right: 32px;
+  margin-top: 4px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.drawerFormBox {
+  padding: 2px 32px;
+}
+
+.tableLight {
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+  :global {
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+  }
+  .row {
+    background: #fff;
+    font-size: 13px;
+    &:hover {
+      cursor: pointer;
+      background: #fff !important;
+      td {
+        background: #fff !important;
+      }
+    }
+    td {
+      background-color: white;
+      font-size: 13px;
+      font-weight: 400;
+      color: #646464;
+      max-width: 100px;
+      text-overflow: ellipsis;
+      border: 2px solid #f6f6f6;
+      border-bottom: 0;
+      position: relative;
+      overflow: initial;
+      &:first-child {
+        border-radius: 4px 0px 0px 4px;
+      }
+      &:nth-last-child(2) {
+        text-align: center;
+      }
+      &:last-child {
+        border-radius: 0px 4px 4px 0px;
+      }
+    }
+  }
+}
+
+.formTr {
+  background: transparent;
+  &:hover {
+    background: transparent;
+    td {
+      background: transparent !important;
+    }
+  }
+  td {
+    background: 0;
+    padding: 2px !important;
+    border: 0 !important;
+  }
+  td:first-child,
+  td:nth-child(2) {
+    width: 35%;
+  }
+  td:nth-child(3) {
+    width: 20%;
+  }
+  td:last-child {
+    width: 10%;
+  }
+}
+
+.btnAdd {
+  position: relative;
+  height: 30px;
+  top: 2px;
+}
+
+.btnTd {
+  padding: 0 !important;
+  margin: 0 !important;
+  button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    &:focus {
+      color: #c82d3b;
+    }
+  }
+  .delete {
+    color: #b4b4b4 !important;
+    &:hover {
+      color: #c82d3b !important;
+    }
+  }
+}

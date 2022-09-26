@@ -1,0 +1,123 @@
+.inputWrapper {
+  max-width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.label {
+  display: block;
+  width: 100%;
+}
+
+.labelText {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #868686;
+}
+
+.requiredStar::before {
+  display: inline-block;
+  margin-right: 4px;
+  color: #f5222d;
+  font-size: 16px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  height: 40px;
+  padding: 6px 11px;
+  margin-right: 5px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #555;
+  line-height: 1.5;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+
+  &::-webkit-input-placeholder {
+    opacity: 0.6;
+  }
+  &::-moz-placeholder {
+    opacity: 0.6;
+  }
+  &:-ms-input-placeholder {
+    opacity: 0.6;
+  }
+  &:-moz-placeholder {
+    opacity: 0.6;
+  }
+  &:hover {
+    border-color: #79b896;
+    border-right-width: 1px !important;
+  }
+  &:focus {
+    border-color: #79b896;
+    border-right-width: 1px !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(85, 171, 128, 0.2);
+    box-shadow: 0 0 0 2px rgba(85, 171, 128, 0.2);
+  }
+}
+.wrap {
+  position: relative;
+}
+
+.icon {
+  font-size: 13px;
+  color: #bbb;
+  border: none;
+  padding: 6px 12px;
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s ease-in-out;
+  svg {
+    vertical-align: middle;
+  }
+  &:hover {
+    cursor: pointer;
+    color: #333;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.prefix {
+  left: 3px;
+}
+.suffix {
+  right: 3px;
+}
+
+.error {
+  box-shadow: 0 0 0 1px red;
+}
+.succes {
+  box-shadow: 0 0 0 1px #6fca9c;
+}
+
+.message {
+  height: 16px;
+  display: block;
+  position: absolute;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: red;
+  transition: all 370ms;
+}

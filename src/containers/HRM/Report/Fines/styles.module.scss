@@ -1,0 +1,298 @@
+.infoText {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  height: 100%;
+  color: #242424;
+  display: flex;
+  align-items: center;
+}
+
+.buttonsCol {
+  display: flex;
+  align-items: center;
+}
+.buttonSortIcon {
+  display: flex;
+  margin-left: 8px;
+  flex-direction: column;
+}
+.settingsButton {
+  height: 40px;
+
+  &:hover {
+    border: 1px solid #55ab80;
+  }
+}
+
+.modal {
+  :global {
+    .ant-modal-header {
+      background-color: #68af86;
+      padding: 16px 18px;
+    }
+
+    .ant-modal-close-x {
+      color: #ffffff;
+    }
+  }
+}
+
+.modalTitle {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.modalBody {
+  & > :not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.modalBodyItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalBodyCheckbox {
+  line-height: normal;
+}
+
+.modalBodyText {
+  font-size: 14px;
+  line-height: normal;
+  color: #000000;
+  text-align: left;
+}
+
+.modalBodyInput {
+  width: 96px;
+  height: 32px;
+  font-size: 14px;
+}
+
+.sidebarCheckbox {
+  font-size: 13px;
+}
+.padding24 {
+  padding: 24px;
+}
+.header {
+  background: #373737;
+  border-radius: 4px 4px 0px 0px;
+  h3,
+  p {
+    color: #fff !important;
+  }
+}
+.infoTable {
+  width: 100%;
+  font-size: 13px;
+  @media (min-width: 1367px) {
+    font-size: 16px;
+  }
+}
+
+.tableRow {
+  th,
+  td {
+    padding: 8px;
+    border: 1px solid #f2f2f2;
+    text-align: center;
+  }
+
+  :last-child {
+    border-right-color: transparent;
+  }
+  :first-child {
+    border-left-color: transparent;
+  }
+}
+.settingsWrap {
+  margin-bottom: 12px;
+  margin-top: 6px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.textColsWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.alignRight {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.borderedRadius {
+  margin-bottom: 0;
+  & > div {
+    border-radius: 20px !important;
+    margin-right: 10px;
+    padding: 0 10px;
+    z-index: 999;
+    position: relative;
+  }
+}
+.infoBox {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.InfoHeader {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+// main table ovveride
+.table {
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none !important;
+  }
+
+  thead {
+    font-size: 11.5px;
+
+    // @media (min-width: 1367px) {
+    //   font-size: 11px;
+    // }
+  }
+  th {
+    padding: 8px 10px !important;
+
+    @media (min-width: 1367px) {
+      padding: 12px 20px 12px !important;
+    }
+    border-right: none !important;
+    & > * {
+      text-align: center;
+    }
+  }
+  :global {
+    .ant-table-row-selected td {
+      background-color: #fff !important;
+    }
+  }
+}
+
+.row {
+  background: #fff;
+  font-size: 13px;
+
+  &:hover {
+    cursor: pointer;
+    // background: rgba(85, 171, 128, 0.180392) !important;
+    // td {
+    //   background: rgba(85, 171, 128, 0.180392) !important;
+    // }
+  }
+  td {
+    // border-top: 2px solid #f6f6f6 !important;
+    // border-bottom: 2px solid #f6f6f6 !important;
+    background-color: #fff;
+    font-weight: 400;
+    color: #646464;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // border-right: none !important;
+    &:first-child{
+      word-break: inherit;
+    }
+    input {
+      font-size: 13px;
+    }
+
+    font-size: 13px;
+    @media (min-width: 1367px) {
+      font-size: 16px;
+      input {
+        font-size: 16px;
+      }
+    }
+
+    &:last-child {
+      position: relative;
+      text-align: center;
+    }
+
+    &:not(:nth-child(2)) {
+      text-align: center;
+    }
+
+    &:nth-child(4) {
+      padding: 0 !important;
+    }
+
+    &:nth-child(2) {
+      min-width: 170px;
+    }
+  }
+}
+
+.editableBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  button {
+    opacity: 0;
+  }
+
+  :hover {
+    button {
+      opacity: 1;
+    }
+  }
+}
+.editable {
+  width: 100%;
+  height: 100%;
+  // font-size: 16px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  word-break: break-all;
+}
+
+.buttonsGroup {
+  width: 44%;
+  display: flex;
+  align-items: center;
+}
+
+.editButton {
+  color: #000000;
+  appearance: none;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0 8px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #000000;
+  }
+}
+.customLabel {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #505050;
+}
+.customWrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: #e9e9e9;
+  border-bottom: 2px solid #fff;
+}

@@ -1,0 +1,12 @@
+.newButton,
+.newButton:hover,
+.newButton:active,
+.newButton:focus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #4e9cdf;
+  font-size: 14px;
+  font-weight: 500;
+}

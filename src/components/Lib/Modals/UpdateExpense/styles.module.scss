@@ -1,0 +1,20 @@
+.modalContainer {
+    padding: 25px;
+  
+    .header {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 0.5px solid rgba(158, 158, 158, 0.336);
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+  
+      .section {
+        font-weight: 700;
+      }
+    }
+  }

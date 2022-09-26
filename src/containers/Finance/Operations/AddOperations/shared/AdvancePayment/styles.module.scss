@@ -1,0 +1,64 @@
+.advancePaymentBox{
+  width: 100%;
+  display: flex;
+  padding: 10px 14px;
+  align-items: center;
+  justify-content: space-between;
+
+  //margin-top: 16px;
+  border: 1px solid rgba(131, 131, 131, 0.28);
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  transition: opacity ease-in-out 150ms;
+}
+.fadeDetails{
+  display: flex;
+  flex-direction: column;
+  opacity: 0.6;
+}
+
+.avansBox{
+  display: flex;
+  align-items: baseline;
+  font-size: 14px;
+
+}
+.title{
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 0.35em;
+}
+
+.box{
+  height: 24px;
+  width: 24px;
+  background-color: rgba(131, 131, 131, 0.58);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+
+//override custom style to antd checkbox
+.customCheckBox {
+  :global {
+    .ant-checkbox-inner{
+      background-color: transparent;
+      border-color: transparent;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner{
+      background-color: #4cae4c;
+    }
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner{
+      border-color: transparent;
+    }
+    .ant-checkbox-disabled .ant-checkbox-inner{
+      border-color: transparent!important;
+    }
+  }
+}

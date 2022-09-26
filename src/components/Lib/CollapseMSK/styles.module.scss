@@ -1,0 +1,126 @@
+@import 'theme/vars.scss';
+
+.collapse {
+  overflow: auto;
+  margin: 15px;
+  border-radius: 4px;
+  transition: all 350ms;
+  position: relative;
+}
+
+.header {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 32px;
+  border-radius: 4px;
+  background-color: #fff;
+  position: relative;
+  z-index: 99;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.titleWrapper {
+  display: flex;
+}
+.title {
+  flex: 1;
+  text-transform: capitalize;
+}
+.icon {
+  display: inline-block;
+  appearance: none;
+  background: transparent;
+  border: none;
+  padding: 0 15px;
+  height: 15px;
+  transform-origin: center;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
+.body {
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transform-origin: center top;
+}
+.contentWrapper {
+  height: calc(100% - 10px);
+  overflow: auto;
+  margin-bottom: 10px;
+  &::-webkit-scrollbar {
+    width: 2px;
+    background-color: #ddd;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $accent;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #ccc;
+  }
+}
+.content {
+  background: #fff;
+  padding: 32px;
+  padding-top: 0;
+  border-top: 1px solid transparent;
+  overflow: auto;
+}
+
+.collapse-appear {
+  height: 350px;
+}
+.collapse-enter {
+  height: 0;
+}
+.collapse-enter-active {
+  height: 350px;
+  transition: all 350ms ease-in-out;
+}
+
+.collapse-enter-done {
+  height: 350px;
+}
+
+.collapse-exit {
+  height: 350px;
+}
+.collapse-exit-active {
+  height: 0;
+  transition: all 350ms ease-in-out;
+}
+
+.collapse-exit-done {
+  height: 0;
+}
+
+.rotate-enter {
+  transform: rotate(0deg);
+}
+.rotate-enter-active {
+  transform: rotate(180deg);
+  transition: all 350ms;
+}
+
+.rotate-enter-done {
+  transform: rotate(180deg);
+}
+
+.rotate-exit {
+  transform: rotate(180deg);
+}
+.rotate-exit-active {
+  transform: rotate(0deg);
+  transition: all 350ms;
+}
+
+.rotate-exit-done {
+  transform: rotate(0deg);
+}

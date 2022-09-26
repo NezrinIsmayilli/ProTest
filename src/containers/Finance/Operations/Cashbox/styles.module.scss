@@ -1,0 +1,67 @@
+@import 'theme/vars.scss';
+
+.wrapper {
+  padding: 80px 215px !important;
+}
+
+.containerFluid {
+  margin-top: 24px;
+  margin-bottom: 88px;
+  border-top: 1px solid transparent;
+}
+
+.nameCode {
+  font-size: 18px;
+  font-weight: 700;
+  color: #505050;
+  margin: 10px 0 30px;
+}
+
+.motion {
+  overflow: hidden;
+}
+
+.salesAddBtns {
+  margin-top: 32px;
+}
+
+.nameAndDate {
+  font-size: 13px;
+  color: #b4b4b4;
+  margin-right: 17px;
+  position: relative;
+  font-weight: 400;
+}
+
+.userName {
+  margin-left: 17px;
+}
+
+.balance {
+  font-size: 13px;
+  color: #b4b4b4;
+  margin-right: 17px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.debt {
+  color: #d0021b;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.number {
+  font-size: 13px;
+  color: #555;
+  display: block;
+  width: 100%;
+  &:focus,
+  &:active {
+    border-color: transparent !important;
+  }
+}
+
+.checkbox {
+  font-size: 12px;
+}

@@ -1,0 +1,49 @@
+@import '../styles.module.scss';
+
+  a {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.mode {
+  color: #383d3e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.inputLabel {
+    margin-bottom: 6px;
+}
+
+.select {
+  width: 100%;
+  margin: 0!important;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555555;
+  overflow: hidden;
+  // margin-bottom: 8px;
+
+  :global {
+    .ant-select-arrow {
+      color: black;
+    }
+    .ant-select-selection {
+      border: 1px solid #d9d9d9 !important;
+      border-color: #d9d9d9 !important;
+    }
+  }
+}
+.addNumber {
+    width: 93%;
+}
+
+

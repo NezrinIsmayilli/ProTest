@@ -1,0 +1,182 @@
+@import 'theme/vars.scss';
+
+.customModal {
+  :global {
+
+    @media screen  and (max-width: 320px) {
+      .ant-modal-content {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .ant-modal-body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+
+    .ant-modal-content {
+      padding: 16px 24px;
+      margin: 64px 0;
+    }
+
+    .ant-modal-title {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .ant-modal-body {
+      padding: 16px 16px;
+    }
+
+    .ant-modal-close {
+      top: -44px !important;
+      right: -44px !important;
+      background-color: #fff;
+      border-radius: 4px;
+      color: #373737 !important;
+
+      @media screen  and (max-width: 768px) {
+        top: -45px !important;
+        right: 0px !important;
+      }
+    }
+
+    .ant-modal-close-x {
+      width: 40px !important;
+      height: 40px !important;
+      line-height: 36px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ant-modal-header {
+      border-bottom: 0 !important;
+      padding: 16px 16px;
+    }
+
+    .ant-modal-footer {
+      border-top: 0 !important;
+      padding-top: 8px;
+    }
+  }
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+
+  .inputLabelBox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    justify-content: space-between;
+  }
+  label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #7c7c7c;
+    line-height: 16px;
+  }
+
+  input {
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #CBCBCB;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px !important;
+      line-height: 16px;
+    }
+  }
+}
+
+.confirmButton {
+  width: 100%;
+  height: 40px;
+}
+
+
+.delete {
+  color: #b4b4b4;
+  padding: 0;
+  transition: all .25s;
+  &:hover{
+    color: #c82d3b
+
+  }
+  &:active{
+    transform: scale(1.2)
+  }
+}
+
+.edit {
+  color: #b4b4b4;
+  padding: 0;
+  margin-left: 8px;
+  transition: all .25s;
+
+  &:hover {
+    color: $accent
+  }
+
+  &:active {
+    transform: scale(1.2)
+  }
+}
+
+
+.row{
+  display: flex!important;
+  justify-content: space-between;
+  align-items: center
+}
+
+
+.select {
+  width: 100%;
+  font-weight: normal;
+  font-size: 13px;
+  color: #555555;
+  :global {
+    .ant-select-arrow-icon * {
+      stroke: #777;
+    }
+    li.ant-select-search {
+      border-bottom: none !important;
+    }
+  }
+}
+
+.selectError {
+  & div {
+    border-color: red;
+  }
+  :global {
+    .ant-select-arrow-icon * {
+      stroke: red;
+    }
+  }
+}
+
+
+.disabled {
+  & > div {
+    background-color: #eee !important;
+  }
+}
+
+
+.dropdown {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  z-index: 1;
+}
+
+.helperTextBox{
+  margin-top: 8px;
+}

@@ -1,0 +1,126 @@
+@import 'theme/vars.scss';
+
+.nav {
+  height: calc(100vh - 80px);
+  width: 94px;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 80px;
+  overflow-y: auto;
+  background: #373737;
+
+  @media screen and (max-width: 425px) {
+    position: fixed;
+    height: calc(100vh - 60px);
+    width: 70px;
+    left: -96px;
+    top: 60px;
+    transition: all .3s ease-in-out;
+
+    &.show {
+      left: 0;
+    }
+  }
+}
+
+.nav::-webkit-scrollbar {
+  width: 2px;
+  background-color: #ddd;
+}
+
+.nav::-webkit-scrollbar-thumb {
+  background-color: $accent;
+  border-radius: 2px;
+}
+
+.nav::-webkit-scrollbar-track {
+  background-color: #373737;
+}
+
+.ul {
+  //delete this if global reset have
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  background: #17191a !important;
+  opacity: 1 !important;
+
+  &::after {
+    left: 0 !important;
+  }
+}
+
+// li
+.item {
+  list-style: none;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  a {
+    opacity: 0.7;
+    transition: all 0.3s;
+  }
+  &:hover {
+    a {
+      background: #17191a;
+      opacity: 1;
+
+      &::after {
+        left: 0px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+}
+// a tag
+.link {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: #fff;
+  background: #373737;
+  line-height: 1.65;
+
+  &::after {
+    content: ' ';
+    display: inline-block;
+    transition: left 0.2s ease-in-out;
+    position: absolute;
+    left: -4px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 4px;
+    height: auto;
+    background-color: $accent;
+  }
+}
+.linkText {
+  display: block;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 7px;
+}
+.icon {
+  display: inline-block;
+}

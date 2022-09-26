@@ -1,0 +1,48 @@
+{
+  "ru": {
+    "translation": {
+      "loginIn": "Войти"
+    },
+    "dashboard": {
+      "today": "Bu gün",
+      "thisWeek": "Bu həftə",
+      "thisMonth": "Bu ay",
+      "thisYear": "Bu il",
+      "salesTurnover": "Satış dövriyyəsi.",
+      "accountsReceivable": "Debitor borclar",
+      "lenderDebts": "Kreditor borclar",
+      "expenses": "Xərclər",
+      "cost": "Maya dəyəri",
+      "profit": "Mənfəət",
+      "margin": "Marja %",
+      "tradeIndicators": "Trade indicators",
+      "receivablesDebtIndicators": "DB borc göstəriciləri",
+      "receivablesDebtReduction": "Borcun azalması",
+      "receivablesDebtIncreasment": "Borcun artması",
+      "receivablesDynamics": "Dinamika",
+      "payablesDebtIndicators": "KD borc göstəriciləri",
+      "payablesDebtReduction": "Borcun azalması",
+      "payablesDebtIncreasment": "Borcun artması",
+      "payablesDynamics": "Dinamika",
+      "financialIndicators": "Maliyyə göstəriciləri",
+      "totalCashboxBalance": "Pul qalığı",
+      "totalCashIn": "Cash In",
+      "totalCashOut": "Cash Out"
+    },
+    "mainNavigation": {
+      "controlPanel": "Nəzarət Paneli",
+      "users": "İstifadəçilər",
+      "contacts": "Контакты",
+      "stock": "Anbar",
+      "sales": "Ticarət",
+      "finance": "Maliyyə",
+      "hrm": "Əməkdaşlar",
+      "order": "Sifariş",
+      "callCenter": "Çağrı mərkəzi",
+      "report": "Hesabatlar",
+      "businessUnit": "Biznes blok",
+      "projobs": "İşçi axtarışı",
+      "task": "Tapşırıqlar"
+    }
+  }
+}

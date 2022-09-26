@@ -1,0 +1,78 @@
+.currenciesOption {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+
+  button {
+    border-radius: 0;
+    font-weight: 500;
+    font-size: 14px;
+    min-width: 72px;
+    line-height: 24px;
+    height: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    &:nth-child(1) {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+    &:nth-last-child(1) {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+}
+
+.exportBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.columnDetailItem {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a4a4a4;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #373737;
+  }
+}
+
+.customSquareButton,
+.customSquareButton:hover {
+  border: none !important;
+  background-color: white;
+
+  i {
+    background-color: white;
+    color: #464a4b !important;
+  }
+}
+
+.footer {
+  background-color: black;
+}
+
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.subTitle {
+  font-size: 18px;
+  margin: 10px;
+  color: #cbcbcb;
+  font-weight: normal;
+}

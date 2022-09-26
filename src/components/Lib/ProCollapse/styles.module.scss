@@ -1,0 +1,39 @@
+.collapse_override {
+  user-select: none;
+  background: transparent;
+  border: 1px solid #ffffff;
+  & > div {
+    padding-right: 16px;
+    // border-top: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff !important;
+  }
+}
+.header {
+  padding: 20px 0 20px 32px;
+  & > div:first-child {
+    padding: 0 !important;
+    font-size: 15px;
+    color: rgb(80, 80, 80) !important;
+    font-weight: bold !important;
+  }
+  & > div:last-child {
+    font-size: 15px;
+    color: rgb(80, 80, 80) !important;
+    font-weight: bold !important;
+  }
+
+  & > div:last-child > div {
+    //padding: 20px 20px 0 0 !important;
+    padding: 8px 12px 0 0 !important;
+  }
+
+  :global {
+    .ant-collapse-content{
+      overflow: unset!important;
+    }
+    .ant-select-selection {
+      left: 2px; // box-shadow not show correct, under overflow hidden parent;
+      top: -2px;
+    }
+  }
+}

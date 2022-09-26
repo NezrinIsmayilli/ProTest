@@ -1,0 +1,20 @@
+.parentWrapper{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.label{
+  font-size: 13px;
+  margin-bottom: 0.35em;
+  color: rgba(0,0,0,0.57);
+}
+
+.buttonGroup{
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  button{
+    margin-right: 6px;
+  }
+}
